@@ -1,8 +1,13 @@
 @import "tailwindcss";
+/*  
+    Personal Portfolio Website
+    Eliot Pearson Jr
+    Developement Started: 5/2/25
+*/
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFEFFC;
+  --foreground: #857C6F;
 }
 
 @theme inline {
@@ -14,13 +19,43 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #FFEFFC;
+    --foreground: #857C6F;
   }
+}
+
+.postcard-bg {
+  
+  background-color: #FEEADA;
+  color: #857C6F;
+  border-radius: 15px;
+  margin-top: -70px;
+  margin-left: 70px;
+  margin-right: 70px;
+
+  
+  /* 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top:-300px;
+  margin-left: -900px;
+  */
 }
 
 body {
   background: var(--background);
+  background-image: repeating-linear-gradient(
+    45deg,
+    #FEB2CC 0px,         /* Pink stripe start - same color to avoid gradient effect */
+    #FEB2CC 20px,        /* Pink stripe end */
+    var(--background) 20px,
+    var(--background) 40px,  /* Background between pink and blue */
+    #CBEEFE 40px,        /* Light blue stripe start - same color to avoid gradient effect */
+    #CBEEFE 60px,        /* Light blue stripe end */
+    var(--background) 60px,
+    var(--background) 80px  /* Background before next pink */
+  );
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
