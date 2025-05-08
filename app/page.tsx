@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 // Personal Portfolio Website
+// Home Page
 // Eliot Pearson Jr
 // Developement Started: 5/2/25
 
@@ -8,7 +10,7 @@ export default function Home() {
     <div className="postcard-bg">
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
 
-        <a>Greetings From,</a>
+        <p>Greetings From,</p>
 
         <main className="flex gap-[50px] row-start-2 items-center sm:items-start">
 
@@ -44,9 +46,10 @@ export default function Home() {
               />
           </a>
           
+          
           <a
             //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="/contact"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -140,3 +143,6 @@ export default function Home() {
     
   );
 }
+
+// <a> tag contains hyperlinks for each page
+// <p> tag for paragraph text
