@@ -32,7 +32,7 @@ export default function Home() {
 
         <a
             //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="/links"
             target="_blank"
             rel="noopener noreferrer"
           >
