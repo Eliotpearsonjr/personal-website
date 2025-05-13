@@ -8,6 +8,7 @@
 :root {
   --background: #FFEFFC;
   --foreground: #857C6F;
+
 }
 
 @theme inline {
@@ -15,6 +16,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,25 +24,6 @@
     --background: #FFEFFC;
     --foreground: #857C6F;
   }
-}
-
-.postcard-bg {
-  
-  background-color: #FEEADA;
-  color: #857C6F;
-  border-radius: 15px;
-  margin-top: -70px;
-  margin-left: 70px;
-  margin-right: 70px;
-
-  
-  /* 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top:-300px;
-  margin-left: -900px;
-  */
 }
 
 body {
