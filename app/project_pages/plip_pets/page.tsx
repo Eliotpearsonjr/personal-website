@@ -13,7 +13,7 @@ export default function PlipPets() {
             
                 <Image
                     className="rotate-350 mb-4 mx-auto block h-auto"
-                    src="/Sprites/Plip_Pets_Logo_Sticker_Transparent_.png"
+                    src="/Sprites/Plip_Pets_Logo_Sticker_Transparent_.webp"
                     width={300}
                     height={300}
                     alt="Plip Pets Logo Header"
@@ -35,6 +35,39 @@ export default function PlipPets() {
                     </p>
                 </div>
 
+                {/* Section Title - Tools Used */}
+                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
+                    <p className="text-lg font-semibold">Tools Used</p>
+                </div>
+
+                {/* Section Title - Features */}
+                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
+                    <p className="text-lg font-semibold">Core Gameplay</p>
+                </div>
+
+                {/* Section Body - Core Gameplay */}
+                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-10 mr-10">
+                    <p className="text-lg font-regular">
+                        There are three major gameplay elements featured, being
+                        <b> Snack Time, Bath Time,</b> and <b> Play Time. </b>
+                        Each of the core features allows for the user to interact with
+                        their Plip, complete with a responsive UI.
+                    </p>
+                    
+                </div>
+
+                {/* Section Caption - Screenshots */}
+                <div className="bg-orange-900/5 text-stone-700/90 p-4 rounded-md ml-10 mr-10">
+                    <p className="text-lg font-regular">
+                        Screenshots of beta gameplay
+                    </p>
+                </div>
+
+                {/* Section Title - Characters */}
+                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
+                    <p className="text-lg font-semibold">Characters</p>
+                </div>
+
                 {/* Section Title - Plip Types */}
                 <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
                     <p className="text-lg font-semibold">Types of Plips</p>
@@ -43,9 +76,9 @@ export default function PlipPets() {
                 {/* Section Body - Types Introduction */}
                 <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-10 mr-10">
                     <p className="text-lg font-regular">
-                        Plips can be one of four different types: Cozy, Fluffy, Winter, or Woodsy.
-                        Each different type generally prefers certain types of activities and foods.
-                        In game, feeding Plips their favorite foods will increase their affection more!
+                        Plips can be one of four different types: <b>Cozy, Fluffy, Winter, </b> or 
+                        <b> Woodsy.</b> Each different type generally prefers certain types of activities 
+                        and foods. In game, feeding Plips their favorite foods will increase their affection more!
                         Click the icons to learn more about what each type likes!
                     </p>
                 </div>
@@ -61,7 +94,7 @@ export default function PlipPets() {
                     >
                         <Image
                             
-                            src="/Sprites/Cozy_Button.png"
+                            src="/Sprites/Cozy_Button.webp"
                             width={200}
                             height={200}
                             alt="Cozy Type Button"
@@ -75,7 +108,7 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
-                            src="/Sprites/Fluffy_Button.png"
+                            src="/Sprites/Fluffy_Button.webp"
                             width={200}
                             height={200}
                             alt="Fluffy Type Button"
@@ -89,7 +122,7 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
-                            src="/Sprites/Winter_Button.png"
+                            src="/Sprites/Winter_Button.webp"
                             width={200}
                             height={200}
                             alt="Winter Type Button"
@@ -103,7 +136,7 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
-                            src="/Sprites/Woodsy_Button.png"
+                            src="/Sprites/Woodsy_Button.webp"
                             width={200}
                             height={200}
                             alt="Woodsy Type Button"
@@ -115,6 +148,11 @@ export default function PlipPets() {
                     <p className="text-lg font-semibold">Winter</p>
                     <p className="text-lg font-semibold">Woodsy</p>
                     
+                </div>
+
+                {/* Section Title - Art Gallery */}
+                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
+                    <p className="text-lg font-semibold">Sprite and Concept Art Gallery</p>
                 </div>
                 
             </div>

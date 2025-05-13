@@ -15,7 +15,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     >
                     <Image
-                        src="/Sprites/Plip_Pets_Logo_Sticker_Transparent_.png"
+                        src="/Sprites/Plip_Pets_Logo_Sticker_Transparent_.webp"
                         width={500}
                         height={300}
                         alt="Plip Pets Logo Button"
@@ -29,7 +29,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     >
                     <Image
-                        src="/Sprites/Beer_N_Bots_Logo_Sticker.png"
+                        src="/Sprites/Beer_N_Bots_Logo_Sticker.webp"
                         width={600}
                         height={300}
                         alt="Beer N Bots Logo Button"
@@ -43,7 +43,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     >
                     <Image
-                        src="/Sprites/Reward_Sprout_Big_Icon.png"
+                        src="/Sprites/Reward_Sprout_Big_Icon.webp"
                         width={300}
                         height={300}
                         alt="Reward Sprout Logo Button"
