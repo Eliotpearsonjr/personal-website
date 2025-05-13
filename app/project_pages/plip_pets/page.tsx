@@ -5,6 +5,7 @@ import Image from "next/image";
 // Developement Started: 5/2/25
 export default function PlipPets() {
     return (
+        // inner postcard background
         <div className="bg-orange-100 p-1 mt-15 ml-15 mr-15 mb-15 rounded-lg">
 
             {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
@@ -19,12 +20,12 @@ export default function PlipPets() {
                 />
 
                 {/* Section Title - Plip Pets */}
-                <div className="bg-orange-900/5 text-stone-700 p-4 rounded-md ml-10 mr-10 mb-4">
+                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
                     <p className="text-lg font-semibold">Plip Pets</p>
                 </div>
 
                 {/* Section Body - Summary */}
-                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10 mb-4">
+                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-10 mr-10 mb-2">
                     <p className="text-lg font-regular">
                         Plip Pets is an indie game that I started development on in 2024.
                         The game features cute collectible creatures called 'Plips' that you
@@ -35,12 +36,12 @@ export default function PlipPets() {
                 </div>
 
                 {/* Section Title - Plip Types */}
-                <div className="bg-orange-900/5 text-stone-700 p-4 rounded-md ml-10 mr-10 mb-4">
+                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
                     <p className="text-lg font-semibold">Types of Plips</p>
                 </div>
 
                 {/* Section Body - Types Introduction */}
-                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
+                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-10 mr-10">
                     <p className="text-lg font-regular">
                         Plips can be one of four different types: Cozy, Fluffy, Winter, or Woodsy.
                         Each different type generally prefers certain types of activities and foods.
@@ -53,7 +54,7 @@ export default function PlipPets() {
 
                     {/* Icons to learn more about the types */}
                     <a
-                        //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"
+                        className="transition-transform ease-in-out hover:scale-120"
                         href="/project_pages/plip_pets"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -64,11 +65,11 @@ export default function PlipPets() {
                             width={200}
                             height={200}
                             alt="Cozy Type Button"
-                            />
+                        />
                     </a>
 
                     <a
-                        //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"
+                        className="transition-transform ease-in-out hover:scale-120"
                         href="/project_pages/plip_pets"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -78,11 +79,11 @@ export default function PlipPets() {
                             width={200}
                             height={200}
                             alt="Fluffy Type Button"
-                            />
+                        />
                     </a>
 
                     <a
-                        //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"
+                        className="transition-transform ease-in-out hover:scale-120"
                         href="/project_pages/plip_pets"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -92,11 +93,11 @@ export default function PlipPets() {
                             width={200}
                             height={200}
                             alt="Winter Type Button"
-                            />
+                        />
                     </a>
 
                     <a
-                        //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"
+                        className="transition-transform ease-in-out hover:scale-120"
                         href="/project_pages/plip_pets"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -106,17 +107,15 @@ export default function PlipPets() {
                             width={200}
                             height={200}
                             alt="Woodsy Type Button"
-                            />
+                        />
                     </a>
 
-                    <p>Cozy</p>
-                    <p>Fluffy</p>
-                    <p>Winter</p>
-                    <p>Woodsy</p>
+                    <p className="text-lg font-semibold">Cozy</p>
+                    <p className="text-lg font-semibold">Fluffy</p>
+                    <p className="text-lg font-semibold">Winter</p>
+                    <p className="text-lg font-semibold">Woodsy</p>
                     
                 </div>
-
-                
                 
             </div>
             

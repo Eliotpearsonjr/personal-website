@@ -5,11 +5,11 @@ import Image from "next/image";
 // Developement Started: 5/2/25
 export default function Contact() {
     return (
-        <div className="postcard-bg">
+        <div className="bg-orange-100 p-1 mt-15 ml-15 mr-15 mb-15 rounded-lg">
             <div className="grid grid-rows-[20px_1fr_200px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
                 <p>Choose a project.</p>
                 <a
-                    //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"
+                    className="rotate-8 transition-transform ease-in-out hover:scale-120"
                     href="/project_pages/plip_pets"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -23,7 +23,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                    //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"
+                    className="rotate-355 transition-transform ease-in-out hover:scale-120"
                     href="/project_pages/plip_pets"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -37,7 +37,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                    //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"
+                    className="rotate-3 transition-transform ease-in-out hover:scale-120"
                     href="/project_pages/plip_pets"
                     target="_blank"
                     rel="noopener noreferrer"
