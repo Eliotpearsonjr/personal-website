@@ -26,7 +26,7 @@ export default function PlipPets() {
                 <Image
                     className="rotate-350 mb-4 mx-auto block h-auto"
                     src="/Sprites/Plip_Pets_Logo_Sticker_Transparent_.webp"
-                    width={300}
+                    width={400}
                     height={300}
                     alt="Plip Pets Logo Header"
                 />
@@ -42,8 +42,8 @@ export default function PlipPets() {
                         Plip Pets is an indie game that I started development on in 2024.
                         The game features cute collectible creatures called 'Plips' that you
                         care for and call your own. You can feed them, play with them and much
-                        more. I developed this game using Unity, and created all of my assets
-                        in Procreate.
+                        more. I developed this game using <b> Unity, </b> and created all of my assets
+                        in <b> Procreate.</b>
                     </p>
                 </div>
 
@@ -185,7 +185,7 @@ export default function PlipPets() {
                 </div>
 
                 {/* Section Caption - Screenshots */}
-                <div className="bg-orange-900/5 text-stone-700/90 p-4 rounded-md ml-10 mr-10">
+                <div className="bg-orange-900/5 text-stone-700/90 p-4 rounded-md ml-10 mr-10 text-center">
                     <p className="text-lg font-regular">
                         Screenshots of beta gameplay
                     </p>
@@ -302,7 +302,7 @@ export default function PlipPets() {
                         Plips can be one of four different types: <b>Cozy, Fluffy, Winter, </b> or 
                         <b> Woodsy.</b> Each different type generally prefers certain types of activities 
                         and foods. In game, feeding Plips their favorite foods will increase their affection more!
-                        Click the icons to learn more about what each type likes!
+                        <b> Click the icons to learn more about what each type likes!</b>
                     </p>
                 </div>
 
