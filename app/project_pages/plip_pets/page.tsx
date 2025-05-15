@@ -56,6 +56,97 @@ export default function PlipPets() {
                     
                 </div>
 
+                {/* Gameplay Images, grid scales with screen size */}
+                <div className="bg-neutral-50 mt-4 mb-4 mr-8 ml-8 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
+                    
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Plip_Pets_Beta_Home.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            
+                            src="/Sprites/Plip_Pets_Beta_Home.webp"
+                            width={200}
+                            height={200}
+                            alt="Beta Home Screen Image"
+                        />
+                    </a>
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Plip_Pets_Beta_Fridge.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/Sprites/Plip_Pets_Beta_Fridge.webp"
+                            width={200}
+                            height={200}
+                            alt="Beta Fridge Image"
+                        />
+                    </a>
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Plip_Pets_Beta_Ball_Game.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/Sprites/Plip_Pets_Beta_Ball_Game.webp"
+                            width={200}
+                            height={200}
+                            alt="Beta Ball Minigame Image"
+                        />
+                    </a>
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Bath_Background-2-copy.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            
+                            src="/Sprites/Bath_Background-2-copy.webp"
+                            width={200}
+                            height={200}
+                            alt="Beta Bath Scene Image"
+                        />
+                    </a>
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Beta_Title_Screen.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/Sprites/Beta_Title_Screen.webp"
+                            width={200}
+                            height={200}
+                            alt="Beta Title Screen Image"
+                        />
+                    </a>
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Clover_Help_Concept_2.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/Sprites/Clover_Help_Concept_2.webp"
+                            width={200}
+                            height={200}
+                            alt="Clover Help Concept Image"
+                        />
+                    </a>
+
+                </div>
+
                 {/* Section Caption - Screenshots */}
                 <div className="bg-orange-900/5 text-stone-700/90 p-4 rounded-md ml-10 mr-10">
                     <p className="text-lg font-regular">
@@ -83,7 +174,7 @@ export default function PlipPets() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-4 items-center justify-items-center gap-10 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 items-center justify-items-center gap-10 sm:p-20 font-[family-name:var(--font-geist-sans)]">
 
                     {/* Icons to learn more about the types */}
                     <a
@@ -93,12 +184,12 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
-                            
                             src="/Sprites/Cozy_Button.webp"
                             width={200}
                             height={200}
                             alt="Cozy Type Button"
                         />
+                        <p className="text-lg font-semibold">Cozy</p>
                     </a>
 
                     <a
@@ -113,6 +204,7 @@ export default function PlipPets() {
                             height={200}
                             alt="Fluffy Type Button"
                         />
+                        <p className="text-lg font-semibold">Fluffy</p>
                     </a>
 
                     <a
@@ -127,6 +219,7 @@ export default function PlipPets() {
                             height={200}
                             alt="Winter Type Button"
                         />
+                        <p className="text-lg font-semibold">Winter</p>
                     </a>
 
                     <a
@@ -141,18 +234,64 @@ export default function PlipPets() {
                             height={200}
                             alt="Woodsy Type Button"
                         />
+                        <p className="text-lg font-semibold">Woodsy</p>
                     </a>
 
-                    <p className="text-lg font-semibold">Cozy</p>
-                    <p className="text-lg font-semibold">Fluffy</p>
-                    <p className="text-lg font-semibold">Winter</p>
-                    <p className="text-lg font-semibold">Woodsy</p>
                     
                 </div>
 
                 {/* Section Title - Art Gallery */}
                 <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
                     <p className="text-lg font-semibold">Sprite and Concept Art Gallery</p>
+                </div>
+
+                {/* Concept Art Images */}
+                <div className="bg-neutral-50 mt-4 mb-4 mr-8 ml-8 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
+                    
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Sweets_Concept.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            
+                            src="/Sprites/Sweets_Concept.webp"
+                            width={300}
+                            height={300}
+                            alt="Beta Home Screen Image"
+                        />
+                    </a>
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Savory_Concept.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/Sprites/Savory_Concept.webp"
+                            width={300}
+                            height={300}
+                            alt="Beta Fridge Image"
+                        />
+                    </a>
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Kitsune_Postcard.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/Sprites/Kitsune_Postcard.webp"
+                            width={300}
+                            height={300}
+                            alt="Beta Ball Minigame Image"
+                        />
+                    </a>
+
+
                 </div>
                 
             </div>
