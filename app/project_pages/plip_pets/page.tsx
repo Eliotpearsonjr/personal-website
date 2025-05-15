@@ -1,9 +1,21 @@
+"use client";
 import Image from "next/image";
+import {useState} from "react";
 // Personal Portfolio Website
 // Plip Pets Subpage
 // Eliot Pearson Jr
 // Developement Started: 5/2/25
 export default function PlipPets() {
+    // varibles for selecting plip type descriptions
+    const [selectedPlip, setSelectedPlip] = useState<string | null>(null);
+
+    const plipInfo: { [key: string]: string } = {
+        Cozy: "Cozy Plips enjoy warm treats like soups and tea. They love to nap and relax all day!",
+        Fluffy: "Fluffy Plips are soft and affectionate. Be careful as they are extraordinarily high-maintenance!",
+        Winter: "Winter Plips love to play in the snow and chilly treats like ice cream.",
+        Woodsy: "Woodsy Plips spend lots of time outdoors and aren't afraid to get their hands dirty. They adore fresh fruits. ",
+      };
+
     return (
         // inner postcard background
         <div className="bg-orange-100 p-1 mt-15 ml-15 mr-15 mb-15 rounded-lg">
@@ -38,6 +50,31 @@ export default function PlipPets() {
                 {/* Section Title - Tools Used */}
                 <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
                     <p className="text-lg font-semibold">Tools Used</p>
+                </div>
+
+                {/* Stamps with logos of software products used */}
+                <div className= "grid grid-row sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:p-4 justify-items-left">
+                    <a className="text-left">
+                        <Image
+                                    
+                            src="/Sprites/Unity_Stamp.png"
+                            width={250}
+                            height={250}
+                            alt="Unity Logo Stamp"
+                        />
+                        <p className="text-lg font-semibold">Unity 2D</p>
+                    </a>
+
+                    <a className="text-left">
+                        <Image
+                                    
+                            src="/Sprites/Procreate_Stamp.png"
+                            width={250}
+                            height={250}
+                            alt="Procreate Logo Stamp"
+                        />
+                        <p className="text-lg font-semibold">Procreate</p>
+                    </a>
                 </div>
 
                 {/* Section Title - Features */}
@@ -159,87 +196,6 @@ export default function PlipPets() {
                     <p className="text-lg font-semibold">Characters</p>
                 </div>
 
-                {/* Section Title - Plip Types */}
-                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
-                    <p className="text-lg font-semibold">Types of Plips</p>
-                </div>
-
-                {/* Section Body - Types Introduction */}
-                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-10 mr-10">
-                    <p className="text-lg font-regular">
-                        Plips can be one of four different types: <b>Cozy, Fluffy, Winter, </b> or 
-                        <b> Woodsy.</b> Each different type generally prefers certain types of activities 
-                        and foods. In game, feeding Plips their favorite foods will increase their affection more!
-                        Click the icons to learn more about what each type likes!
-                    </p>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 items-center justify-items-center gap-10 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-
-                    {/* Icons to learn more about the types */}
-                    <a
-                        className="transition-transform ease-in-out hover:scale-120"
-                        href="/project_pages/plip_pets"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            src="/Sprites/Cozy_Button.webp"
-                            width={200}
-                            height={200}
-                            alt="Cozy Type Button"
-                        />
-                        <p className="text-lg font-semibold">Cozy</p>
-                    </a>
-
-                    <a
-                        className="transition-transform ease-in-out hover:scale-120"
-                        href="/project_pages/plip_pets"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            src="/Sprites/Fluffy_Button.webp"
-                            width={200}
-                            height={200}
-                            alt="Fluffy Type Button"
-                        />
-                        <p className="text-lg font-semibold">Fluffy</p>
-                    </a>
-
-                    <a
-                        className="transition-transform ease-in-out hover:scale-120"
-                        href="/project_pages/plip_pets"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            src="/Sprites/Winter_Button.webp"
-                            width={200}
-                            height={200}
-                            alt="Winter Type Button"
-                        />
-                        <p className="text-lg font-semibold">Winter</p>
-                    </a>
-
-                    <a
-                        className="transition-transform ease-in-out hover:scale-120"
-                        href="/project_pages/plip_pets"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            src="/Sprites/Woodsy_Button.webp"
-                            width={200}
-                            height={200}
-                            alt="Woodsy Type Button"
-                        />
-                        <p className="text-lg font-semibold">Woodsy</p>
-                    </a>
-
-                    
-                </div>
-
                 {/* Section Title - Art Gallery */}
                 <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
                     <p className="text-lg font-semibold">Sprite and Concept Art Gallery</p>
@@ -279,6 +235,20 @@ export default function PlipPets() {
 
                     <a
                         className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Official_Clover_Concept_Art.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/Sprites/Official_Clover_Concept_Art.png"
+                            width={300}
+                            height={300}
+                            alt="Beta Ball Minigame Image"
+                        />
+                    </a>
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
                         href="/Sprites/Kitsune_Postcard.webp"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -291,8 +261,126 @@ export default function PlipPets() {
                         />
                     </a>
 
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Tabby_Postcard.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/Sprites/Tabby_Postcard.png"
+                            width={300}
+                            height={300}
+                            alt="Beta Ball Minigame Image"
+                        />
+                    </a>
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Nimbus_Postcard.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/Sprites/Nimbus_Postcard.png"
+                            width={300}
+                            height={300}
+                            alt="Beta Ball Minigame Image"
+                        />
+                    </a>
 
                 </div>
+
+                {/* Section Title - Plip Types */}
+                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
+                    <p className="text-lg font-semibold">Types of Plips</p>
+                </div>
+
+                {/* Section Body - Types Introduction */}
+                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-10 mr-10">
+                    <p className="text-lg font-regular">
+                        Plips can be one of four different types: <b>Cozy, Fluffy, Winter, </b> or 
+                        <b> Woodsy.</b> Each different type generally prefers certain types of activities 
+                        and foods. In game, feeding Plips their favorite foods will increase their affection more!
+                        Click the icons to learn more about what each type likes!
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 items-center justify-items-center gap-10 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+
+                    {/* Icons to learn more about the types */}
+                    <div
+                        className="flex flex-col items-center text-center cursor-pointer transition-transform ease-in-out hover:scale-120 text-center"
+                        onClick={() => setSelectedPlip("Cozy")}
+                    >
+                        <Image
+                            src="/Sprites/Cozy_Button.webp"
+                            width={200}
+                            height={200}
+                            alt="Cozy Type Button"
+                        />
+                        <p className="text-lg font-semibold">Cozy</p>
+                    </div>
+
+                    <div
+                        className="flex flex-col items-center text-center cursor-pointer transition-transform ease-in-out hover:scale-120 text-center"
+                        onClick={() => setSelectedPlip("Fluffy")}
+                    >
+                        <Image
+                            src="/Sprites/Fluffy_Button.webp"
+                            width={200}
+                            height={200}
+                            alt="Fluffy Type Button"
+                        />
+                        <p className="text-lg font-semibold">Fluffy</p>
+                    </div>
+
+                    <div
+                        className="flex flex-col items-center text-center cursor-pointer transition-transform ease-in-out hover:scale-120 text-center"
+                        onClick={() => setSelectedPlip("Winter")}
+                    >
+                        <Image
+                            src="/Sprites/Winter_Button.webp"
+                            width={200}
+                            height={200}
+                            alt="Winter Type Button"
+                        />
+                        <p className="text-lg font-semibold">Winter</p>
+                    </div>
+
+                    <div
+                        className="flex flex-col items-center text-center cursor-pointer transition-transform ease-in-out hover:scale-120 text-center"
+                        onClick={() => setSelectedPlip("Woodsy")}
+                    >
+                        <Image
+                            src="/Sprites/Woodsy_Button.webp"
+                            width={200}
+                            height={200}
+                            alt="Woodsy Type Button"
+                        />
+                        <p className="text-lg font-semibold">Woodsy</p>
+                    </div>
+
+                    
+
+                    
+                </div>
+
+                {/* pop-up div that displays plip type info when clicked */}
+                {selectedPlip && (
+                        <div className="bg-orange-900/5 text-stone-800 ml-10 mr-10 mb-5 p-4 rounded-md text-center transition-opacity duration-300">
+
+                            {/* 'close' button for information pop-up */}
+                            <button
+                                onClick={() => setSelectedPlip(null)}
+                                className="text-sm text-right block ml-auto text-pink-700 hover:underline"
+                                >
+                                Close
+                                </button>
+                            <p className="text-lg font-medium">{plipInfo[selectedPlip]}</p>
+                        </div>
+                    )}
+                
                 
             </div>
             
