@@ -5,10 +5,13 @@ import {useState} from "react";
 // Plip Pets Subpage
 // Eliot Pearson Jr
 // Developement Started: 5/2/25
+
 export default function PlipPets() {
+
     // varibles for selecting plip type descriptions
     const [selectedPlip, setSelectedPlip] = useState<string | null>(null);
 
+    // descriptions for each plip type
     const plipInfo: { [key: string]: string } = {
         Cozy: "Cozy Plips enjoy warm treats like soups and tea. They love to nap and relax all day!",
         Fluffy: "Fluffy Plips are soft and affectionate. Be careful as they are extraordinarily high-maintenance!",
@@ -32,69 +35,153 @@ export default function PlipPets() {
                 />
 
                 {/* Section Title - Plip Pets */}
-                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
+                <div className="text-stone-700 rounded-md ml-10 mr-10">
                     <p className="text-lg font-semibold">Plip Pets</p>
                 </div>
 
-                {/* Section Body - Summary */}
-                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-10 mr-10 mb-2">
-                    <p className="text-lg font-regular">
-                        Plip Pets is an indie game that I started development on in 2024.
-                        The game features cute collectible creatures called 'Plips' that you
-                        care for and call your own. You can feed them, play with them and much
-                        more. I developed this game using <b> Unity, </b> and created all of my assets
-                        in <b> Procreate.</b>
-                    </p>
+                {/* Holds split subsections */}
+                <div className="flex flex-col lg:flex-row gap-8 ml-10 mr-10">
+                    {/* Section Body - Summary */}
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
+                        <p className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md text-lg font-regular">
+                            Plip Pets is an indie game that I started development on in 2024.
+                            The game features cute collectible creatures called 'Plips' that you
+                            care for and call your own. You can feed them, play with them and much
+                            more. I developed this game using <b> Unity, </b> and created all of my assets
+                            in <b> Procreate.</b>
+                        </p>
+                    </div>
+                
+
+                    {/* Stamps with logos of software products used */}
+                    <div className= "flex flex-row-2 w-90 mb-5">
+                        <a className="text-center">
+                            <Image
+                                className="rotate-4"
+                                src="/Sprites/Unity_Stamp.png"
+                                width={250}
+                                height={250}
+                                alt="Unity Logo Stamp"
+                            />
+                            <p className="text-lg font-semibold">Unity 2D</p>
+                        </a>
+
+                        <a className="text-center">
+                            <Image
+                                className="rotate-357"       
+                                src="/Sprites/Procreate_Stamp.png"
+                                width={250}
+                                height={250}
+                                alt="Procreate Logo Stamp"
+                            />
+                            <p className="text-lg font-semibold">Procreate</p>
+                        </a>
+                    </div>
+                </div>
+                
+                {/* Section Title - Art Gallery */}
+                <div className="text-stone-700 rounded-md ml-10 mr-10">
+                    <p className="text-lg font-semibold">Sprite and Concept Art Gallery</p>
                 </div>
 
-                {/* Section Title - Tools Used */}
-                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
-                    <p className="text-lg font-semibold">Tools Used</p>
-                </div>
-
-                {/* Stamps with logos of software products used */}
-                <div className= "grid grid-row sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:p-4 justify-items-left">
-                    <a className="text-left">
+                {/* Concept Art Images */}
+                <div className="bg-stone-50/90 mt-4 mb-4 mr-8 ml-8 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
+                    
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Sweets_Concept.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <Image
-                                    
-                            src="/Sprites/Unity_Stamp.png"
-                            width={250}
-                            height={250}
-                            alt="Unity Logo Stamp"
+                            
+                            src="/Sprites/Sweets_Concept.webp"
+                            width={300}
+                            height={300}
+                            alt="Beta Home Screen Image"
                         />
-                        <p className="text-lg font-semibold">Unity 2D</p>
                     </a>
 
-                    <a className="text-left">
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Savory_Concept.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <Image
-                                    
-                            src="/Sprites/Procreate_Stamp.png"
-                            width={250}
-                            height={250}
-                            alt="Procreate Logo Stamp"
+                            src="/Sprites/Savory_Concept.webp"
+                            width={300}
+                            height={300}
+                            alt="Beta Fridge Image"
                         />
-                        <p className="text-lg font-semibold">Procreate</p>
                     </a>
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Official_Clover_Concept_Art.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/Sprites/Official_Clover_Concept_Art.png"
+                            width={300}
+                            height={300}
+                            alt="Beta Ball Minigame Image"
+                        />
+                    </a>
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Kitsune_Postcard.webp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/Sprites/Kitsune_Postcard.webp"
+                            width={300}
+                            height={300}
+                            alt="Beta Ball Minigame Image"
+                        />
+                    </a>
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Tabby_Postcard.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/Sprites/Tabby_Postcard.png"
+                            width={300}
+                            height={300}
+                            alt="Beta Ball Minigame Image"
+                        />
+                    </a>
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Nimbus_Postcard.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Image
+                            src="/Sprites/Nimbus_Postcard.png"
+                            width={300}
+                            height={300}
+                            alt="Beta Ball Minigame Image"
+                        />
+                    </a>
+
                 </div>
 
-                {/* Section Title - Features */}
-                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
+
+                {/* Section Title - Core Gameplay */}
+                <div className="text-stone-700 rounded-md ml-10 mr-10">
                     <p className="text-lg font-semibold">Core Gameplay</p>
                 </div>
 
-                {/* Section Body - Core Gameplay */}
-                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-10 mr-10">
-                    <p className="text-lg font-regular">
-                        There are three major gameplay elements featured, being
-                        <b> Snack Time, Bath Time,</b> and <b> Play Time. </b>
-                        Each of the core features allows for the user to interact with
-                        their Plip, complete with a responsive UI.
-                    </p>
-                    
-                </div>
-
                 {/* Gameplay Images, grid scales with screen size */}
-                <div className="bg-neutral-50 mt-4 mb-4 mr-8 ml-8 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
+                <div className="bg-stone-50/90 mt-4 mb-4 mr-8 ml-8 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
                     
                     <a
                         className="transition-transform ease-in-out hover:scale-110"
@@ -184,115 +271,19 @@ export default function PlipPets() {
 
                 </div>
 
-                {/* Section Caption - Screenshots */}
-                <div className="bg-orange-900/5 text-stone-700/90 p-4 rounded-md ml-10 mr-10 text-center">
+                {/* Section Body - Core Gameplay */}
+                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-10 mr-10">
                     <p className="text-lg font-regular">
-                        Screenshots of beta gameplay
+                        There are three major gameplay elements featured, being
+                        <b> Snack Time, Bath Time,</b> and <b> Play Time. </b>
+                        Each of the core features allows for the user to interact with
+                        their Plip, complete with a responsive UI.
                     </p>
-                </div>
-
-                {/* Section Title - Characters */}
-                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
-                    <p className="text-lg font-semibold">Characters</p>
-                </div>
-
-                {/* Section Title - Art Gallery */}
-                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
-                    <p className="text-lg font-semibold">Sprite and Concept Art Gallery</p>
-                </div>
-
-                {/* Concept Art Images */}
-                <div className="bg-neutral-50 mt-4 mb-4 mr-8 ml-8 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
                     
-                    <a
-                        className="transition-transform ease-in-out hover:scale-110"
-                        href="/Sprites/Sweets_Concept.webp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            
-                            src="/Sprites/Sweets_Concept.webp"
-                            width={300}
-                            height={300}
-                            alt="Beta Home Screen Image"
-                        />
-                    </a>
-
-                    <a
-                        className="transition-transform ease-in-out hover:scale-110"
-                        href="/Sprites/Savory_Concept.webp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            src="/Sprites/Savory_Concept.webp"
-                            width={300}
-                            height={300}
-                            alt="Beta Fridge Image"
-                        />
-                    </a>
-
-                    <a
-                        className="transition-transform ease-in-out hover:scale-110"
-                        href="/Sprites/Official_Clover_Concept_Art.png"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            src="/Sprites/Official_Clover_Concept_Art.png"
-                            width={300}
-                            height={300}
-                            alt="Beta Ball Minigame Image"
-                        />
-                    </a>
-
-                    <a
-                        className="transition-transform ease-in-out hover:scale-110"
-                        href="/Sprites/Kitsune_Postcard.webp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            src="/Sprites/Kitsune_Postcard.webp"
-                            width={300}
-                            height={300}
-                            alt="Beta Ball Minigame Image"
-                        />
-                    </a>
-
-                    <a
-                        className="transition-transform ease-in-out hover:scale-110"
-                        href="/Sprites/Tabby_Postcard.png"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            src="/Sprites/Tabby_Postcard.png"
-                            width={300}
-                            height={300}
-                            alt="Beta Ball Minigame Image"
-                        />
-                    </a>
-
-                    <a
-                        className="transition-transform ease-in-out hover:scale-110"
-                        href="/Sprites/Nimbus_Postcard.png"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            src="/Sprites/Nimbus_Postcard.png"
-                            width={300}
-                            height={300}
-                            alt="Beta Ball Minigame Image"
-                        />
-                    </a>
-
                 </div>
 
                 {/* Section Title - Plip Types */}
-                <div className="text-stone-700 p-4 rounded-md ml-10 mr-10">
+                <div className="text-stone-700 rounded-md ml-10 mr-10 mt-4">
                     <p className="text-lg font-semibold">Types of Plips</p>
                 </div>
 
@@ -360,28 +351,25 @@ export default function PlipPets() {
                         />
                         <p className="text-lg font-semibold">Woodsy</p>
                     </div>
-
-                    
-
                     
                 </div>
 
                 {/* pop-up div that displays plip type info when clicked */}
                 {selectedPlip && (
-                        <div className="bg-orange-900/5 text-stone-800 ml-10 mr-10 mb-5 p-4 rounded-md text-center transition-opacity duration-300">
+                    <div className="bg-orange-900/5 text-stone-800 ml-10 mr-10 mb-5 p-4 rounded-md text-center transition-opacity duration-300">
 
-                            {/* 'close' button for information pop-up */}
-                            <button
-                                onClick={() => setSelectedPlip(null)}
-                                className="text-sm text-right block ml-auto text-pink-700 hover:underline"
-                                >
-                                Close
-                                </button>
-                            <p className="text-lg font-medium">{plipInfo[selectedPlip]}</p>
-                        </div>
-                    )}
-                
-                
+                        {/* 'close' button for information pop-up */}
+                        <button
+                            onClick={() => setSelectedPlip(null)}
+                            className="text-sm text-right block ml-auto text-pink-700 hover:underline"
+                        >
+                            Close
+                        </button>
+
+                        <p className="text-lg font-medium">{plipInfo[selectedPlip]}</p>
+                    </div>
+                )}
+
             </div>
             
         </div>
