@@ -69,7 +69,7 @@ export default function PlipPets() {
                         <a className="text-center">
                             <Image
                                 className="rotate-357"       
-                                src="/Sprites/Procreate_Stamp.png"
+                                src="/Sprites/Procreate_Stamp.webp"
                                 width={250}
                                 height={250}
                                 alt="Procreate Logo Stamp"
