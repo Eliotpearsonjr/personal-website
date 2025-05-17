@@ -7,12 +7,12 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-orange-100 p-1 mt-15 ml-15 mr-15 mb-15 rounded-lg">
+    <div className="bg-orange-100 p-1 mt-10 ml-10 mr-10 mb-10 rounded-lg">
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
 
         <p>Greetings From,</p>
 
-        <main className="flex gap-[50px] row-start-2 items-center sm:items-start">
+        <main className="mt-4 mb-4 mr-8 ml-8 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
 
         <a
             //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"

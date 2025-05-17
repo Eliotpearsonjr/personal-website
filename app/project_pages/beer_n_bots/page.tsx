@@ -12,7 +12,7 @@ export default function BeerNBots() {
 
     return (
         // inner postcard background
-        <div className="bg-orange-100 p-1 mt-15 ml-15 mr-15 mb-15 rounded-lg">
+        <div className="bg-orange-100 p-1 mt-10 ml-10 mr-10 mb-10 rounded-lg">
 
             {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
             <div className="flex flex-col gap-2 mt-10">

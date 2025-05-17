@@ -21,10 +21,10 @@ export default function PlipPets() {
 
     return (
         // inner postcard background
-        <div className="bg-orange-100 p-1 mt-15 ml-15 mr-15 mb-15 rounded-lg">
+        <div className="bg-orange-100 p-1 mt-10 ml-10 mr-10 mb-10 rounded-lg">
 
             {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
-            <div className="flex flex-col gap-2 mt-10">
+            <div className="flex flex-col mt-10">
             
                 <Image
                     className="rotate-350 mb-4 mx-auto block h-auto"
@@ -35,15 +35,15 @@ export default function PlipPets() {
                 />
 
                 {/* Section Title - Plip Pets */}
-                <div className="text-stone-700 rounded-md ml-10 mr-10">
+                <div className="text-stone-700 rounded-md ml-10 mr-10 mb-2">
                     <p className="text-lg font-semibold">Plip Pets</p>
                 </div>
 
                 {/* Holds split subsections */}
-                <div className="flex flex-col lg:flex-row gap-8 ml-10 mr-10">
+                <div className="flex flex-col lg:flex-row gap-8">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md text-lg font-regular">
+                        <p className="bg-orange-900/5 text-stone-700/90 ml-5 mr-5 p-4 pb-8 rounded-md text-lg font-regular">
                             Plip Pets is an indie game that I started development on in 2024.
                             The game features cute collectible creatures called 'Plips' that you
                             care for and call your own. You can feed them, play with them and much
@@ -54,7 +54,7 @@ export default function PlipPets() {
                 
 
                     {/* Stamps with logos of software products used */}
-                    <div className= "flex flex-row-2 w-90 mb-5">
+                    <div className= "flex flex-col lg:flex-row ml-5 mb-5">
                         <a className="text-center">
                             <Image
                                 className="rotate-4"
@@ -283,7 +283,7 @@ export default function PlipPets() {
                 </div>
 
                 {/* Section Title - Plip Types */}
-                <div className="text-stone-700 rounded-md ml-10 mr-10 mt-4">
+                <div className="text-stone-700 rounded-md ml-10 mr-10 mb-2 mt-4">
                     <p className="text-lg font-semibold">Types of Plips</p>
                 </div>
 
