@@ -85,7 +85,7 @@ export default function PlipPets() {
                 </div>
 
                 {/* Concept Art Images */}
-                <div className="bg-stone-50/90 mt-4 mb-4 mr-8 ml-8 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
+                <div className="bg-stone-50/90 mt-4 mb-4 mr-5 ml-5 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
                     
                     <a
                         className="transition-transform ease-in-out hover:scale-110"
@@ -181,7 +181,7 @@ export default function PlipPets() {
                 </div>
 
                 {/* Gameplay Images, grid scales with screen size */}
-                <div className="bg-stone-50/90 mt-4 mb-4 mr-8 ml-8 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
+                <div className="bg-stone-50/90 mt-4 mb-4 mr-5 ml-5 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
                     
                     <a
                         className="transition-transform ease-in-out hover:scale-110"
@@ -272,7 +272,7 @@ export default function PlipPets() {
                 </div>
 
                 {/* Section Body - Core Gameplay */}
-                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-10 mr-10">
+                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-5 mr-5">
                     <p className="text-lg font-regular">
                         There are three major gameplay elements featured, being
                         <b> Snack Time, Bath Time,</b> and <b> Play Time. </b>
@@ -288,7 +288,7 @@ export default function PlipPets() {
                 </div>
 
                 {/* Section Body - Types Introduction */}
-                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-10 mr-10">
+                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-5 mr-5">
                     <p className="text-lg font-regular">
                         Plips can be one of four different types: <b>Cozy, Fluffy, Winter, </b> or 
                         <b> Woodsy.</b> Each different type generally prefers certain types of activities 
@@ -356,7 +356,7 @@ export default function PlipPets() {
 
                 {/* pop-up div that displays plip type info when clicked */}
                 {selectedPlip && (
-                    <div className="bg-orange-900/5 text-stone-800 ml-10 mr-10 mb-5 p-4 rounded-md text-center transition-opacity duration-300">
+                    <div className="bg-orange-900/5 text-stone-800 ml-5 mr-5 mb-5 p-4 rounded-md text-center transition-opacity duration-300">
 
                         {/* 'close' button for information pop-up */}
                         <button
