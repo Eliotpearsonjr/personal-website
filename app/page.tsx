@@ -8,75 +8,65 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="bg-orange-100 p-1 mt-10 ml-10 mr-10 mb-10 rounded-lg">
-      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 gap-12 sm:p-20 font-[family-name:var(--font-geist-sans)]">
 
         <p>Greetings From,</p>
 
-        <main className="mt-4 mb-4 mr-8 ml-8 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
+        <main className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:p-4 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
 
         <a
-            //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"
+            className="flex flex-col items-center text-center cursor-pointer transition-transform ease-in-out hover:scale-120 text-center"
             href="/work"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image 
               // className=
-                src="/Sprites/Stamp_Web_Button_Work_Slant.png"
-                width={300}
-                height={300}
-                alt="Work Info Stamp image"
+                src="/Sprites/Projects_Sticker_Button.png"
+                width={700}
+                height={700}
+                alt="Project Info Image"
                 // priority
               />
-        </a>
 
-        <a
-            //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"
-            href="/links"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image 
-              // className=
-                src="/Sprites/Stamp_Web_Button_Links_Slant.png"
-                width={300}
-                height={300}
-                alt="Links Info Stamp image"
-                // priority
-              />
-          </a>
+              <p>Projects</p>
+        </a>
           
           
           <a
-            //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"
+            className="flex flex-col items-center text-center cursor-pointer transition-transform ease-in-out hover:scale-120 text-center"
             href="/contact"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image 
-              // className=
-                src="/Sprites/Stamp_Web_Button_Contact_Slant.png"
-                width={300}
-                height={300}
-                alt="Contact Info Stamp image"
+                
+                src="/Sprites/Contact_Sticker_Button.png"
+                width={700}
+                height={700}
+                alt="Contact Info Image"
                 // priority
               />
+
+              <p>Contact</p>
           </a>
 
           <a
-            //className="hover:bg-[#383838] dark:hover:bg-[#ccc]"
+            className="flex flex-col items-center text-center cursor-pointer transition-transform ease-in-out hover:scale-120 text-center"
             href="/about"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image 
               // className=
-                src="/Sprites/Stamp_Web_Button_About_Slant.png"
-                width={300}
-                height={300}
-                alt="About Stamp image"
+                src="/Sprites/About_Sticker_Button.png"
+                width={700}
+                height={700}
+                alt="About Image"
                 // priority
               />
+
+              <p>About</p>
           </a>
 
           
@@ -92,51 +82,7 @@ export default function Home() {
           </div>
         </main>
         <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-          <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/file.svg"
-              alt="File icon"
-              width={16}
-              height={16}
-            />
-            Learn
-          </a>
-          <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/window.svg"
-              alt="Window icon"
-              width={16}
-              height={16}
-            />
-            Examples
-          </a>
-          <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/globe.svg"
-              alt="Globe icon"
-              width={16}
-              height={16}
-            />
-            Go to nextjs.org →
-          </a>
+          
         </footer>
       </div>
     </div>
