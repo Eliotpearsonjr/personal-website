@@ -110,7 +110,7 @@ export default function About() {
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
                         <p className="bg-orange-50 text-stone-700/90 ml-5 mr-5 px-8 py-8 rounded-2xl text-lg font-regular">
                             If you would like to learn more about how I developed my projects, and see
-                            the frameworks that used in the process, please check out my <b>Github!</b>
+                            the frameworks that I used in the process, please check out my <b>Github!</b>
                         </p>
                     </div>
                 

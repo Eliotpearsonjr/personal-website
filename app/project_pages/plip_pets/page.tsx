@@ -136,6 +136,21 @@ export default function PlipPets() {
 
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
+                            href="/Sprites/Capymel_Postcard_B.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                className="rounded-xl drop-shadow-lg"
+                                src="/Sprites/Capymel_Postcard_B.png"
+                                width={300}
+                                height={300}
+                                alt="Capymel Character Postcard Image"
+                            />
+                        </a>
+
+                        <a
+                            className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/Kitsune_Postcard.webp"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -178,6 +193,8 @@ export default function PlipPets() {
                                 alt="Nimbus Character Postcard Image"
                             />
                         </a>
+
+                       
 
                     </div>
                 </div>
