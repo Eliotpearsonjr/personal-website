@@ -21,7 +21,7 @@ export default function PlipPets() {
 
     return (
         // inner postcard background
-        <div className="bg-orange-100 p-1 mt-10 ml-10 mr-10 mb-10 rounded-lg">
+        <div className="bg-orange-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 ml-10 mr-10 my-10 p-4 rounded-2xl border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
 
             {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
             <div className="flex flex-col mt-10">
@@ -35,15 +35,15 @@ export default function PlipPets() {
                 />
 
                 {/* Section Title - Plip Pets */}
-                <div className="text-stone-700 border-b-2 border-stone-700/10 pb-2 ml-7 mr-7 mb-2">
+                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-stone-600/50 pb-2 ml-7 mr-7 mb-2">
                     <p className="text-4xl font-semibold">Plip Pets</p>
                 </div>
 
                 {/* Holds split subsections */}
-                <div className="flex flex-col lg:flex-row gap-8">
+                <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-orange-50 text-stone-700/90 ml-5 mr-5 p-4 pb-8 rounded-2xl text-lg font-regular">
+                        <p className="bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
                             Plip Pets is an indie game that I started development on in 2024.
                             The game features cute collectible creatures called 'Plips' that you
                             care for and call your own. You can feed them, play with them and much
@@ -54,7 +54,7 @@ export default function PlipPets() {
                 
 
                     {/* Stamps with logos of software products used */}
-                    <div className= "flex flex-col lg:flex-row ml-5 mb-5">
+                    <div className= "flex flex-col md:flex-row lg:flex-row ml-5 mb-5">
                         <a className="text-center">
                             <Image
                                 className="rotate-4"
@@ -80,13 +80,13 @@ export default function PlipPets() {
                 </div>
                 
                 {/* Section Title - Art Gallery */}
-                <div className="text-stone-700 border-b-2 border-stone-700/10 pb-2 ml-7 mr-7 mb-2">
+                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-stone-600/50 pb-2 ml-7 mr-7 mb-2">
                     <p className="text-2xl font-semibold">Sprite and Concept Art Gallery</p>
                 </div>
 
                 {/* Concept Art Images */}
                 {/* Gameplay Images - horizontal scrollable gallery */}
-                <div className="bg-stone-50/90 mt-4 mb-4 mx-5 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
+                <div className="bg-stone-50/90 dark:bg-stone-700 mt-4 mb-4 mx-5 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
                     <div className="flex space-x-6 items-center justify-start min-w-fit w-max">
 
                         <a
@@ -201,12 +201,12 @@ export default function PlipPets() {
 
 
                 {/* Section Title - Core Gameplay */}
-                <div className="text-stone-700 border-b-2 border-stone-700/10 pb-2 ml-7 mr-7 mb-2">
+                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-stone-600/50 pb-2 ml-7 mr-7 mb-2">
                     <p className="text-2xl font-semibold">Core Gameplay</p>
                 </div>
 
                 {/* Gameplay Images - horizontal scrollable gallery, scales with screen */}
-                <div className="bg-stone-50/90 mt-4 mb-4 mx-5 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
+                <div className="bg-stone-50/90 dark:bg-stone-700 mt-4 mb-4 mx-5 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
                     <div className="flex space-x-6 items-center justify-start min-w-fit w-max">
 
                         <a
@@ -304,7 +304,7 @@ export default function PlipPets() {
 
 
                 {/* Section Body - Core Gameplay */}
-                <div className="bg-orange-50 text-stone-700/90 p-4 pb-8 rounded-2xl ml-5 mr-5">
+                <div className="bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
                     <p className="text-lg font-regular">
                         There are three major gameplay elements featured, being
                         <b> Snack Time, Bath Time,</b> and <b> Play Time. </b>
@@ -315,12 +315,12 @@ export default function PlipPets() {
                 </div>
 
                 {/* Section Title - Plip Types */}
-                <div className="text-stone-700 border-b-2 border-stone-700/10 pb-2 ml-7 mr-7 mt-4 mb-4">
+                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-stone-600/50 pb-2 ml-7 mr-7 mt-4 mb-4">
                     <p className="text-2xl font-semibold">Types of Plips</p>
                 </div>
 
                 {/* Section Body - Types Introduction */}
-                <div className="bg-orange-50 text-stone-700/90 p-4 pb-8 rounded-2xl ml-5 mr-5">
+                <div className="bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
                     <p className="text-lg font-regular">
                         Plips can be one of four different types: <b>Cozy, Fluffy, Winter, </b> or 
                         <b> Woodsy.</b> Each different type generally prefers certain types of activities 
@@ -392,7 +392,7 @@ export default function PlipPets() {
 
                 {/* pop-up div that displays plip type info when clicked */}
                 {selectedPlip && (
-                    <div className="bg-orange-50 text-stone-800 ml-5 mr-5 mb-5 p-4 rounded-2xl text-center transition-opacity duration-300">
+                    <div className="bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 shadow-lg transition-opacity duration-300 text-lg font-regular">
 
                         {/* 'close' button for information pop-up */}
                         <button
