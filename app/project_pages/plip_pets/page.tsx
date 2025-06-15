@@ -35,7 +35,7 @@ export default function PlipPets() {
                 />
 
                 {/* Section Title - Plip Pets */}
-                <div className="text-stone-700 rounded-md ml-10 mr-10 mb-2">
+                <div className="text-stone-700 border-b-2 border-stone-700/10 pb-2 ml-7 mr-7 mb-2">
                     <p className="text-2xl font-semibold">Plip Pets</p>
                 </div>
 
@@ -80,120 +80,124 @@ export default function PlipPets() {
                 </div>
                 
                 {/* Section Title - Art Gallery */}
-                <div className="text-stone-700 rounded-lg ml-10 mr-10">
+                <div className="text-stone-700 border-b-2 border-stone-700/10 pb-2 ml-7 mr-7 mb-2">
                     <p className="text-2xl font-semibold">Sprite and Concept Art Gallery</p>
                 </div>
 
                 {/* Concept Art Images */}
-                <div className="bg-stone-50/90 mt-4 mb-4 mr-5 ml-5 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-xl font-[family-name:var(--font-geist-sans)]">
-                    
-                    <a
-                        className="transition-transform ease-in-out hover:scale-110"
-                        href="/Sprites/Sweets_Concept.webp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            className="rounded-xl drop-shadow-lg"
-                            src="/Sprites/Sweets_Concept.webp"
-                            width={300}
-                            height={300}
-                            alt="Sweet Food Concept Image"
-                        />
-                    </a>
+                {/* Gameplay Images - horizontal scrollable gallery */}
+                <div className="bg-stone-50/90 mt-4 mb-4 mx-5 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
+                    <div className="flex space-x-6 items-center justify-start min-w-fit w-max">
 
-                    <a
-                        className="transition-transform ease-in-out hover:scale-110"
-                        href="/Sprites/Savory_Concept.webp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            className="rounded-xl drop-shadow-lg"
-                            src="/Sprites/Savory_Concept.webp"
-                            width={300}
-                            height={300}
-                            alt="Savory Food Concept Image"
-                        />
-                    </a>
+                        <a
+                            className="transition-transform ease-in-out hover:scale-110"
+                            href="/Sprites/Sweets_Concept.webp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                className="rounded-xl drop-shadow-lg"
+                                src="/Sprites/Sweets_Concept.webp"
+                                width={300}
+                                height={300}
+                                alt="Sweet Food Concept Image"
+                            />
+                        </a>
 
-                    <a
-                        className="transition-transform ease-in-out hover:scale-110"
-                        href="/Sprites/Official_Clover_Concept_Art.png"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            className="rounded-xl drop-shadow-lg"
-                            src="/Sprites/Official_Clover_Concept_Art.png"
-                            width={300}
-                            height={300}
-                            alt="Clover Concept Image"
-                        />
-                    </a>
+                        <a
+                            className="transition-transform ease-in-out hover:scale-110"
+                            href="/Sprites/Savory_Concept.webp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                className="rounded-xl drop-shadow-lg"
+                                src="/Sprites/Savory_Concept.webp"
+                                width={300}
+                                height={300}
+                                alt="Savory Food Concept Image"
+                            />
+                        </a>
 
-                    <a
-                        className="transition-transform ease-in-out hover:scale-110"
-                        href="/Sprites/Kitsune_Postcard.webp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            className="rounded-xl drop-shadow-lg"
-                            src="/Sprites/Kitsune_Postcard.webp"
-                            width={300}
-                            height={300}
-                            alt="Kistune Character Postcard Image"
-                        />
-                    </a>
+                        <a
+                            className="transition-transform ease-in-out hover:scale-110"
+                            href="/Sprites/Official_Clover_Concept_Art.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                className="rounded-xl drop-shadow-lg"
+                                src="/Sprites/Official_Clover_Concept_Art.png"
+                                width={300}
+                                height={300}
+                                alt="Clover Concept Image"
+                            />
+                        </a>
 
-                    <a
-                        className="transition-transform ease-in-out hover:scale-110"
-                        href="/Sprites/Tabby_Postcard.png"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            className="rounded-xl drop-shadow-lg"
-                            src="/Sprites/Tabby_Postcard.png"
-                            width={300}
-                            height={300}
-                            alt="Tabby Character Postcard Image"
-                        />
-                    </a>
+                        <a
+                            className="transition-transform ease-in-out hover:scale-110"
+                            href="/Sprites/Kitsune_Postcard.webp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                className="rounded-xl drop-shadow-lg"
+                                src="/Sprites/Kitsune_Postcard.webp"
+                                width={300}
+                                height={300}
+                                alt="Kistune Character Postcard Image"
+                            />
+                        </a>
 
-                    <a
-                        className="transition-transform ease-in-out hover:scale-110"
-                        href="/Sprites/Nimbus_Postcard.png"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            className="rounded-xl drop-shadow-lg"
-                            src="/Sprites/Nimbus_Postcard.png"
-                            width={300}
-                            height={300}
-                            alt="Nimbus Character Postcard Image"
-                        />
-                    </a>
+                        <a
+                            className="transition-transform ease-in-out hover:scale-110"
+                            href="/Sprites/Tabby_Postcard.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                className="rounded-xl drop-shadow-lg"
+                                src="/Sprites/Tabby_Postcard.png"
+                                width={300}
+                                height={300}
+                                alt="Tabby Character Postcard Image"
+                            />
+                        </a>
 
+                        <a
+                            className="transition-transform ease-in-out hover:scale-110"
+                            href="/Sprites/Nimbus_Postcard.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                className="rounded-xl drop-shadow-lg"
+                                src="/Sprites/Nimbus_Postcard.png"
+                                width={300}
+                                height={300}
+                                alt="Nimbus Character Postcard Image"
+                            />
+                        </a>
+
+                    </div>
                 </div>
 
 
                 {/* Section Title - Core Gameplay */}
-                <div className="text-stone-700 rounded-md ml-10 mr-10">
+                <div className="text-stone-700 border-b-2 border-stone-700/10 pb-2 ml-7 mr-7 mb-2">
                     <p className="text-2xl font-semibold">Core Gameplay</p>
                 </div>
 
-                {/* Gameplay Images, grid scales with screen size */}
-                <div className="bg-stone-50/90 mt-4 mb-4 mr-5 ml-5 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-xl font-[family-name:var(--font-geist-sans)]">
-                    
-                    <a
+                {/* Gameplay Images - horizontal scrollable gallery, scales with screen */}
+                <div className="bg-stone-50/90 mt-4 mb-4 mx-5 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
+                    <div className="flex space-x-6 items-center justify-start min-w-fit w-max">
+
+                        <a
                         className="transition-transform ease-in-out hover:scale-110"
                         href="/Sprites/Plip_Pets_Beta_Home.webp"
                         target="_blank"
                         rel="noopener noreferrer"
-                    >
+                        >
                         <Image
                             className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Plip_Pets_Beta_Home.webp"
@@ -201,14 +205,14 @@ export default function PlipPets() {
                             height={200}
                             alt="Beta Home Screen Image"
                         />
-                    </a>
+                        </a>
 
-                    <a
+                        <a
                         className="transition-transform ease-in-out hover:scale-110"
                         href="/Sprites/Plip_Pets_Beta_Fridge.webp"
                         target="_blank"
                         rel="noopener noreferrer"
-                    >
+                        >
                         <Image
                             className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Plip_Pets_Beta_Fridge.webp"
@@ -216,14 +220,14 @@ export default function PlipPets() {
                             height={200}
                             alt="Beta Fridge Image"
                         />
-                    </a>
+                        </a>
 
-                    <a
+                        <a
                         className="transition-transform ease-in-out hover:scale-110"
                         href="/Sprites/Plip_Pets_Beta_Ball_Game.webp"
                         target="_blank"
                         rel="noopener noreferrer"
-                    >
+                        >
                         <Image
                             className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Plip_Pets_Beta_Ball_Game.webp"
@@ -231,14 +235,14 @@ export default function PlipPets() {
                             height={200}
                             alt="Beta Ball Minigame Image"
                         />
-                    </a>
+                        </a>
 
-                    <a
+                        <a
                         className="transition-transform ease-in-out hover:scale-110"
                         href="/Sprites/Bath_Background-2-copy.webp"
                         target="_blank"
                         rel="noopener noreferrer"
-                    >
+                        >
                         <Image
                             className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Bath_Background-2-copy.webp"
@@ -246,14 +250,14 @@ export default function PlipPets() {
                             height={200}
                             alt="Beta Bath Scene Image"
                         />
-                    </a>
+                        </a>
 
-                    <a
+                        <a
                         className="transition-transform ease-in-out hover:scale-110"
                         href="/Sprites/Beta_Title_Screen.webp"
                         target="_blank"
                         rel="noopener noreferrer"
-                    >
+                        >
                         <Image
                             className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Beta_Title_Screen.webp"
@@ -261,14 +265,14 @@ export default function PlipPets() {
                             height={200}
                             alt="Beta Title Screen Image"
                         />
-                    </a>
+                        </a>
 
-                    <a
+                        <a
                         className="transition-transform ease-in-out hover:scale-110"
                         href="/Sprites/Clover_Help_Concept_2.webp"
                         target="_blank"
                         rel="noopener noreferrer"
-                    >
+                        >
                         <Image
                             className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Clover_Help_Concept_2.webp"
@@ -276,9 +280,11 @@ export default function PlipPets() {
                             height={200}
                             alt="Clover Help Concept Image"
                         />
-                    </a>
+                        </a>
 
+                    </div>
                 </div>
+
 
                 {/* Section Body - Core Gameplay */}
                 <div className="bg-orange-50 text-stone-700/90 p-4 pb-8 rounded-2xl ml-5 mr-5">
@@ -292,7 +298,7 @@ export default function PlipPets() {
                 </div>
 
                 {/* Section Title - Plip Types */}
-                <div className="text-stone-700 rounded-md ml-10 mr-10 mb-2 mt-4">
+                <div className="text-stone-700 border-b-2 border-stone-700/10 pb-2 ml-7 mr-7 mt-4 mb-4">
                     <p className="text-2xl font-semibold">Types of Plips</p>
                 </div>
 
