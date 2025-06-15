@@ -36,14 +36,14 @@ export default function PlipPets() {
 
                 {/* Section Title - Plip Pets */}
                 <div className="text-stone-700 rounded-md ml-10 mr-10 mb-2">
-                    <p className="text-lg font-semibold">Plip Pets</p>
+                    <p className="text-2xl font-semibold">Plip Pets</p>
                 </div>
 
                 {/* Holds split subsections */}
                 <div className="flex flex-col lg:flex-row gap-8">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-orange-900/5 text-stone-700/90 ml-5 mr-5 p-4 pb-8 rounded-md text-lg font-regular">
+                        <p className="bg-orange-50 text-stone-700/90 ml-5 mr-5 p-4 pb-8 rounded-2xl text-lg font-regular">
                             Plip Pets is an indie game that I started development on in 2024.
                             The game features cute collectible creatures called 'Plips' that you
                             care for and call your own. You can feed them, play with them and much
@@ -80,12 +80,12 @@ export default function PlipPets() {
                 </div>
                 
                 {/* Section Title - Art Gallery */}
-                <div className="text-stone-700 rounded-md ml-10 mr-10">
-                    <p className="text-lg font-semibold">Sprite and Concept Art Gallery</p>
+                <div className="text-stone-700 rounded-lg ml-10 mr-10">
+                    <p className="text-2xl font-semibold">Sprite and Concept Art Gallery</p>
                 </div>
 
                 {/* Concept Art Images */}
-                <div className="bg-stone-50/90 mt-4 mb-4 mr-5 ml-5 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
+                <div className="bg-stone-50/90 mt-4 mb-4 mr-5 ml-5 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-xl font-[family-name:var(--font-geist-sans)]">
                     
                     <a
                         className="transition-transform ease-in-out hover:scale-110"
@@ -94,11 +94,11 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
-                            
+                            className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Sweets_Concept.webp"
                             width={300}
                             height={300}
-                            alt="Beta Home Screen Image"
+                            alt="Sweet Food Concept Image"
                         />
                     </a>
 
@@ -109,10 +109,11 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
+                            className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Savory_Concept.webp"
                             width={300}
                             height={300}
-                            alt="Beta Fridge Image"
+                            alt="Savory Food Concept Image"
                         />
                     </a>
 
@@ -123,10 +124,11 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
+                            className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Official_Clover_Concept_Art.png"
                             width={300}
                             height={300}
-                            alt="Beta Ball Minigame Image"
+                            alt="Clover Concept Image"
                         />
                     </a>
 
@@ -137,10 +139,11 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
+                            className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Kitsune_Postcard.webp"
                             width={300}
                             height={300}
-                            alt="Beta Ball Minigame Image"
+                            alt="Kistune Character Postcard Image"
                         />
                     </a>
 
@@ -151,10 +154,11 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
+                            className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Tabby_Postcard.png"
                             width={300}
                             height={300}
-                            alt="Beta Ball Minigame Image"
+                            alt="Tabby Character Postcard Image"
                         />
                     </a>
 
@@ -165,10 +169,11 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
+                            className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Nimbus_Postcard.png"
                             width={300}
                             height={300}
-                            alt="Beta Ball Minigame Image"
+                            alt="Nimbus Character Postcard Image"
                         />
                     </a>
 
@@ -177,11 +182,11 @@ export default function PlipPets() {
 
                 {/* Section Title - Core Gameplay */}
                 <div className="text-stone-700 rounded-md ml-10 mr-10">
-                    <p className="text-lg font-semibold">Core Gameplay</p>
+                    <p className="text-2xl font-semibold">Core Gameplay</p>
                 </div>
 
                 {/* Gameplay Images, grid scales with screen size */}
-                <div className="bg-stone-50/90 mt-4 mb-4 mr-5 ml-5 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
+                <div className="bg-stone-50/90 mt-4 mb-4 mr-5 ml-5 pb-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:p-10 justify-items-center rounded-xl font-[family-name:var(--font-geist-sans)]">
                     
                     <a
                         className="transition-transform ease-in-out hover:scale-110"
@@ -190,7 +195,7 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
-                            
+                            className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Plip_Pets_Beta_Home.webp"
                             width={200}
                             height={200}
@@ -205,6 +210,7 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
+                            className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Plip_Pets_Beta_Fridge.webp"
                             width={200}
                             height={200}
@@ -219,6 +225,7 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
+                            className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Plip_Pets_Beta_Ball_Game.webp"
                             width={200}
                             height={200}
@@ -233,7 +240,7 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
-                            
+                            className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Bath_Background-2-copy.webp"
                             width={200}
                             height={200}
@@ -248,6 +255,7 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
+                            className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Beta_Title_Screen.webp"
                             width={200}
                             height={200}
@@ -262,6 +270,7 @@ export default function PlipPets() {
                         rel="noopener noreferrer"
                     >
                         <Image
+                            className="rounded-xl drop-shadow-lg"
                             src="/Sprites/Clover_Help_Concept_2.webp"
                             width={200}
                             height={200}
@@ -272,7 +281,7 @@ export default function PlipPets() {
                 </div>
 
                 {/* Section Body - Core Gameplay */}
-                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-5 mr-5">
+                <div className="bg-orange-50 text-stone-700/90 p-4 pb-8 rounded-2xl ml-5 mr-5">
                     <p className="text-lg font-regular">
                         There are three major gameplay elements featured, being
                         <b> Snack Time, Bath Time,</b> and <b> Play Time. </b>
@@ -284,11 +293,11 @@ export default function PlipPets() {
 
                 {/* Section Title - Plip Types */}
                 <div className="text-stone-700 rounded-md ml-10 mr-10 mb-2 mt-4">
-                    <p className="text-lg font-semibold">Types of Plips</p>
+                    <p className="text-2xl font-semibold">Types of Plips</p>
                 </div>
 
                 {/* Section Body - Types Introduction */}
-                <div className="bg-orange-900/5 text-stone-700/90 p-4 pb-8 rounded-md ml-5 mr-5">
+                <div className="bg-orange-50 text-stone-700/90 p-4 pb-8 rounded-2xl ml-5 mr-5">
                     <p className="text-lg font-regular">
                         Plips can be one of four different types: <b>Cozy, Fluffy, Winter, </b> or 
                         <b> Woodsy.</b> Each different type generally prefers certain types of activities 
@@ -305,12 +314,13 @@ export default function PlipPets() {
                         onClick={() => setSelectedPlip("Cozy")}
                     >
                         <Image
+                            className="rounded-xl drop-shadow-md"
                             src="/Sprites/Cozy_Button.webp"
                             width={200}
                             height={200}
                             alt="Cozy Type Button"
                         />
-                        <p className="text-lg font-semibold">Cozy</p>
+                        <p className="text-xl font-semibold">Cozy</p>
                     </div>
 
                     <div
@@ -318,12 +328,13 @@ export default function PlipPets() {
                         onClick={() => setSelectedPlip("Fluffy")}
                     >
                         <Image
+                            className="rounded-xl drop-shadow-md"
                             src="/Sprites/Fluffy_Button.webp"
                             width={200}
                             height={200}
                             alt="Fluffy Type Button"
                         />
-                        <p className="text-lg font-semibold">Fluffy</p>
+                        <p className="text-xl font-semibold">Fluffy</p>
                     </div>
 
                     <div
@@ -331,12 +342,13 @@ export default function PlipPets() {
                         onClick={() => setSelectedPlip("Winter")}
                     >
                         <Image
+                            className="rounded-xl drop-shadow-md"
                             src="/Sprites/Winter_Button.webp"
                             width={200}
                             height={200}
                             alt="Winter Type Button"
                         />
-                        <p className="text-lg font-semibold">Winter</p>
+                        <p className="text-xl font-semibold">Winter</p>
                     </div>
 
                     <div
@@ -344,19 +356,20 @@ export default function PlipPets() {
                         onClick={() => setSelectedPlip("Woodsy")}
                     >
                         <Image
+                            className="rounded-xl drop-shadow-md"
                             src="/Sprites/Woodsy_Button.webp"
                             width={200}
                             height={200}
                             alt="Woodsy Type Button"
                         />
-                        <p className="text-lg font-semibold">Woodsy</p>
+                        <p className="text-xl font-semibold">Woodsy</p>
                     </div>
                     
                 </div>
 
                 {/* pop-up div that displays plip type info when clicked */}
                 {selectedPlip && (
-                    <div className="bg-orange-900/5 text-stone-800 ml-5 mr-5 mb-5 p-4 rounded-md text-center transition-opacity duration-300">
+                    <div className="bg-orange-50 text-stone-800 ml-5 mr-5 mb-5 p-4 rounded-2xl text-center transition-opacity duration-300">
 
                         {/* 'close' button for information pop-up */}
                         <button

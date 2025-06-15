@@ -12,22 +12,22 @@ export default function Home() {
         
         <p>Greetings From,</p>
 
-        <div className="font-bold text-6xl">
+        <div className="font-bold text-6xl text-amber-900">
           <p>Eliot Pearson Jr</p>
         </div>
 
         <main className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:p-4 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
 
         <a
-            className="flex flex-col items-center font-semibold text-4xl text-center cursor-pointer transition-transform ease-in-out hover:scale-120 text-center"
+            className="flex flex-col items-center font-semibold text-4xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
             href="/work"
             target="_blank"
             rel="noopener noreferrer"
           >
 
-            <p>Projects</p>
+            <p className="bg-blue-200 text-neutral-800 p-4 rounded-4xl ml-5 mr-5 shadow-md border-4 border-white">Projects</p>
             <Image 
-              // className=
+                className="rotate-355 drop-shadow-lg"
                 src="/Sprites/Projects_Sticker_Button.png"
                 width={700}
                 height={700}
@@ -39,14 +39,14 @@ export default function Home() {
           
           
           <a
-            className="flex flex-col items-center font-semibold text-4xl text-center cursor-pointer transition-transform ease-in-out hover:scale-120 text-center"
+            className="flex flex-col items-center font-semibold text-4xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
             href="/contact"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p>Contact</p>
+            <p className="bg-green-500/50 text-neutral-800 p-4 rounded-4xl ml-5 mr-5 shadow-md border-4 border-white">Contact</p>
             <Image 
-                
+                className="rotate-10 drop-shadow-lg"
                 src="/Sprites/Contact_Sticker_Button.png"
                 width={700}
                 height={700}
@@ -58,14 +58,14 @@ export default function Home() {
           </a>
 
           <a
-            className="flex flex-col items-center font-semibold text-4xl text-center cursor-pointer transition-transform ease-in-out hover:scale-120 text-center"
+            className="flex flex-col items-center font-semibold text-4xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
             href="/about"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p>About</p>
+            <p className="bg-rose-200 text-neutral-800 p-4 rounded-4xl ml-5 mr-5 shadow-md border-4 border-white">About</p>
             <Image 
-              // className=
+                className="rotate-5 drop-shadow-lg"
                 src="/Sprites/About_Sticker_Button.png"
                 width={700}
                 height={700}

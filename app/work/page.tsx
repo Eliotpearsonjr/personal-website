@@ -15,6 +15,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     >
                     <Image
+                        className="drop-shadow-lg"
                         src="/Sprites/Plip_Pets_Logo_Sticker_Transparent_.webp"
                         width={500}
                         height={300}
@@ -29,6 +30,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     >
                     <Image
+                        className="drop-shadow-lg"
                         src="/Sprites/Beer_N_Bots_Logo_Sticker.webp"
                         width={600}
                         height={300}
@@ -43,6 +45,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     >
                     <Image
+                        className="drop-shadow-lg"
                         src="/Sprites/Reward_Sprout_Big_Icon.webp"
                         width={300}
                         height={300}
