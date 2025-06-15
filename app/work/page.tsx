@@ -24,7 +24,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                    className="rotate-2 transition-transform ease-in-out hover:scale-120"
+                    className="transition-transform ease-in-out hover:scale-120"
                     href="/project_pages/beer_n_bots"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -39,7 +39,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                    className="rotate-357 transition-transform ease-in-out hover:scale-120"
+                    className="transition-transform ease-in-out hover:scale-120"
                     href="/project_pages/plip_pets"
                     target="_blank"
                     rel="noopener noreferrer"

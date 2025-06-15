@@ -36,7 +36,7 @@ export default function PlipPets() {
 
                 {/* Section Title - Plip Pets */}
                 <div className="text-stone-700 border-b-2 border-stone-700/10 pb-2 ml-7 mr-7 mb-2">
-                    <p className="text-2xl font-semibold">Plip Pets</p>
+                    <p className="text-4xl font-semibold">Plip Pets</p>
                 </div>
 
                 {/* Holds split subsections */}
