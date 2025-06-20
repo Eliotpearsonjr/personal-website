@@ -44,7 +44,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="bg-green-500/50 text-neutral-800 p-4 rounded-4xl ml-5 mr-5 shadow-md border-4 border-white">Contact</p>
+            <p className="bg-green-200 text-neutral-800 p-4 rounded-4xl ml-5 mr-5 shadow-md border-4 border-white">Contact</p>
             <Image 
                 className="rotate-10 drop-shadow-lg"
                 src="/Sprites/Contact_Sticker_Button.png"
