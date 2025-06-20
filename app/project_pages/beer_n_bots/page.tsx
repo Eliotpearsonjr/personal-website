@@ -33,7 +33,7 @@ export default function BeerNBots() {
                         <p className="bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
                             Beer N Bots is an anual event hosted by the Baltimore Robotics Center. The 
                             event allows for representatives from local tech companies to compete in a
-                            cutthroat battle with robots!
+                            cutthroat, King of the Hill-style battle with robots!
                             I worked with the Robotics Center Team to provide a modern, eye-catching 
                             and fresh logo for the event, along with a new branding direction for the 
                             Center's official social media pages that are used to announce competitors. 
