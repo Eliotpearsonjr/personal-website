@@ -7,12 +7,12 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-orange-100 p-1 mt-10 ml-10 mr-10 mb-10 rounded-lg">
+    <div className="bg-orange-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 p-1 mt-10 ml-10 mr-10 mb-10 rounded-lg">
       <div className="grid grid-rows font-semibold text-3xl items-center justify-items-center min-h-screen p-2 gap-10 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         
         <p>Greetings From,</p>
 
-        <div className="font-bold text-6xl text-amber-900">
+        <div className="font-bold text-6xl text-amber-900 dark:text-orange-200">
           <p>Eliot Pearson Jr</p>
         </div>
 
