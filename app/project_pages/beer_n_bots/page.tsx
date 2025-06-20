@@ -30,7 +30,7 @@ export default function BeerNBots() {
                 <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
+                        <p className="bg-orange-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
                             Beer N Bots is an anual event hosted by the Baltimore Robotics Center. The 
                             event allows for representatives from local tech companies to compete in a
                             cutthroat, King of the Hill-style battle with robots!

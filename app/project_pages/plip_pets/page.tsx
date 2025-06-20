@@ -43,7 +43,7 @@ export default function PlipPets() {
                 <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
+                        <p className="bg-orange-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
                             Plip Pets is an indie game that I started development on in 2024.
                             The game features cute collectible creatures called 'Plips' that you
                             care for and call your own. You can feed them, play with them and much
@@ -304,7 +304,7 @@ export default function PlipPets() {
 
 
                 {/* Section Body - Core Gameplay */}
-                <div className="bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
+                <div className="bg-orange-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
                     <p className="text-lg font-regular">
                         There are three major gameplay elements featured, being
                         <b> Snack Time, Bath Time,</b> and <b> Play Time. </b>
@@ -320,7 +320,7 @@ export default function PlipPets() {
                 </div>
 
                 {/* Section Body - Types Introduction */}
-                <div className="bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
+                <div className="bg-orange-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
                     <p className="text-lg font-regular">
                         Plips can be one of four different types: <b>Cozy, Fluffy, Winter, </b> or 
                         <b> Woodsy.</b> Each different type generally prefers certain types of activities 
