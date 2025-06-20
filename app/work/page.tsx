@@ -8,7 +8,7 @@ export default function Contact() {
         // inner postcard background
         <div className="bg-orange-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 p-1 mt-10 ml-10 mr-10 mb-10 rounded-lg">
 
-            <div className="justify-items-center items-center bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 mx-10 mt-10 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
+            <div className="justify-items-center items-center bg-orange-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 mx-10 mt-10 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
                 <p>Choose a project!</p>
             </div>
             
@@ -96,7 +96,7 @@ export default function Contact() {
                         />
                     </div>
                 </a>
-                
+
             </div>
         </div>
     );
