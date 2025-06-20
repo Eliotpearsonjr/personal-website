@@ -16,19 +16,23 @@ export default function Contact() {
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
                 
                 <a
-                    className="rotate-350 transition-transform ease-in-out hover:scale-120"
+                    className="relative group shine-on-hover transition-transform ease-in-out hover:scale-120"
                     href="/project_pages/plip_pets"
                     target="_blank"
                     rel="noopener noreferrer"
                     >
-                    <Image
+                    <div className="motion-target">
+                        <Image
                         className="drop-shadow-lg"
                         src="/Sprites/Plip_Pets_Logo_Sticker_Transparent_.webp"
                         width={500}
                         height={300}
                         alt="Plip Pets Logo Button"
                         />
-                </a>
+                    </div>
+                   </a>
+
+
 
                 <a
                     className="transition-transform ease-in-out hover:scale-120"
