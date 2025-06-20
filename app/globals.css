@@ -56,14 +56,14 @@ body {
 @keyframes stripe-pulse {
   0% {
     opacity: 0;
-    background-position: 100% 0;
+    background-position: 200% 0;
   }
   10% {
     opacity: 1;
-    background-position: 100% 0;
+    background-position: 200% 0;
   }
   55% {
-    background-position: -100% 0;
+    background-position: -200% 0;
     opacity: 1;
   }
   70% {
@@ -71,11 +71,12 @@ body {
   }
   100% {
     opacity: 0;
-    background-position: -100% 0;
+    background-position: -200% 0;
   }
 }
 
-.shine-on-hover::before {
+
+.shimmer-button::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -83,28 +84,30 @@ body {
   pointer-events: none;
   opacity: 0;
 
+  /* creates diagonal line for horizontal shimmer animation*/
   background-image: linear-gradient(
-    135deg,
+    125deg,
     rgba(255, 255, 255, 0) 30%,
-    rgba(255, 255, 255, 0.3) 45%,
+    rgba(255, 255, 255, 0.464) 45%,
     rgba(255, 255, 255, 0) 60%,
-    rgba(255, 255, 255, 0.3) 75%,
+    rgba(255, 255, 255, 0) 75%,
     rgba(255, 255, 255, 0) 90%
   );
   background-size: 200% 150%;
 
-  -webkit-mask-image: url('/Sprites/Plip_Pets_Logo_Sticker_Transparent_.webp');
+  /* Actual visible clipping using the image itself */
+  -webkit-mask-image: var(--image-mask);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
-  mask-image: url('/Sprites/Plip_Pets_Logo_Sticker_Transparent_.webp');
+  mask-image: var(--image-mask);
   mask-repeat: no-repeat;
   mask-size: cover;
 }
 
-.shine-on-hover:hover::before {
+.shimmer-button:hover::before {
   animation: stripe-pulse 4s ease-in-out infinite;
 }
 
-.shine-on-hover:hover .motion-target {
+.shimmer-button:hover .motion-target {
   animation: rock 3s ease-in-out infinite;
 }
