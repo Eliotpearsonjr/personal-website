@@ -23,91 +23,125 @@ function CandyFrame({ children }: { children: React.ReactNode }) {
   );
 }
 
+function PostcardTitle() {
+  return (
+    <div className="relative w-full flex items-center justify-center px-2">
+      <div className="relative inline-block select-none">
+        {/* Sticker-y text with gradient fill, white outline, and soft shadow */}
+        <h1
+          className={[
+            "text-center font-black tracking-tight",
+            "text-4xl sm:text-5xl md:text-6xl lg:text-7xl",
+            "bg-white",
+            "bg-clip-text text-transparent",
+            "drop-shadow-md",
+          ].join(" ")}
+          style={{
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
+            textShadow:
+              "0 0 0 #fff, 0 2px 4px rgba(0,0,0,0.15)",
+          }}
+        >
+          Eliot Pearson Jr
+        </h1>
+
+        {/* Tiny "stamp" badge in the corner */}
+        <div
+          className="absolute -top-6 -right-4 rotate-6 bg-white/90 dark:bg-stone-100/90 text-[10px] sm:text-xs px-4 py-2 rounded-[8px] border border-rose-300 shadow"
+          style={{
+            boxShadow: "2px 2px 0 rgba(0,0,0,.12)",
+            backgroundImage:
+              "radial-gradient(circle at 4px 4px, transparent 3px, #ffffff 3px), radial-gradient(circle at calc(100% - 4px) 4px, transparent 3px, #ffffff 3px), radial-gradient(circle at 4px calc(100% - 4px), transparent 3px, #ffffff 3px), radial-gradient(circle at calc(100% - 4px) calc(100% - 4px), transparent 3px, #ffffff 3px)",
+            backgroundSize: "8px 8px, 8px 8px, 8px 8px, 8px 8px",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          ✦ GREETINGS FROM
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
-    <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 ml-10 mr-10 my-10 p-10 rounded-2xl border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+    <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-10 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
       <div className="grid grid-rows font-semibold text-3xl items-center justify-items-center min-h-screen p-2 gap-10 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         
-        <p>Greetings From,</p>
-
-        <div className="font-bold text-6xl text-amber-900 dark:text-orange-200">
-          <p>Eliot Pearson Jr</p>
-        </div>
+        <PostcardTitle/>
 
         <CandyFrame>
-          <div className="bg-orange-50 dark:bg-stone-700 my-2 mx-2 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
-              <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:p-4 justify-items-center rounded-sm font-[family-name:var(--font-geist-sans)]">
+          <div className="bg-orange-50 dark:bg-stone-700 my-1 mx-1 px-3 rounded-xl">
+              <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 sm:p-4 justify-items-left rounded-sm font-[family-name:var(--font-geist-sans)]">
 
                 <a
-                  className="flex flex-col items-center font-semibold text-4xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
+                  className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                   href="/work"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
 
-                  <p className="bg-blue-200 text-neutral-800 p-4 rounded-4xl ml-5 mr-5 shadow-md border-4 border-white">Projects</p>
+                  <p className="bg-blue-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">Projects</p>
                   <Image 
-                      className="rotate-355 drop-shadow-lg"
+                      className="rotate-355 drop-shadow-lg overflow-hidden"
                       src="/Sprites/Projects_Sticker_Button.png"
-                      width={300}
-                      height={300}
+                      width={250}
+                      height={250}
                       alt="Project Info Image"
-                      // priority
                     />
 
                 </a>
 
                 <a
-                  className="flex flex-col items-center font-semibold text-4xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
+                  className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                   href="/characters"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="bg-green-200 text-neutral-800 p-4 rounded-4xl ml-5 mr-5 shadow-md border-4 border-white">Characters</p>
+                  <p className="bg-green-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">Characters</p>
                   <Image 
-                      className="drop-shadow-lg"
+                      className="drop-shadow-lg overflow-hidden"
                       src="/Sprites/Capymel_Character_Tab.png"
-                      width={300}
-                      height={300}
-                      alt="About Image"
-                      // priority
+                      width={250}
+                      height={250}
+                      alt="Characters Image"
                     />
 
               
                 </a>
 
                 <a
-                  className="flex flex-col items-center font-semibold text-4xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
+                  className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                   href="/contact"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="bg-orange-200 text-neutral-800 p-4 rounded-4xl ml-5 mr-5 shadow-md border-4 border-white">Contact</p>
+                  <p className="bg-orange-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">Contact</p>
                   <Image 
-                      className="rotate-10 drop-shadow-lg"
+                      className="rotate-10 drop-shadow-lg overflow-hidden"
                       src="/Sprites/Contact_Sticker_Button.png"
-                      width={300}
-                      height={300}
+                      width={250}
+                      height={250}
                       alt="Contact Info Image"
-                      // priority
                     />
 
                 </a>
 
                 <a
-                  className="flex flex-col items-center font-semibold text-4xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
+                  className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                   href="/about"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <p className="bg-rose-200 text-neutral-800 p-4 rounded-4xl ml-5 mr-5 shadow-md border-4 border-white">About</p>
+                  <p className="bg-rose-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">About</p>
                   <Image 
-                      className="rotate-5 drop-shadow-lg"
+                      className="rotate-5 drop-shadow-lg overflow-hidden"
                       src="/Sprites/About_Sticker_Button.png"
-                      width={300}
-                      height={300}
+                      width={250}
+                      height={250}
                       alt="About Image"
-                      // priority
                     />
 
               
