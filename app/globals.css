@@ -14,7 +14,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  /* 🍒 Cherry Bomb One is now your main sans */
+  /* Patrick Hand is now your main sans */
   --font-sans: var(--font-cute), var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -92,3 +92,9 @@ body {
 .shimmer-button:hover .motion-target {
   animation: rock 3s ease-in-out infinite;
 }
+
+/* Force Patrick Hand for all text elements in the app content.
+   Exempt code-like elements so monospace stays intact. */
+   .apply-cute :where(*) :not(code, pre, kbd, samp) {
+    font-family: var(--font-cute), var(--font-geist-sans), sans-serif !important;
+  }
