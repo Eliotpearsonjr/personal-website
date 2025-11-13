@@ -46,7 +46,7 @@ export default function Letsgo() {
             
                 <Image
                     className="mx-auto block h-auto"
-                    src="/Sprites/Lets_go_Logo_Sticker.webp"
+                    src="/Sprites/Lets_Go_Logo_Sticker.webp"
                     width={400}
                     height={400}
                     alt="LET'S GO Logo Header"
@@ -311,7 +311,7 @@ export default function Letsgo() {
                     >
                         <Image
                             className="rounded-xl drop-shadow-md"
-                            src="/Sprites/Robot_Venture_Sticker 3.png"
+                            src="/Sprites/Robot_Venture_Sticker3.png"
                             width={300}
                             height={300}
                             alt="RockBot Sticker"
