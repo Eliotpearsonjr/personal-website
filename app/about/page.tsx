@@ -74,15 +74,15 @@ export default function About() {
                     {/* Section Body - Additional Information */}
                     <div className="flex flex-col sm:flex-col justify-center items-left gap-4 w-full lg:w-full mx-10 my-5">
                         <p className="bg-gradient-to-r from-orange-50 dark:from-stone-900 to-fuchsia-200 dark:to-fuchsia-300/80 border-2 border-fuchsia-200 dark:border-fuchsia-200 text-stone-700/90 dark:text-white ml-5 mr-5 p-4 rounded-2xl text-xl font-regular">
-                            <b>Titles: </b>Front End Developer, Digital Strategist
+                            <b>Titles: </b>Front End Developer, Digital Strategist, Illustrator
                         </p>
 
                         <p className="bg-gradient-to-r from-orange-50 dark:from-stone-900 to-blue-200 dark:to-blue-300/80 border-2 border-blue-200 dark:border-blue-200 text-stone-700/90 dark:text-white ml-5 mr-5 p-4 rounded-2xl text-xl font-regular">
-                            <b>Skills: </b>UI/UX Design, Strong Communication
+                            <b>Skills: </b>UI/UX Design, Strong Communication, Graphic Design, Marketing Strategy
                         </p>
 
                         <p className="bg-gradient-to-r from-orange-50 dark:from-stone-900 to-emerald-200 dark:to-emerald-300/80 border-2 border-emerald-200 dark:border-emerald-200 text-stone-700/90 dark:text-white ml-5 mr-5 p-4 rounded-2xl text-xl font-regular">
-                            <b>Hobbies: </b>Gaming, Drawing, Baking, Gardening
+                            <b>Hobbies: </b>Gaming, Drawing, Baking, Gardening, Collecting Pokémon related items
                         </p>
                        
                         <p className="bg-gradient-to-r from-orange-50 dark:from-stone-900 to-amber-200 dark:to-orange-300/80 border-2 border-amber-200 dark:border-amber-200 text-stone-700/90 dark:text-white ml-5 mr-5 p-4 rounded-2xl text-xl font-regular">

@@ -25,7 +25,7 @@ function CandyFrame({ children }: { children: React.ReactNode }) {
 
 function PostcardTitle() {
   return (
-    <div className="relative w-full flex items-center justify-center px-2">
+    <div className="relative w-full flex items-center justify-center my-8">
       <div className="relative inline-block select-none">
         {/* Sticker-y text with gradient fill, white outline, and soft shadow */}
         <h1
@@ -71,9 +71,9 @@ function FullBleedBanner({
 }) {
   return (
     // full-bleed banner
-    <div className="relative flex justify-center w-full my-4">
+    <div className="relative flex justify-center w-full">
       {/* thin, responsive height */}
-      <div className="relative w-full max-w-screen-2xl h-17 sm:h-20 md:h-30 lg:h-45 rounded-xl overflow-hidden ring-3 ring-white dark:ring-rose-300/70">
+      <div className="relative w-full max-w-screen-2xl h-15 sm:h-20 md:h-30 lg:h-35 rounded-xl overflow-hidden ring-3 ring-white dark:ring-rose-300/70">
         <Image
           src={src}
           alt={alt}
@@ -89,13 +89,16 @@ function FullBleedBanner({
 
 export default function Home() {
   return (
-    <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-10 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
-      <div className="grid grid-rows font-semibold text-3xl items-center justify-items-center min-h-screen p-2 gap-10 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 p-10 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+      <div className="grid grid-rows font-semibold text-3xl items-center justify-items-center min-h-screen gap-5 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         
+        
+
+        <FullBleedBanner src="/Sprites/Banner_Attempt.png" />
+
         <PostcardTitle/>
 
-        <FullBleedBanner src="/Sprites/Capymel_Postcard_B.png" />
-
+        {/* main menu, each page will open in the same tab */}
         <CandyFrame>
           <div className="bg-orange-50 dark:bg-stone-700 my-1 mx-1 px-3 rounded-xl">
               <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 sm:p-4 justify-items-left rounded-sm font-[family-name:var(--font-geist-sans)]">
@@ -103,7 +106,7 @@ export default function Home() {
                 <a
                   className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                   href="/work"
-                  target="_blank"
+                  target="_self"
                   rel="noopener noreferrer"
                 >
 
@@ -121,7 +124,7 @@ export default function Home() {
                 <a
                   className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                   href="/characters"
-                  target="_blank"
+                  target="_self"
                   rel="noopener noreferrer"
                 >
                   <p className="bg-green-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">Characters</p>
@@ -139,7 +142,7 @@ export default function Home() {
                 <a
                   className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                   href="/contact"
-                  target="_blank"
+                  target="_self"
                   rel="noopener noreferrer"
                 >
                   <p className="bg-orange-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">Contact</p>
@@ -156,7 +159,7 @@ export default function Home() {
                 <a
                   className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                   href="/about"
-                  target="_blank"
+                  target="_self"
                   rel="noopener noreferrer"
                 >
                   <p className="bg-rose-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">About</p>
@@ -167,15 +170,10 @@ export default function Home() {
                       height={250}
                       alt="About Image"
                     />
-
-              
-                </a>
-
-                
+                </a>          
               </div>
-          </div>
+            </div>
           </CandyFrame>
-        
       </div>
     </div>
     

@@ -1,6 +1,6 @@
 import Image from "next/image";
 // Personal Portfolio Website
-// Work Page
+// Work/Projects Page
 // Eliot Pearson Jr
 // Developement Started: 5/2/25
 
@@ -8,7 +8,7 @@ import Image from "next/image";
 function CandyFrame({ children }: { children: React.ReactNode }) {
     return (
       <div
-        className="rounded-2xl p-[10px] sm:p-2"
+        className="rounded-2xl p-[10px] sm:p-2 mx-10 mb-10"
         style={{
           background:
             "repeating-linear-gradient(45deg, rgba(255, 182, 193, 0.8) 0 14px, rgba(255, 255, 255, 0.8) 14px 28px, rgb(150, 218, 241, 0.8) 28px 42px, rgb(255, 255, 255, 0.8) 42px 56px)",
@@ -35,15 +35,15 @@ export default function Work() {
             
             {/* list of projects */}
             <CandyFrame>
-                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-orange-100 dark:bg-stone-800 rounded-xl items-center justify-items-center min-h-screen p-4 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-orange-50 dark:bg-stone-800 rounded-xl items-center justify-items-center min-h-screen p-4 gap-8 font-[family-name:var(--font-geist-sans)]">
 
                     <a
                         className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
                         style={{
                             ['--image-mask' as any]: "url('/Sprites/Lets_Go_Logo_Sticker.webp')",
                         }}
-                        href="/project_pages/beer_n_bots"
-                        target="_blank"
+                        href="/project_pages/lets_go"
+                        target="_self"
                         rel="noopener noreferrer"
                         >
                         <div className="motion-target">
@@ -55,8 +55,6 @@ export default function Work() {
                             alt="LET'S GO Logo Button"
                             />
                         </div>
-
-                        
                     </a>
 
                     <a
@@ -65,7 +63,7 @@ export default function Work() {
                             ['--image-mask' as any]: "url('/Sprites/Plip_Pets_Logo_Sticker_Transparent_.webp')",
                         }}
                         href="/project_pages/plip_pets"
-                        target="_blank"
+                        target="_self"
                         rel="noopener noreferrer"
                         >
                         <div className="motion-target">
@@ -85,7 +83,7 @@ export default function Work() {
                             ['--image-mask' as any]: "url('/Sprites/Reward_Sprout_Big_Icon.webp')",
                         }}
                         href="/project_pages/beer_n_bots"
-                        target="_blank"
+                        target="_self"
                         rel="noopener noreferrer"
                         >
                         <div className="motion-target">
@@ -105,7 +103,7 @@ export default function Work() {
                             ['--image-mask' as any]: "url('/Sprites/Mix_N_Munch_App_Icon.webp')",
                         }}
                         href="/project_pages/beer_n_bots"
-                        target="_blank"
+                        target="_self"
                         rel="noopener noreferrer"
                         >
                         <div className="motion-target">
@@ -125,7 +123,7 @@ export default function Work() {
                             ['--image-mask' as any]: "url('/Sprites/Beer_N_Bots_Logo_Sticker.webp')",
                         }}
                         href="/project_pages/beer_n_bots"
-                        target="_blank"
+                        target="_self"
                         rel="noopener noreferrer"
                         >
                         <div className="motion-target">
@@ -138,7 +136,6 @@ export default function Work() {
                             />
                         </div>
                     </a>
-
                 </div>
             </CandyFrame>
         </div>
