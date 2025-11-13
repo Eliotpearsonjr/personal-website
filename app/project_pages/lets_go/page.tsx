@@ -117,7 +117,7 @@ export default function Letsgo() {
                             >
                                 <Image
                                     className="rounded-xl drop-shadow-lg"
-                                    src="/Sprites/LET'S_GO_Rack_Card_Page1.png"
+                                    src="/Sprites/LETS_GO_Rack_Card_Page1.png"
                                     width={200}
                                     height={200}
                                     alt="LET'S GO STEM Rack Card"
@@ -132,7 +132,7 @@ export default function Letsgo() {
                             >
                                 <Image
                                     className="rounded-xl drop-shadow-lg"
-                                    src="/Sprites/LET'S_GO_Rack_Card_Page2.png"
+                                    src="/Sprites/LETS_GO_Rack_Card_Page2.png"
                                     width={200}
                                     height={200}
                                     alt="LET'S GO STEM Rack Card"
@@ -195,7 +195,7 @@ export default function Letsgo() {
                             >
                                 <Image
                                     className="rounded-xl drop-shadow-lg"
-                                    src="/Sprites/All_Drivers_Robo_CEO_Card(2025).png"
+                                    src="/Sprites/All_Drivers_Robo_CEO_Card.png"
                                     width={450}
                                     height={450}
                                     alt="LET'S GO RoboCEO Promotional Poster"
