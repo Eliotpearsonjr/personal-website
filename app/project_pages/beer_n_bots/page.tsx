@@ -5,6 +5,25 @@ import {useState} from "react";
 // Beer N Bots Subpage
 // Eliot Pearson Jr
 // Developement Started: 5/2/25
+
+// cute candy stripe border for each gallery element
+function CandyFrame({ children }: { children: React.ReactNode }) {
+    return (
+      <div
+        className="rounded-2xl p-[10px] sm:p-1"
+        style={{
+          background:
+            "repeating-linear-gradient(45deg, rgba(254, 197, 144, 0.8) 0 14px, rgba(255, 255, 255, 0.8) 14px 28px, rgb(150, 300, 220, 0.8) 28px 42px, rgb(255, 255, 255, 0.8) 42px 56px)",
+        }}
+      >
+        {/* Your original white panel stays intact inside here */}
+        <div className="rounded-xl">
+          {children}
+        </div>
+      </div>
+    );
+}
+
 export default function BeerNBots() {
     return (
         // inner postcard background
@@ -30,7 +49,7 @@ export default function BeerNBots() {
                 <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-lg font-regular">
+                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-xl font-regular">
                             Beer N Bots is an anual event hosted by the Baltimore Robotics Center. The 
                             event allows for representatives from local tech companies to compete in a
                             cutthroat, King of the Hill-style battle with robots!
@@ -63,6 +82,7 @@ export default function BeerNBots() {
                 </div>
 
                 {/* Promotional Images - horizontal scrollable gallery */}
+                <CandyFrame>
                 <div className="bg-stone-50/90 dark:bg-stone-700 mt-4 mb-4 mx-5 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
                     <div className="flex space-x-6 items-center justify-start min-w-fit w-max">
 
@@ -126,7 +146,9 @@ export default function BeerNBots() {
                             />
                         </a>
                     </div>
+                    
                 </div>
+                </CandyFrame>
 
                 {/* Section Title - Slogan Footer */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-4 mb-4">

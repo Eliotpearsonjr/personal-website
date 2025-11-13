@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Cherry_Bomb_One, Patrick_Hand } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +10,19 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// 🍒 new cute retro font
+// const cherry = Cherry_Bomb_One({
+//   variable: "--font-cute",
+//   subsets: ["latin"],
+//   weight: "400",
+// });
+
+const patrick = Patrick_Hand({
+  variable: "--font-cute",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +38,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${patrick.variable} antialiased`}
       >
-        {children}
+        <div className="apply-cute">
+          {children}
+        </div>
+        
       </body>
     </html>
   );

@@ -21,7 +21,7 @@ export default function About() {
                 <div className="flex flex-col lg:flex-row gap-4 items-center">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-lg font-regular">
+                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-xl font-regular">
                             Hello! My name is Eliot, and I am a front-end developer and UX Designer.
                             I am also an illustrator! Ever since I was little I have always loved art
                             and design, but I was quite interested in computers as well. Becoming a
@@ -109,7 +109,7 @@ export default function About() {
                 <div className="flex flex-col lg:flex-row gap-4 items-center">
                     {/* Section Body - GitHub */}
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-lg font-regular">
+                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-xl font-regular">
                             If you would like to learn more about how I developed my projects, and see
                             the frameworks that I used in the process, please check out my <b>Github!</b>
                         </p>

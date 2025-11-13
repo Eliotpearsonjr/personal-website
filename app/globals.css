@@ -8,15 +8,15 @@
 :root {
   --background: #FFEFFC;
   --foreground: #857C6F;
-
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+
+  /* 🍒 Cherry Bomb One is now your main sans */
+  --font-sans: var(--font-cute), var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,17 +30,19 @@ body {
   background: var(--background);
   background-image: repeating-linear-gradient(
     45deg,
-    #FEB2CC 0px,         /* Pink stripe start - same color to avoid gradient effect */
-    #FEB2CC 20px,        /* Pink stripe end */
+    #FEB2CC 0px,
+    #FEB2CC 20px,
     var(--background) 20px,
-    var(--background) 40px,  /* Background between pink and blue */
-    #CBEEFE 40px,        /* Light blue stripe start - same color to avoid gradient effect */
-    #CBEEFE 60px,        /* Light blue stripe end */
+    var(--background) 40px,
+    #CBEEFE 40px,
+    #CBEEFE 60px,
     var(--background) 60px,
-    var(--background) 80px  /* Background before next pink */
+    var(--background) 80px
   );
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @keyframes rock {
@@ -51,30 +53,13 @@ body {
   100% { transform: rotate(0deg); }
 }
 
-
-
 @keyframes stripe-pulse {
-  0% {
-    opacity: 0;
-    background-position: 200% 0;
-  }
-  10% {
-    opacity: 1;
-    background-position: 200% 0;
-  }
-  55% {
-    background-position: -200% 0;
-    opacity: 1;
-  }
-  70% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    background-position: -200% 0;
-  }
+  0% { opacity: 0; background-position: 200% 0; }
+  10% { opacity: 1; background-position: 200% 0; }
+  55% { background-position: -200% 0; opacity: 1; }
+  70% { opacity: 0; }
+  100% { opacity: 0; background-position: -200% 0; }
 }
-
 
 .shimmer-button::before {
   content: "";
@@ -83,8 +68,6 @@ body {
   z-index: 5;
   pointer-events: none;
   opacity: 0;
-
-  /* creates diagonal line for horizontal shimmer animation*/
   background-image: linear-gradient(
     125deg,
     rgba(255, 255, 255, 0) 30%,
@@ -94,8 +77,6 @@ body {
     rgba(255, 255, 255, 0) 90%
   );
   background-size: 200% 150%;
-
-  /* Actual visible clipping using the image itself */
   -webkit-mask-image: var(--image-mask);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;

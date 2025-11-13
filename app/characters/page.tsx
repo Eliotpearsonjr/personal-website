@@ -43,17 +43,16 @@ export default function Characters() {
                 <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-pink-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-lg font-regular">
+                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-pink-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-xl font-regular">
                         Take a stroll through the page to meet my original characters — 
                         little cuties I’ve designed for companies, branding projects, and 
                         video games! Each one is full of personality, color, and charm, 
                         waiting to say hello~
                         </p>
                     </div>
-                
 
                     {/* Stamps with logos of software products used */}
-                    <div className= "flex flex-col md:flex-row lg:flex-row ml-5 mb-5">
+                    <div className= "flex flex-row md:flex-row lg:flex-row ml-5 mb-5">
                         <a className="text-center">
                             <Image
                                 className="rotate-4"
