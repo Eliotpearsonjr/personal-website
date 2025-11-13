@@ -7,13 +7,13 @@ import Image from "next/image";
 export default function About() {
     return (
     // inner postcard background
-        <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 ml-10 mr-10 my-10 p-4 rounded-2xl border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+        <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
 
             {/* text box div, makes the top border of the postcard visible from the header */}
             <div className="flex flex-col mt-10">
 
                 {/* Section Title - Welcome */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-stone-600/50 pb-2 ml-7 mr-7 mb-2">
+                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
                     <p className="text-4xl font-semibold">Welcome To My Website!</p>
                 </div>
 
@@ -21,7 +21,7 @@ export default function About() {
                 <div className="flex flex-col lg:flex-row gap-4 items-center">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
+                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-lg font-regular">
                             Hello! My name is Eliot, and I am a front-end developer and UX Designer.
                             I am also an illustrator! Ever since I was little I have always loved art
                             and design, but I was quite interested in computers as well. Becoming a
@@ -49,7 +49,7 @@ export default function About() {
                 </div>
                 
                 {/* Section Title -Eliot's Stats */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-stone-600/50 pb-2 ml-7 mr-7 mb-2">
+                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
                     <p className="text-2xl font-semibold">Eliot's Stats</p>
                 </div>
 
@@ -100,7 +100,7 @@ export default function About() {
 
 
                 {/* Section Title - Github Information */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-stone-600/50 pb-2 ml-7 mr-7 mb-2">
+                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
                     <p className="text-2xl font-semibold">While You're Here...</p>
                 </div>
 
@@ -109,7 +109,7 @@ export default function About() {
                 <div className="flex flex-col lg:flex-row gap-4 items-center">
                     {/* Section Body - GitHub */}
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
+                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-lg font-regular">
                             If you would like to learn more about how I developed my projects, and see
                             the frameworks that I used in the process, please check out my <b>Github!</b>
                         </p>

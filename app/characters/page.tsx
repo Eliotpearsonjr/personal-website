@@ -28,14 +28,14 @@ export default function Characters() {
 
     return (
         // inner postcard background
-        <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 ml-10 mr-10 my-10 p-10 rounded-2xl border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+        <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
 
             {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
             <div className="flex flex-col mt-10">
             
                 
                 {/* Section Title - Characters */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-pink-900/10 dark:border-stone-600/50 pb-2 ml-7 mr-7 mb-2">
+                <div className="text-stone-700 dark:text-white border-b-2 border-pink-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
                     <p className="text-4xl font-semibold">Original Characters</p>
                 </div>
 
@@ -43,7 +43,7 @@ export default function Characters() {
                 <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-pink-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
+                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-pink-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-lg font-regular">
                         Take a stroll through the page to meet my original characters — 
                         little cuties I’ve designed for companies, branding projects, and 
                         video games! Each one is full of personality, color, and charm, 

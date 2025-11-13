@@ -49,13 +49,10 @@ function PostcardTitle() {
 
         {/* Tiny "stamp" badge in the corner */}
         <div
-          className="absolute -top-6 -right-4 rotate-6 bg-white/90 dark:bg-stone-100/90 text-[10px] sm:text-xs px-4 py-2 rounded-[8px] border border-rose-300 shadow"
+          className="absolute -top-6 -right-4 rotate-6 bg-white/90 dark:bg-stone-900/90 text-[10px] sm:text-xs px-4 py-2 rounded-[8px] border border-rose-300 shadow"
           style={{
             boxShadow: "2px 2px 0 rgba(0,0,0,.12)",
-            backgroundImage:
-              "radial-gradient(circle at 4px 4px, transparent 3px, #ffffff 3px), radial-gradient(circle at calc(100% - 4px) 4px, transparent 3px, #ffffff 3px), radial-gradient(circle at 4px calc(100% - 4px), transparent 3px, #ffffff 3px), radial-gradient(circle at calc(100% - 4px) calc(100% - 4px), transparent 3px, #ffffff 3px)",
-            backgroundSize: "8px 8px, 8px 8px, 8px 8px, 8px 8px",
-            backgroundRepeat: "no-repeat",
+            
           }}
         >
           ✦ GREETINGS FROM

@@ -39,7 +39,7 @@ export default function PlipPets() {
 
     return (
         // inner postcard background
-        <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 ml-10 mr-10 my-10 p-4 rounded-2xl border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+        <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
 
             {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
             <div className="flex flex-col mt-10">
@@ -53,7 +53,7 @@ export default function PlipPets() {
                 />
 
                 {/* Section Title - Plip Pets */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-stone-600/50 pb-2 ml-7 mr-7 mb-2">
+                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
                     <p className="text-4xl font-semibold">Plip Pets</p>
                 </div>
 
@@ -61,7 +61,7 @@ export default function PlipPets() {
                 <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
+                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-lg font-regular">
                             Plip Pets is an indie game that I started development on in 2024.
                             The game features cute collectible creatures called 'Plips' that you
                             care for and call your own. You can feed them, play with them and much
@@ -72,7 +72,7 @@ export default function PlipPets() {
                 
 
                     {/* Stamps with logos of software products used */}
-                    <div className= "flex flex-col md:flex-row lg:flex-row ml-5 mb-5">
+                    <div className= "flex flex-row ml-5 mb-5">
                         <a className="text-center">
                             <Image
                                 className="rotate-4"
@@ -98,7 +98,7 @@ export default function PlipPets() {
                 </div>
                 
                 {/* Section Title - Art Gallery */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-stone-600/50 pb-2 ml-7 mr-7 mb-2">
+                <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
                     <p className="text-2xl font-semibold">Sprite and Concept Art Gallery</p>
                 </div>
 
@@ -117,8 +117,8 @@ export default function PlipPets() {
                             <Image
                                 className="rounded-xl drop-shadow-lg"
                                 src="/Sprites/Sweets_Concept.webp"
-                                width={300}
-                                height={300}
+                                width={250}
+                                height={250}
                                 alt="Sweet Food Concept Image"
                             />
                         </a>
@@ -132,8 +132,8 @@ export default function PlipPets() {
                             <Image
                                 className="rounded-xl drop-shadow-lg"
                                 src="/Sprites/Savory_Concept.webp"
-                                width={300}
-                                height={300}
+                                width={250}
+                                height={250}
                                 alt="Savory Food Concept Image"
                             />
                         </a>
@@ -147,8 +147,8 @@ export default function PlipPets() {
                             <Image
                                 className="rounded-xl drop-shadow-lg"
                                 src="/Sprites/Official_Clover_Concept_Art.png"
-                                width={300}
-                                height={300}
+                                width={250}
+                                height={250}
                                 alt="Clover Concept Image"
                             />
                         </a>
@@ -162,8 +162,8 @@ export default function PlipPets() {
                             <Image
                                 className="rounded-xl drop-shadow-lg"
                                 src="/Sprites/Capymel_Postcard_B.png"
-                                width={300}
-                                height={300}
+                                width={250}
+                                height={250}
                                 alt="Capymel Character Postcard Image"
                             />
                         </a>
@@ -177,8 +177,8 @@ export default function PlipPets() {
                             <Image
                                 className="rounded-xl drop-shadow-lg"
                                 src="/Sprites/Kitsune_Postcard.webp"
-                                width={300}
-                                height={300}
+                                width={250}
+                                height={250}
                                 alt="Kistune Character Postcard Image"
                             />
                         </a>
@@ -192,8 +192,8 @@ export default function PlipPets() {
                             <Image
                                 className="rounded-xl drop-shadow-lg"
                                 src="/Sprites/Tabby_Postcard.png"
-                                width={300}
-                                height={300}
+                                width={250}
+                                height={250}
                                 alt="Tabby Character Postcard Image"
                             />
                         </a>
@@ -207,8 +207,8 @@ export default function PlipPets() {
                             <Image
                                 className="rounded-xl drop-shadow-lg"
                                 src="/Sprites/Nimbus_Postcard.png"
-                                width={300}
-                                height={300}
+                                width={250}
+                                height={250}
                                 alt="Nimbus Character Postcard Image"
                             />
                         </a>
@@ -221,7 +221,7 @@ export default function PlipPets() {
 
 
                 {/* Section Title - Core Gameplay */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-stone-600/50 pb-2 ml-7 mr-7 my-4">
+                <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 my-4">
                     <p className="text-2xl font-semibold">Core Gameplay</p>
                 </div>
 
@@ -326,7 +326,7 @@ export default function PlipPets() {
 
 
                 {/* Section Body - Core Gameplay */}
-                <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 my-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
+                <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 my-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-lg font-regular">
                     <p className="text-lg font-regular">
                         There are three major gameplay elements featured, being
                         <b> Snack Time, Bath Time,</b> and <b> Play Time. </b>
@@ -337,12 +337,12 @@ export default function PlipPets() {
                 </div>
 
                 {/* Section Title - Plip Types */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-stone-600/50 pb-2 ml-7 mr-7 mt-4 mb-4">
+                <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-4 mb-4">
                     <p className="text-2xl font-semibold">Types of Plips</p>
                 </div>
 
                 {/* Section Body - Types Introduction */}
-                <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-stone-600 transition-opacity duration-300 text-lg font-regular">
+                <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-lg font-regular">
                     <p className="text-lg font-regular">
                         Plips can be one of four different types: <b>Cozy, Fluffy, Winter, </b> or 
                         <b> Woodsy.</b> Each different type generally prefers certain types of activities 
@@ -414,7 +414,7 @@ export default function PlipPets() {
 
                 {/* pop-up div that displays plip type info when clicked */}
                 {selectedPlip == "Fluffy" && (
-                    <div className="bg-pink-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-stone-600 shadow-lg transition-opacity duration-300 text-lg font-regular">
+                    <div className="bg-pink-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 shadow-lg transition-opacity duration-300 text-lg font-regular">
 
                         {/* 'close' button for information pop-up */}
                         <button
@@ -428,7 +428,7 @@ export default function PlipPets() {
                     </div>
                 )}
                 {selectedPlip == "Cozy" && (
-                    <div className="bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-stone-600 shadow-lg transition-opacity duration-300 text-lg font-regular">
+                    <div className="bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-orange-300/30 shadow-lg transition-opacity duration-300 text-lg font-regular">
 
                         {/* 'close' button for information pop-up */}
                         <button
@@ -442,7 +442,7 @@ export default function PlipPets() {
                     </div>
                 )}
                 {selectedPlip == "Winter" && (
-                    <div className="bg-blue-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-blue-900/30 dark:border-stone-600 shadow-lg transition-opacity duration-300 text-lg font-regular">
+                    <div className="bg-blue-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-blue-900/30 dark:border-blue-300/30 shadow-lg transition-opacity duration-300 text-lg font-regular">
 
                         {/* 'close' button for information pop-up */}
                         <button
@@ -456,7 +456,7 @@ export default function PlipPets() {
                     </div>
                 )}
                 {selectedPlip == "Woodsy" && (
-                    <div className="bg-emerald-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-emerald-900/30 dark:border-stone-600 shadow-lg transition-opacity duration-300 text-lg font-regular">
+                    <div className="bg-emerald-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-emerald-900/30 dark:border-emerald-300/30 shadow-lg transition-opacity duration-300 text-lg font-regular">
 
                         {/* 'close' button for information pop-up */}
                         <button
