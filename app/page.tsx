@@ -9,14 +9,14 @@ import Link from "next/link";
 function CandyFrame({ children }: { children: React.ReactNode }) {
   return (
     <div
-      className="rounded-2xl p-[10px] sm:p-1"
+      className="rounded-2xl p-[10px] sm:p-1 shadow-md"
       style={{
         background:
           "repeating-linear-gradient(45deg, rgba(255, 182, 193, 0.8) 0 14px, rgba(255, 255, 255, 0.8) 14px 28px, rgb(150, 218, 241, 0.8) 28px 42px, rgb(255, 255, 255, 0.8) 42px 56px)",
       }}
     >
       {/* Your original white panel stays intact inside here */}
-      <div className="rounded-xl">
+      <div className="rounded-x">
         {children}
       </div>
     </div>
@@ -62,12 +62,39 @@ function PostcardTitle() {
   );
 }
 
+function FullBleedBanner({
+  src,
+  alt = "Portfolio banner",
+}: {
+  src: string;
+  alt?: string;
+}) {
+  return (
+    // full-bleed banner
+    <div className="relative flex justify-center w-full my-4">
+      {/* thin, responsive height */}
+      <div className="relative w-full max-w-screen-2xl h-17 sm:h-20 md:h-30 lg:h-45 rounded-xl overflow-hidden ring-3 ring-white dark:ring-rose-300/70">
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+          priority={false}
+        />
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-10 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
       <div className="grid grid-rows font-semibold text-3xl items-center justify-items-center min-h-screen p-2 gap-10 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         
         <PostcardTitle/>
+
+        <FullBleedBanner src="/Sprites/Capymel_Postcard_B.png" />
 
         <CandyFrame>
           <div className="bg-orange-50 dark:bg-stone-700 my-1 mx-1 px-3 rounded-xl">

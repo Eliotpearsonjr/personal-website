@@ -84,8 +84,7 @@ export default function Characters() {
         
                         <a
                             className="flex flex-col items-center font-semibold text-4xl text-center 
-                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center 
-                            bg-rose-50 dark:bg-stone-800 rounded-3xl"
+                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                             href="/work"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -102,8 +101,7 @@ export default function Characters() {
 
                         <a
                             className="flex flex-col items-center font-semibold text-4xl text-center 
-                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center 
-                            bg-green-50 dark:bg-stone-800 rounded-3xl"
+                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                             href="/work"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -120,8 +118,7 @@ export default function Characters() {
 
                         <a
                             className="flex flex-col items-center font-semibold text-4xl text-center 
-                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center 
-                            bg-amber-50 dark:bg-stone-800 rounded-3xl"
+                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                             href="/work"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -138,8 +135,7 @@ export default function Characters() {
 
                         <a
                             className="flex flex-col items-center font-semibold text-4xl text-center 
-                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center 
-                            bg-emerald-50 dark:bg-stone-800 rounded-3xl"
+                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                             href="/work"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -156,8 +152,7 @@ export default function Characters() {
 
                         <a
                             className="flex flex-col items-center font-semibold text-4xl text-center 
-                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center 
-                            bg-blue-50 dark:bg-stone-800 rounded-3xl"
+                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                             href="/work"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -174,8 +169,7 @@ export default function Characters() {
 
                         <a
                             className="flex flex-col items-center font-semibold text-4xl text-center 
-                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center 
-                            bg-orange-50 dark:bg-stone-800 rounded-3xl"
+                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                             href="/work"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -192,8 +186,7 @@ export default function Characters() {
 
                         <a
                             className="flex flex-col items-center font-semibold text-4xl text-center 
-                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center 
-                            bg-purple-50 dark:bg-stone-800 rounded-3xl"
+                            cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                             href="/work"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -207,10 +200,7 @@ export default function Characters() {
                             />
         
                         </a>
-        
-                        
-        
-                        
+               
                         </div>
                     </div>
                 </CandyFrame>
