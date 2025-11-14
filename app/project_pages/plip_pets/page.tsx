@@ -61,7 +61,7 @@ export default function PlipPets() {
                 <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-xl font-regular">
+                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular">
                             Plip Pets is an indie game that I started development on in 2024.
                             The game features cute collectible creatures called 'Plips' that you
                             care for and call your own. You can feed them, play with them and much
@@ -326,8 +326,8 @@ export default function PlipPets() {
 
 
                 {/* Section Body - Core Gameplay */}
-                <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 my-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-xl font-regular">
-                    <p className="text-lg font-regular">
+                <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 my-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 font-regular">
+                    <p className="text-2xl font-regular">
                         There are three major gameplay elements featured, being
                         <b> Snack Time, Bath Time,</b> and <b> Play Time. </b>
                         Each of the core features allows for the user to interact with
@@ -342,8 +342,8 @@ export default function PlipPets() {
                 </div>
 
                 {/* Section Body - Types Introduction */}
-                <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-xl font-regular">
-                    <p className="text-lg font-regular">
+                <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 font-regular">
+                    <p className="text-2xl font-regular">
                         Plips can be one of four different types: <b>Cozy, Fluffy, Winter, </b> or 
                         <b> Woodsy.</b> Each different type generally prefers certain types of activities 
                         and foods. In game, feeding Plips their favorite foods will increase their affection more!
@@ -414,59 +414,59 @@ export default function PlipPets() {
 
                 {/* pop-up div that displays plip type info when clicked */}
                 {selectedPlip == "Fluffy" && (
-                    <div className="bg-pink-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 shadow-lg transition-opacity duration-300 text-lg font-regular">
+                    <div className="bg-pink-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 shadow-lg transition-opacity duration-300 font-regular">
 
                         {/* 'close' button for information pop-up */}
                         <button
                             onClick={() => setSelectedPlip(null)}
-                            className="text-sm text-right block ml-auto text-pink-700 hover:underline"
+                            className="text-xl text-right block ml-auto text-pink-700 hover:underline"
                         >
                             Close
                         </button>
 
-                        <p className="text-lg font-medium">{plipInfo[selectedPlip]}</p>
+                        <p className="text-2xl font-medium">{plipInfo[selectedPlip]}</p>
                     </div>
                 )}
                 {selectedPlip == "Cozy" && (
-                    <div className="bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-orange-300/30 shadow-lg transition-opacity duration-300 text-lg font-regular">
+                    <div className="bg-orange-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-orange-900/30 dark:border-orange-300/30 shadow-lg transition-opacity duration-300 font-regular">
 
                         {/* 'close' button for information pop-up */}
                         <button
                             onClick={() => setSelectedPlip(null)}
-                            className="text-sm text-right block ml-auto text-pink-700 hover:underline"
+                            className="text-xl text-right block ml-auto text-pink-700 hover:underline"
                         >
                             Close
                         </button>
 
-                        <p className="text-lg font-medium">{plipInfo[selectedPlip]}</p>
+                        <p className="text-2xl font-medium">{plipInfo[selectedPlip]}</p>
                     </div>
                 )}
                 {selectedPlip == "Winter" && (
-                    <div className="bg-blue-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-blue-900/30 dark:border-blue-300/30 shadow-lg transition-opacity duration-300 text-lg font-regular">
+                    <div className="bg-blue-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-blue-900/30 dark:border-blue-300/30 shadow-lg transition-opacity duration-300 font-regular">
 
                         {/* 'close' button for information pop-up */}
                         <button
                             onClick={() => setSelectedPlip(null)}
-                            className="text-sm text-right block ml-auto text-pink-700 hover:underline"
+                            className="text-sl text-right block ml-auto text-pink-700 hover:underline"
                         >
                             Close
                         </button>
 
-                        <p className="text-lg font-medium">{plipInfo[selectedPlip]}</p>
+                        <p className="text-2xl font-medium">{plipInfo[selectedPlip]}</p>
                     </div>
                 )}
                 {selectedPlip == "Woodsy" && (
-                    <div className="bg-emerald-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-emerald-900/30 dark:border-emerald-300/30 shadow-lg transition-opacity duration-300 text-lg font-regular">
+                    <div className="bg-emerald-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-emerald-900/30 dark:border-emerald-300/30 shadow-lg transition-opacity duration-300 font-regular">
 
                         {/* 'close' button for information pop-up */}
                         <button
                             onClick={() => setSelectedPlip(null)}
-                            className="text-sm text-right block ml-auto text-pink-700 hover:underline"
+                            className="text-xl text-right block ml-auto text-pink-700 hover:underline"
                         >
                             Close
                         </button>
 
-                        <p className="text-lg font-medium">{plipInfo[selectedPlip]}</p>
+                        <p className="text-2xl font-medium">{plipInfo[selectedPlip]}</p>
                     </div>
                 )}
 

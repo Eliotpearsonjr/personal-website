@@ -94,7 +94,7 @@ export default function Home() {
         
         
 
-        <FullBleedBanner src="/Sprites/Banner_Attempt.png" />
+        <FullBleedBanner src="/Sprites/Banner_Stripe.png" />
 
         <PostcardTitle/>
 

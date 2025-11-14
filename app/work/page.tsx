@@ -27,7 +27,7 @@ export default function Work() {
         // inner postcard background
         <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
 
-            <div className="justify-items-center items-center bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 mx-10 my-10 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-lg font-regular">
+            <div className="justify-items-center items-center bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 mx-10 my-10 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular">
                 <p>Choose a project!</p>
             </div>
 
@@ -73,6 +73,26 @@ export default function Work() {
                             width={500}
                             height={300}
                             alt="Plip Pets Logo Button"
+                            />
+                        </div>
+                    </a>
+
+                    <a
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
+                        style={{
+                            ['--image-mask' as any]: "url('/Sprites/Swatches_Logo_Big.webp')",
+                        }}
+                        href="/project_pages/swatches"
+                        target="_self"
+                        rel="noopener noreferrer"
+                        >
+                        <div className="motion-target">
+                            <Image
+                            className="drop-shadow-lg"
+                            src="/Sprites/Swatches_Logo_Big.webp"
+                            width={500}
+                            height={500}
+                            alt="Swatches Logo Button"
                             />
                         </div>
                     </a>
