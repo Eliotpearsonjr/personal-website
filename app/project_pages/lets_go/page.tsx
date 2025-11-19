@@ -96,13 +96,12 @@ export default function Letsgo() {
                     </div>
                 </div>
                 
-                {/* Section Title - Art Gallery */}
+                {/* Section Title - Photo Gallery */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
                     <p className="text-2xl font-semibold">Promotional Materials</p>
                 </div>
 
-                {/* Concept Art Images */}
-                {/* Gameplay Images - horizontal scrollable gallery */}
+                {/* horizontal scrollable gallery */}
                 {/* Centers Gallery in middle of screen */}
                 
                 <CandyFrame>
@@ -111,8 +110,8 @@ export default function Letsgo() {
 
                             <a
                                 className="transition-transform ease-in-out hover:scale-110"
-                                href="/Sprites/LET'S_GO_Rack_Card_Page1.png"
-                                target="_blank"
+                                href="/Sprites/LETS_GO_Rack_Card_Page1.png"
+                                target="_self"
                                 rel="noopener noreferrer"
                             >
                                 <Image
@@ -126,8 +125,8 @@ export default function Letsgo() {
 
                             <a
                                 className="transition-transform ease-in-out hover:scale-110"
-                                href="/Sprites/LET'S_GO_Rack_Card_Page2.png"
-                                target="_blank"
+                                href="/Sprites/LETS_GO_Rack_Card_Page2.png"
+                                target="_self"
                                 rel="noopener noreferrer"
                             >
                                 <Image
@@ -142,7 +141,7 @@ export default function Letsgo() {
                             <a
                                 className="transition-transform ease-in-out hover:scale-110"
                                 href="/Sprites/Sticker_Choice_Sheet.png"
-                                target="_blank"
+                                target="_self"
                                 rel="noopener noreferrer"
                             >
                                 <Image
@@ -175,7 +174,7 @@ export default function Letsgo() {
                         <a
                                 className="transition-transform ease-in-out hover:scale-110"
                                 href="/Sprites/RoboCEO_Sandwich_Poster.png"
-                                target="_blank"
+                                target="_self"
                                 rel="noopener noreferrer"
                             >
                                 <Image
@@ -189,8 +188,8 @@ export default function Letsgo() {
 
                             <a
                                 className="transition-transform ease-in-out hover:scale-110"
-                                href="/Sprites/All_Drivers_Robo_CEO_Card(2025).png"
-                                target="_blank"
+                                href="/Sprites/All_Drivers_Robo_CEO_Card.png"
+                                target="_self"
                                 rel="noopener noreferrer"
                             >
                                 <Image
@@ -205,7 +204,7 @@ export default function Letsgo() {
                             <a
                                 className="transition-transform ease-in-out hover:scale-110"
                                 href="/Sprites/Driver_Tag.png"
-                                target="_blank"
+                                target="_self"
                                 rel="noopener noreferrer"
                             >
                                 <Image
@@ -220,7 +219,7 @@ export default function Letsgo() {
                             <a
                                 className="transition-transform ease-in-out hover:scale-110"
                                 href="/Sprites/STEM_Connect_Poster.png"
-                                target="_blank"
+                                target="_self"
                                 rel="noopener noreferrer"
                             >
                                 <Image

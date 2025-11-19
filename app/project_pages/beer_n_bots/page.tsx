@@ -89,7 +89,7 @@ export default function BeerNBots() {
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/BNB_Christina_Krueger_SOCIAL.png"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -104,7 +104,7 @@ export default function BeerNBots() {
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/BNB_Margaret_Hart_SOCIAL.png"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -119,7 +119,7 @@ export default function BeerNBots() {
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/Beer_N_Bots_Color_Palette.png"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -134,7 +134,7 @@ export default function BeerNBots() {
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/Beer_N_Bots_Mascot.png"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image

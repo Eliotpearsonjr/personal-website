@@ -112,8 +112,8 @@ export default function Swatches() {
 
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
-                            href="/Sprites/swatches_sc.wepb"
-                            target="_blank"
+                            href="/Sprites/swatches_sc.webp"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -127,8 +127,8 @@ export default function Swatches() {
 
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
-                            href="/Sprites/swatches_text.wepb"
-                            target="_blank"
+                            href="/Sprites/swatches_text.webp"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -143,7 +143,7 @@ export default function Swatches() {
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/swatches_app_concept.png"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -158,7 +158,7 @@ export default function Swatches() {
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/swatches_app_concept_text.png"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -186,7 +186,7 @@ export default function Swatches() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 >
-                            <p><b>Try Swatches Out Here!</b></p>
+                            <b> Try Swatches Out Here!</b>
                         </a>
 
                         </p>

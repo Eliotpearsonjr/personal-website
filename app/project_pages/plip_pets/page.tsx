@@ -111,7 +111,7 @@ export default function PlipPets() {
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/Sweets_Concept.webp"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -126,7 +126,7 @@ export default function PlipPets() {
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/Savory_Concept.webp"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -141,7 +141,7 @@ export default function PlipPets() {
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/Official_Clover_Concept_Art.png"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -156,7 +156,7 @@ export default function PlipPets() {
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/Capymel_Postcard_B.png"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -171,7 +171,7 @@ export default function PlipPets() {
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/Kitsune_Postcard.webp"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -186,7 +186,7 @@ export default function PlipPets() {
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/Tabby_Postcard.png"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -201,7 +201,7 @@ export default function PlipPets() {
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
                             href="/Sprites/Nimbus_Postcard.png"
-                            target="_blank"
+                            target="_self"
                             rel="noopener noreferrer"
                         >
                             <Image
@@ -233,7 +233,7 @@ export default function PlipPets() {
                         <a
                         className="transition-transform ease-in-out hover:scale-110"
                         href="/Sprites/Plip_Pets_Beta_Home.webp"
-                        target="_blank"
+                        target="_self"
                         rel="noopener noreferrer"
                         >
                         <Image
@@ -248,7 +248,7 @@ export default function PlipPets() {
                         <a
                         className="transition-transform ease-in-out hover:scale-110"
                         href="/Sprites/Plip_Pets_Beta_Fridge.webp"
-                        target="_blank"
+                        target="_self"
                         rel="noopener noreferrer"
                         >
                         <Image
@@ -263,7 +263,7 @@ export default function PlipPets() {
                         <a
                         className="transition-transform ease-in-out hover:scale-110"
                         href="/Sprites/Plip_Pets_Beta_Ball_Game.webp"
-                        target="_blank"
+                        target="_self"
                         rel="noopener noreferrer"
                         >
                         <Image
@@ -278,7 +278,7 @@ export default function PlipPets() {
                         <a
                         className="transition-transform ease-in-out hover:scale-110"
                         href="/Sprites/Bath_Background-2-copy.webp"
-                        target="_blank"
+                        target="_self"
                         rel="noopener noreferrer"
                         >
                         <Image
@@ -293,7 +293,7 @@ export default function PlipPets() {
                         <a
                         className="transition-transform ease-in-out hover:scale-110"
                         href="/Sprites/Beta_Title_Screen.webp"
-                        target="_blank"
+                        target="_self"
                         rel="noopener noreferrer"
                         >
                         <Image
@@ -308,7 +308,7 @@ export default function PlipPets() {
                         <a
                         className="transition-transform ease-in-out hover:scale-110"
                         href="/Sprites/Clover_Help_Concept_2.webp"
-                        target="_blank"
+                        target="_self"
                         rel="noopener noreferrer"
                         >
                         <Image
