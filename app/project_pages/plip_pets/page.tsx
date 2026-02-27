@@ -68,6 +68,7 @@ export default function PlipPets() {
                             more. I developed this game using <b> Unity, </b> and created all of my assets
                             in <b> Procreate.</b> Meet <b>Capymel</b> and his friends, take care of them, feed them
                             crepes, and build everlasting friendships!
+                            <b> All characters are my own, and all alt was created by myself.</b>
                         </p>
                     </div>
                 
