@@ -66,7 +66,8 @@ export default function PlipPets() {
                             The game features cute collectible creatures called 'Plips' that you
                             care for and call your own. You can feed them, play with them and much
                             more. I developed this game using <b> Unity, </b> and created all of my assets
-                            in <b> Procreate.</b>
+                            in <b> Procreate.</b> Meet <b>Capymel</b> and his friends, take care of them, feed them
+                            crepes, and build everlasting friendships!
                         </p>
                     </div>
                 
@@ -110,6 +111,7 @@ export default function PlipPets() {
 
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
+<<<<<<< HEAD
                             href="/Sprites/Sweets_Concept.webp"
                             target="_self"
                             rel="noopener noreferrer"
@@ -155,6 +157,8 @@ export default function PlipPets() {
 
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
+=======
+>>>>>>> 31b3f23 (adding more concept images of Capymel, Azufly, and Crepe ideas)
                             href="/Sprites/Capymel_Postcard_B.png"
                             target="_self"
                             rel="noopener noreferrer"
@@ -213,6 +217,81 @@ export default function PlipPets() {
                             />
                         </a>
 
+                        <a
+                            className="transition-transform ease-in-out hover:scale-110"
+                            href="/Sprites/Capymel_And_Friend.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                className="rounded-xl drop-shadow-lg"
+                                src="/Sprites/Capymel_And_Friend.png"
+                                width={250}
+                                height={250}
+                                alt="Capymel and his blue friend Image"
+                            />
+                        </a>
+
+                        <a
+                            className="transition-transform ease-in-out hover:scale-110"
+                            href="/Sprites/Crepe_Concept.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                className="rounded-xl drop-shadow-lg"
+                                src="/Sprites/Crepe_Concept.png"
+                                width={250}
+                                height={250}
+                                alt="Crepe Concept for food in game feature Capymel"
+                            />
+                        </a>
+
+                        <a
+                            className="transition-transform ease-in-out hover:scale-110"
+                            href="/Sprites/Sweets_Concept.webp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                className="rounded-xl drop-shadow-lg"
+                                src="/Sprites/Sweets_Concept.webp"
+                                width={250}
+                                height={250}
+                                alt="Sweet Food Concept Image"
+                            />
+                        </a>
+
+                        <a
+                            className="transition-transform ease-in-out hover:scale-110"
+                            href="/Sprites/Savory_Concept.webp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                className="rounded-xl drop-shadow-lg"
+                                src="/Sprites/Savory_Concept.webp"
+                                width={250}
+                                height={250}
+                                alt="Savory Food Concept Image"
+                            />
+                        </a>
+
+                        <a
+                            className="transition-transform ease-in-out hover:scale-110"
+                            href="/Sprites/Official_Clover_Concept_Art.png"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                className="rounded-xl drop-shadow-lg"
+                                src="/Sprites/Official_Clover_Concept_Art.png"
+                                width={250}
+                                height={250}
+                                alt="Clover Concept Image"
+                            />
+                        </a>
+
                        
 
                     </div>
@@ -242,6 +321,21 @@ export default function PlipPets() {
                             width={200}
                             height={200}
                             alt="Beta Home Screen Image"
+                        />
+                        </a>
+
+                        <a
+                        className="transition-transform ease-in-out hover:scale-110"
+                        href="/Sprites/Capymel_Hungry_Concept.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <Image
+                            className="rounded-xl drop-shadow-lg"
+                            src="/Sprites/Capymel_Hungry_Concept.png"
+                            width={200}
+                            height={200}
+                            alt="Capymel thinking about crepe Concept Image"
                         />
                         </a>
 
@@ -331,8 +425,29 @@ export default function PlipPets() {
                         There are three major gameplay elements featured, being
                         <b> Snack Time, Bath Time,</b> and <b> Play Time. </b>
                         Each of the core features allows for the user to interact with
-                        their Plip, complete with a responsive UI.
+                        their Plip, complete with a responsive UI. Snack time will alow you to
+                        decorate and feed your Plips delicious <b>Crepes</b>. Capymel loves to 
+                        crepes with lots of fruit!
                     </p>
+                    
+                </div>
+
+                <div className="flex bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 my-5 p-4 rounded-2xl items-center border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 font-regular text-align-centerr">
+
+                    <a
+                        className="transition-transform ease-in-out hover:scale-110 mx-auto"
+                        href="/Sprites/Plip_Pets_Crepe_Banner.png"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        <Image
+                            className="rounded-xl drop-shadow-lg justify-items-center"
+                            src="/Sprites/Plip_Pets_Crepe_Banner.png"
+                            width={600}
+                            height={600}
+                            alt="Capymel thinking about crepe Concept Image"
+                        />
+                        </a>
                     
                 </div>
 
