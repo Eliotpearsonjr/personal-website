@@ -111,54 +111,6 @@ export default function PlipPets() {
 
                         <a
                             className="transition-transform ease-in-out hover:scale-110"
-<<<<<<< HEAD
-                            href="/Sprites/Sweets_Concept.webp"
-                            target="_self"
-                            rel="noopener noreferrer"
-                        >
-                            <Image
-                                className="rounded-xl drop-shadow-lg"
-                                src="/Sprites/Sweets_Concept.webp"
-                                width={250}
-                                height={250}
-                                alt="Sweet Food Concept Image"
-                            />
-                        </a>
-
-                        <a
-                            className="transition-transform ease-in-out hover:scale-110"
-                            href="/Sprites/Savory_Concept.webp"
-                            target="_self"
-                            rel="noopener noreferrer"
-                        >
-                            <Image
-                                className="rounded-xl drop-shadow-lg"
-                                src="/Sprites/Savory_Concept.webp"
-                                width={250}
-                                height={250}
-                                alt="Savory Food Concept Image"
-                            />
-                        </a>
-
-                        <a
-                            className="transition-transform ease-in-out hover:scale-110"
-                            href="/Sprites/Official_Clover_Concept_Art.png"
-                            target="_self"
-                            rel="noopener noreferrer"
-                        >
-                            <Image
-                                className="rounded-xl drop-shadow-lg"
-                                src="/Sprites/Official_Clover_Concept_Art.png"
-                                width={250}
-                                height={250}
-                                alt="Clover Concept Image"
-                            />
-                        </a>
-
-                        <a
-                            className="transition-transform ease-in-out hover:scale-110"
-=======
->>>>>>> 31b3f23 (adding more concept images of Capymel, Azufly, and Crepe ideas)
                             href="/Sprites/Capymel_Postcard_B.png"
                             target="_self"
                             rel="noopener noreferrer"
