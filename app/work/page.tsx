@@ -35,12 +35,12 @@ export default function Work() {
             
             {/* list of projects */}
             <CandyFrame>
-                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-orange-50 dark:bg-stone-800 rounded-xl items-center justify-items-center min-h-screen p-4 gap-8 font-[family-name:var(--font-geist-sans)]">
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-orange-50 dark:bg-stone-800 rounded-xl items-center justify-items-center p-5 gap-4 font-[family-name:var(--font-geist-sans)]">
 
                     <a
                         className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
                         style={{
-                            ['--image-mask' as any]: "url('/Sprites/Lets_Go_Logo_Sticker.webp')",
+                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_RoboCEO_26.png')",
                         }}
                         href="/project_pages/lets_go"
                         target="_self"
@@ -49,10 +49,10 @@ export default function Work() {
                         <div className="motion-target">
                             <Image
                             className="drop-shadow-lg"
-                            src="/Sprites/Lets_Go_Logo_Sticker.webp"
-                            width={400}
+                            src="/Sprites/thumbnails/Thumbnail_RoboCEO_26.png"
+                            width={600}
                             height={400}
-                            alt="LET'S GO Logo Button"
+                            alt="LET'S GO RoboCEO Design Work Button"
                             />
                         </div>
                     </a>
@@ -60,7 +60,7 @@ export default function Work() {
                     <a
                         className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
                         style={{
-                            ['--image-mask' as any]: "url('/Sprites/Plip_Pets_Logo_Sticker_Transparent_.webp')",
+                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_STEM_Pathways.png')",
                         }}
                         href="/project_pages/plip_pets"
                         target="_self"
@@ -69,10 +69,10 @@ export default function Work() {
                         <div className="motion-target">
                             <Image
                             className="drop-shadow-lg"
-                            src="/Sprites/Plip_Pets_Logo_Sticker_Transparent_.webp"
-                            width={500}
-                            height={300}
-                            alt="Plip Pets Logo Button"
+                            src="/Sprites/thumbnails/Thumbnail_STEM_Pathways.png"
+                            width={600}
+                            height={400}
+                            alt="LET'S GO STEM Pathways Design Work Button"
                             />
                         </div>
                     </a>
@@ -80,7 +80,7 @@ export default function Work() {
                     <a
                         className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
                         style={{
-                            ['--image-mask' as any]: "url('/Sprites/Swatches_Logo_Big.webp')",
+                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_CCL_Playbook.png')",
                         }}
                         href="/project_pages/swatches"
                         target="_self"
@@ -89,10 +89,10 @@ export default function Work() {
                         <div className="motion-target">
                             <Image
                             className="drop-shadow-lg"
-                            src="/Sprites/Swatches_Logo_Big.webp"
-                            width={500}
-                            height={500}
-                            alt="Swatches Logo Button"
+                            src="/Sprites/thumbnails/Thumbnail_CCL_Playbook.png"
+                            width={600}
+                            height={400}
+                            alt="Career Connected Learning Playbook Design Work Button"
                             />
                         </div>
                     </a>
@@ -100,7 +100,7 @@ export default function Work() {
                     <a
                         className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
                         style={{
-                            ['--image-mask' as any]: "url('/Sprites/Reward_Sprout_Big_Icon.webp')",
+                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_Football.png')",
                         }}
                         href="/project_pages/beer_n_bots"
                         target="_self"
@@ -109,10 +109,10 @@ export default function Work() {
                         <div className="motion-target">
                             <Image
                             className="drop-shadow-lg"
-                            src="/Sprites/Reward_Sprout_Big_Icon.webp"
-                            width={200}
-                            height={200}
-                            alt="Reward Sprout Logo Button"
+                            src="/Sprites/thumbnails/Thumbnail_Football.png"
+                            width={600}
+                            height={400}
+                            alt="Football Portfolio Design Work Button"
                             />
                         </div>
                     </a>
@@ -120,7 +120,47 @@ export default function Work() {
                     <a
                         className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
                         style={{
-                            ['--image-mask' as any]: "url('/Sprites/Mix_N_Munch_App_Icon.webp')",
+                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_LETSGO.png')",
+                        }}
+                        href="/project_pages/lets_go"
+                        target="_self"
+                        rel="noopener noreferrer"
+                        >
+                        <div className="motion-target">
+                            <Image
+                            className="drop-shadow-lg"
+                            src="/Sprites/thumbnails/Thumbnail_LETSGO.png"
+                            width={600}
+                            height={400}
+                            alt="LET'S GO Design Work Button"
+                            />
+                        </div>
+                    </a>
+
+                    <a
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
+                        style={{
+                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_Swatches.png')",
+                        }}
+                        href="/project_pages/swatches"
+                        target="_self"
+                        rel="noopener noreferrer"
+                        >
+                        <div className="motion-target">
+                            <Image
+                            className="drop-shadow-lg"
+                            src="/Sprites/thumbnails/Thumbnail_Swatches.png"
+                            width={600}
+                            height={400}
+                            alt="Swatches App Branding and Design Work Button"
+                            />
+                        </div>
+                    </a>
+
+                    <a
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
+                        style={{
+                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_JHOC.png')",
                         }}
                         href="/project_pages/beer_n_bots"
                         target="_self"
@@ -129,29 +169,9 @@ export default function Work() {
                         <div className="motion-target">
                             <Image
                             className="drop-shadow-lg"
-                            src="/Sprites/Mix_N_Munch_App_Icon.webp"
-                            width={200}
-                            height={200}
-                            alt="Mix N Munch Logo Button"
-                            />
-                        </div>
-                    </a>
-
-                    <a
-                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
-                        style={{
-                            ['--image-mask' as any]: "url('/Sprites/Beer_N_Bots_Logo_Sticker.webp')",
-                        }}
-                        href="/project_pages/beer_n_bots"
-                        target="_self"
-                        rel="noopener noreferrer"
-                        >
-                        <div className="motion-target">
-                            <Image
-                            className="drop-shadow-lg"
-                            src="/Sprites/Beer_N_Bots_Logo_Sticker.webp"
-                            width={500}
-                            height={300}
+                            src="/Sprites/thumbnails/Thumbnail_JHOC.png"
+                            width={600}
+                            height={400}
                             alt="Beer N Bots Logo Button"
                             />
                         </div>
