@@ -42,7 +42,7 @@ export default function Work() {
                         style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_RoboCEO_26.png')",
                         }}
-                        href="/project_pages/lets_go"
+                        href="/project_pages/roboceo"
                         target="_self"
                         rel="noopener noreferrer"
                         >
