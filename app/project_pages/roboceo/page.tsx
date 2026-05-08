@@ -123,8 +123,7 @@ export default function Roboceo() {
               tech and business leaders from across the greater Baltimore-DC
               area, RoboCEO serves as amazing, action packed night of
               networking and fun for the whole family! I used <b>Canva </b>
-              and <b>Procreate </b> to create refreshing designs for the
-              organization's digital presence.
+              to create refreshing designs for the organization's digital presence.
             </p>
           </div>
 
