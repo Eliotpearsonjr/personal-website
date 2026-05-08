@@ -62,7 +62,7 @@ export default function Work() {
                         style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_STEM_Pathways.png')",
                         }}
-                        href="/project_pages/plip_pets"
+                        href="/project_pages/pathways"
                         target="_self"
                         rel="noopener noreferrer"
                         >
