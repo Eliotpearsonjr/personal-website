@@ -38,7 +38,7 @@ export default function Work() {
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-orange-50 dark:bg-stone-800 rounded-xl items-center justify-items-center p-5 gap-4 font-[family-name:var(--font-geist-sans)]">
 
                     <a
-                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
                         style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_RoboCEO_26.png')",
                         }}
@@ -58,7 +58,7 @@ export default function Work() {
                     </a>
 
                     <a
-                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
                         style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_STEM_Pathways.png')",
                         }}
@@ -78,7 +78,7 @@ export default function Work() {
                     </a>
 
                     <a
-                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
                         style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_CCL_Playbook.png')",
                         }}
@@ -98,7 +98,7 @@ export default function Work() {
                     </a>
 
                     <a
-                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
                         style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_Football.png')",
                         }}
@@ -118,7 +118,7 @@ export default function Work() {
                     </a>
 
                     <a
-                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
                         style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_LETSGO.png')",
                         }}
@@ -138,7 +138,7 @@ export default function Work() {
                     </a>
 
                     <a
-                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
                         style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_Swatches.png')",
                         }}
@@ -158,7 +158,7 @@ export default function Work() {
                     </a>
 
                     <a
-                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-120"
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
                         style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_JHOC.png')",
                         }}
