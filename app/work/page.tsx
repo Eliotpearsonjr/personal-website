@@ -120,6 +120,26 @@ export default function Work() {
                     <a
                         className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
                         style={{
+                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_Plip_Pets.png')",
+                        }}
+                        href="/project_pages/plip_pets"
+                        target="_self"
+                        rel="noopener noreferrer"
+                        >
+                        <div className="motion-target">
+                            <Image
+                            className="drop-shadow-lg"
+                            src="/Sprites/thumbnails/Thumbnail_Plip_Pets.png"
+                            width={600}
+                            height={400}
+                            alt="Beer N Bots Logo Button"
+                            />
+                        </div>
+                    </a>
+
+                    <a
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
+                        style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_LETSGO.png')",
                         }}
                         href="/project_pages/lets_go"
@@ -170,6 +190,26 @@ export default function Work() {
                             <Image
                             className="drop-shadow-lg"
                             src="/Sprites/thumbnails/Thumbnail_JHOC.png"
+                            width={600}
+                            height={400}
+                            alt="Beer N Bots Logo Button"
+                            />
+                        </div>
+                    </a>
+
+                    <a
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
+                        style={{
+                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_Reward_Sprout.png')",
+                        }}
+                        href="/project_pages/beer_n_bots"
+                        target="_self"
+                        rel="noopener noreferrer"
+                        >
+                        <div className="motion-target">
+                            <Image
+                            className="drop-shadow-lg"
+                            src="/Sprites/thumbnails/Thumbnail_Sprout.png"
                             width={600}
                             height={400}
                             alt="Beer N Bots Logo Button"
