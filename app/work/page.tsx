@@ -82,7 +82,7 @@ export default function Work() {
                         style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_CCL_Playbook.png')",
                         }}
-                        href="/project_pages/swatches"
+                        href="/project_pages/ccl_playbook"
                         target="_self"
                         rel="noopener noreferrer"
                         >
