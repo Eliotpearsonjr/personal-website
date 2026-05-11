@@ -127,6 +127,23 @@ export default function CCLPlaybook() {
 
           {/* Stamps with logos of software products used */}
           <div className="flex flex-row ml-5 mb-5">
+
+            <a
+                className="transition-transform ease-in-out hover:scale-120"
+                href="https://www.flipsnack.com/8757576F8D6/ccl-playbook"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <Image
+                    className="rotate-354 drop-shadow-lg"
+                    src="/Sprites/Playbook_Stamp.png"
+                    width={250}
+                    height={250}
+                    alt="Swatches Stamp Button"
+                />
+                <p className="text-lg font-semibold">Look at the Playbook here!</p>
+            </a>
+
             <a className="text-center">
               <Image
                 className="rotate-4"
