@@ -63,14 +63,28 @@ export default function STEMPathways() {
         type: "image",
         src: "/Sprites/pathways/Baltimore_Promo.png",
         thumbnail:"",
-        alt: "RoboCEO Promo Material",
+        alt: "STEM Pathways Baltimore Social Post",
     },
 
     {
         type: "image",
         src: "/Sprites/pathways/Washington_DC_Promo.png",
         thumbnail:"",
-        alt: "RoboCEO Driver Card Example",
+        alt: "STEM Pathways DC Social Post",
+    },
+
+    {
+      type: "image",
+      src: "/Sprites/pathways/STEM_Pathways_Graphic.png",
+      thumbnail:"",
+      alt: "Primary Pathways Graphic",
+    },
+
+    {
+      type: "image",
+      src: "/Sprites/pathways/STEM_Pathways_Student_Journey.png",
+      thumbnail:"",
+      alt: "Student Journey Graphic",
     },
 
   ];
