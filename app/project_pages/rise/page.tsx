@@ -34,25 +34,25 @@ export default function Rise() {
     {
         type: "image",
         src: "/Sprites/rise/Donation_Banner_2.png",
-        alt: "RoboCEO Promo Material",
+        alt: "RISE Donation Banner",
     },
 
     {
         type: "image",
         src: "/Sprites/rise/Founder_Banner.png",
-        alt: "RoboCEO Driver Card Example",
+        alt: "RISE Founder Banner",
     },
 
     {
         type: "image",
         src: "/Sprites/rise/June_Newsletter_CLLCTIVgive_Updated.png",
-        alt: "RoboCEO Style Sheet",
+        alt: "RISE CLLCTIVGIVE campaign flyer",
     },
 
     {
         type: "image",
-        src: "/Sprites/rise/RISE_Corporate.png",
-        alt: "LET'S GO RoboCEO April 2026 Informational Flyer",
+        src: "/Sprites/rise/Rise_Corporate.png",
+        alt: "RISE Coporate Sponsorship Flyer",
     },
   ];
 
