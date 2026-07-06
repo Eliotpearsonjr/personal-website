@@ -218,6 +218,11 @@ export default function Work() {
                     </a>
                 </div>
             </CandyFrame>
+
+            <div className="justify-items-center items-center bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 mx-10 my-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular">
+                <p>© 2026 Eliot Pearson Jr. All rights reserved.</p>
+            </div>
+
         </div>
     );
 }
