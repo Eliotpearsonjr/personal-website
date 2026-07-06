@@ -49,7 +49,7 @@ export default function Work() {
                         <div className="motion-target">
                             <Image
                             className="drop-shadow-lg"
-                            src="/Sprites/thumbnails/Thumbnail_RoboCEO_26.png"
+                            src="/Sprites/thumbnails/Thumbnail_RoboCEO_Spring_26.png"
                             width={600}
                             height={400}
                             alt="LET'S GO RoboCEO Design Work Button"
@@ -120,6 +120,26 @@ export default function Work() {
                     <a
                         className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
                         style={{
+                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_Arts_Rise.png')",
+                        }}
+                        href="/project_pages/rise"
+                        target="_self"
+                        rel="noopener noreferrer"
+                        >
+                        <div className="motion-target">
+                            <Image
+                            className="drop-shadow-lg"
+                            src="/Sprites/thumbnails/Thumbnail_Arts_Rise.png"
+                            width={600}
+                            height={400}
+                            alt="RISE Button"
+                            />
+                        </div>
+                    </a>
+
+                    <a
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
+                        style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_Plip_Pets.png')",
                         }}
                         href="/project_pages/plip_pets"
@@ -132,7 +152,7 @@ export default function Work() {
                             src="/Sprites/thumbnails/Thumbnail_Plip_Pets.png"
                             width={600}
                             height={400}
-                            alt="Beer N Bots Logo Button"
+                            alt="Plip Pets Button"
                             />
                         </div>
                     </a>
@@ -180,26 +200,6 @@ export default function Work() {
                     <a
                         className="transition-transform ease-in-out hover:scale-102"
                         style={{
-                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_JHOC.png')",
-                        }}
-                        // href="/project_pages/beer_n_bots"
-                        target="_self"
-                        rel="noopener noreferrer"
-                        >
-                        <div className="motion-target">
-                            <Image
-                            className="drop-shadow-lg"
-                            src="/Sprites/thumbnails/Thumbnail_JHOC_Locked.png"
-                            width={600}
-                            height={400}
-                            alt="Beer N Bots Logo Button"
-                            />
-                        </div>
-                    </a>
-
-                    <a
-                        className="transition-transform ease-in-out hover:scale-102"
-                        style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_Sprout.png')",
                         }}
                         // href="/project_pages/beer_n_bots"
@@ -212,7 +212,7 @@ export default function Work() {
                             src="/Sprites/thumbnails/Thumbnail_Reward_Sprout_Locked.png"
                             width={600}
                             height={400}
-                            alt="Beer N Bots Logo Button"
+                            alt="Reward Sprout Button LOCKED"
                             />
                         </div>
                     </a>
