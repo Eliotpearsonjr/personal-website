@@ -223,7 +223,7 @@ export default function STEMPathways() {
             <button
               type="button"
               onClick={closeLightbox}
-              className="absolute top-5 right-5 text-white text-5xl font-bold hover:scale-110 transition-transform"
+              className="absolute top-5 right-5 text-stone-500 dark:text-white text-5xl font-bold hover:scale-110 transition-transform"
               aria-label="Close lightbox"
             >
               ×
@@ -233,7 +233,7 @@ export default function STEMPathways() {
             <button
               type="button"
               onClick={showPreviousImage}
-              className="absolute left-4 sm:left-8 text-white text-5xl font-bold bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full transition-colors"
+              className="absolute left-4 sm:left-8 text-white text-5xl font-bold bg-stone-500 hover:bg-pink-300 px-4 py-2 rounded-full transition-colors"
               aria-label="Previous image"
             >
               ‹
@@ -268,7 +268,7 @@ export default function STEMPathways() {
             <button
               type="button"
               onClick={showNextImage}
-              className="absolute right-4 sm:right-8 text-white text-5xl font-bold bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full transition-colors"
+              className="absolute right-4 sm:right-8 text-white text-5xl font-bold bg-stone-500 hover:bg-pink-300 px-4 py-2 rounded-full transition-colors"
               aria-label="Next image"
             >
               ›
