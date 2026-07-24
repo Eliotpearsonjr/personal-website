@@ -8,7 +8,7 @@ import Image from "next/image";
 function CandyFrame({ children }: { children: React.ReactNode }) {
     return (
       <div
-        className="rounded-2xl p-[10px] sm:p-1 w-90"
+        className="rounded-2xl p-[10px] sm:p-1 mx-5"
         style={{
           background:
             "repeating-linear-gradient(45deg, rgba(255, 182, 193, 0.8) 0 14px, rgba(255, 255, 255, 0.8) 14px 28px, rgb(150, 218, 241, 0.8) 28px 42px, rgb(255, 255, 255, 0.8) 42px 56px)",
@@ -39,63 +39,74 @@ export default function Contact() {
             {/* Section Title - Social Media Buttons */}
 
             <CandyFrame>
-                <div className="bg-orange-50 dark:bg-stone-700 my-2 mx-2 py-8 rounded-xl">
+            <div className="bg-orange-50 dark:bg-stone-700 my-1 mx-1 px-3 rounded-xl">
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 sm:p-4 justify-items-left rounded-sm font-[family-name:var(--font-geist-sans)]">
 
-                    <div className="flex flex-col sm:flex-col gap-4 w-full lg:w-full my-5 items-center">
-                        <a
-                            className="font-semibold text-4xl cursor-pointer transition-transform ease-in-out hover:scale-105 text-center w-80"
-                            href="https://www.linkedin.com/in/eliot-pearson-jr-482270311"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >
-                            <p className="bg-gradient-to-r from-orange-50 dark:from-stone-700 to-blue-200 dark:to-blue-300/80 border-2 border-blue-200 dark:border-blue-200 text-stone-700/90 dark:text-white mx-5 p-4 rounded-2xl text-2xl font-regular">
-                                <b>LinkedIn</b>
-                            </p>
-                        </a>
+                {/* LinkedIn */}
+                <a
+                    className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
+                    href="https://www.linkedin.com/in/eliot-pearson-jr-482270311/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
 
-                        <a
-                            className="font-semibold text-4xl cursor-pointer transition-transform ease-in-out hover:scale-105 text-center w-80"
-                            href="https://www.tiktok.com/@eliotsquared"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >
-                            <p className="bg-gradient-to-r from-orange-50 dark:from-stone-700 to-fuchsia-200 dark:to-fuchsia-300/80 border-2 border-fuchsia-200 dark:border-fuchsia-200 text-stone-700/90 dark:text-white mx-5 p-4 rounded-2xl text-2xl font-regular">
-                                <b>TikTok</b>
-                            </p>
-                        </a>
+                    <p className="bg-blue-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">LinkedIn</p>
+                    <Image 
+                        className="rotate-355 drop-shadow-lg overflow-hidden"
+                        src="/Sprites/Projects_Sticker_Button.png"
+                        width={250}
+                        height={250}
+                        alt="LinkedIn Postcard Logo"
+                    />
 
-                        <a
-                            className="font-semibold text-4xl cursor-pointer transition-transform ease-in-out hover:scale-105 text-center w-80"
-                            href="https://www.instagram.com/bmore.like.el/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >
-                            <p className="bg-gradient-to-r from-orange-50 dark:from-stone-700 to-rose-200 dark:to-rose-300/80 border-2 border-rose-200 dark:border-rose-200 text-stone-700/90 dark:text-white mx-5 p-4 rounded-2xl text-2xl font-regular">
-                                <b>Instagram</b>
-                            </p>
-                        </a>
+                </a>
 
-                        <a
-                            className="font-semibold text-4xl cursor-pointer transition-transform ease-in-out hover:scale-105 text-center w-80"
-                            href="https://github.com/Eliotpearsonjr"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >
-                            <p className="bg-gradient-to-r from-orange-50 dark:from-stone-700 to-emerald-200 dark:to-emerald-300/80 border-2 border-emerald-200 dark:border-emerald-200 text-stone-700/90 dark:text-white mx-5 p-4 rounded-2xl text-2xl font-regular">
-                                <b>GitHub</b>
-                            </p>
-                        </a>
-                    </div>
+                {/* Instagram */}
+                <a
+                    className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
+                    href="https://www.instagram.com/bmore.like.el/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <p className="bg-rose-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">Instagram</p>
+                    <Image 
+                        className="drop-shadow-lg overflow-hidden"
+                        src="/Sprites/Capymel_Character_Tab.png"
+                        width={250}
+                        height={250}
+                        alt="Instagram Postcard Logo"
+                    />
+
+                </a>
+
+                {/* Github */}
+                <a
+                    className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
+                    href="https://github.com/Eliotpearsonjr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <p className="bg-orange-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">GitHub</p>
+                    <Image 
+                        className="rotate-10 drop-shadow-lg overflow-hidden"
+                        src="/Sprites/Contact_Sticker_Button.png"
+                        width={250}
+                        height={250}
+                        alt="Github Postcard Logo"
+                    />
+
+                </a>
+                        
                 </div>
+            </div>
             </CandyFrame>
 
-                   
-
-                <div className="justify-items-center items-center">
-                    <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 mx-10 my-10 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular"
-                    >If you have any business inquiries, please email me at <b>eliotnumber2@gmail.com</b>.
-                    Thanks for stopping by, share my website if you'd like!</p>
-                </div>   
+            {/* Section - Email Inquiries*/}
+            <div className="justify-items-center items-center">
+                <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 mx-5 my-10 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular"
+                >If you have any business inquiries, please email me at <b>eliotnumber2@gmail.com</b>.
+                Thanks for stopping by, share my website if you'd like!</p>
+            </div>   
             
         </div>
     );
