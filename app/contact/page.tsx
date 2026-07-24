@@ -50,10 +50,10 @@ export default function Contact() {
                     rel="noopener noreferrer"
                 >
 
-                    <p className="bg-blue-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">LinkedIn</p>
+                    <p className="bg-blue-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white mx-5">LinkedIn</p>
                     <Image 
-                        className="rotate-355 drop-shadow-lg overflow-hidden"
-                        src="/Sprites/Projects_Sticker_Button.png"
+                        className="drop-shadow-lg overflow-hidden rounded-2xl"
+                        src="/Sprites/Postcard_Linkedin_Logo.png"
                         width={250}
                         height={250}
                         alt="LinkedIn Postcard Logo"
@@ -68,10 +68,10 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <p className="bg-rose-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">Instagram</p>
+                    <p className="bg-rose-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white mx-5">Instagram</p>
                     <Image 
-                        className="drop-shadow-lg overflow-hidden"
-                        src="/Sprites/Capymel_Character_Tab.png"
+                        className="drop-shadow-lg overflow-hidden rounded-2xl"
+                        src="/Sprites/Postcard_Instagram_Logo.png"
                         width={250}
                         height={250}
                         alt="Instagram Postcard Logo"
@@ -86,10 +86,10 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <p className="bg-orange-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">GitHub</p>
+                    <p className="bg-orange-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white mx-5">GitHub</p>
                     <Image 
-                        className="rotate-10 drop-shadow-lg overflow-hidden"
-                        src="/Sprites/Contact_Sticker_Button.png"
+                        className="drop-shadow-lg overflow-hidden rounded-2xl"
+                        src="/Sprites/Postcard_GitHub_Logo.png"
                         width={250}
                         height={250}
                         alt="Github Postcard Logo"
