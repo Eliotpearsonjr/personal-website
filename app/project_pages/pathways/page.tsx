@@ -46,17 +46,17 @@ export default function STEMPathways() {
     },
 
     {
-        type: "video",
-        src: "/Sprites/pathways/Lapsed_Donor_Video.mp4",
-        thumbnail: "/Sprites/pathways/Lapsed_Donor_Thumbnail.png",
-        alt: "LET'S GO RoboCEO Promo Reel",
+        type: "image",
+        src: "/Sprites/pathways/LETSGO_STEM_Pathways_Branding_Style_Sheet.png",
+        thumbnail: "",
+        alt: "LET'S GO STEM Pathways Branding Style Sheet",
     },
 
     {
         type: "video",
         src: "/Sprites/pathways/LETSGO_Promo_Video.mp4",
         thumbnail: "/Sprites/pathways/LETSGO_Pathways_Promo_Thumbnail.png",
-        alt: "LET'S GO RoboCEO Promo Reel",
+        alt: "LET'S GO Donation Promo Reel",
     },
 
     {
@@ -68,7 +68,7 @@ export default function STEMPathways() {
 
     {
         type: "image",
-        src: "/Sprites/pathways/Washington_DC_Promo.png",
+        src: "/Sprites/pathways/STEM_Social_Final.png",
         thumbnail:"",
         alt: "STEM Pathways DC Social Post",
     },
