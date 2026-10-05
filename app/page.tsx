@@ -100,76 +100,60 @@ export default function Home() {
 
         {/* main menu, each page will open in the same tab */}
         <CandyFrame>
-          <div className="bg-orange-50 dark:bg-stone-700 my-1 mx-1 px-3 rounded-xl">
-              <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 sm:p-4 justify-items-left rounded-sm font-[family-name:var(--font-geist-sans)]">
+          <div className="bg-neutral-50 dark:bg-stone-700 my-1 mx-1 px-10 py-8 rounded-xl">
+              <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 sm:p-4 justify-items-left rounded-sm font-[family-name:var(--font-geist-sans)]">
 
+                {/* Projects Page Clickable Card*/}
                 <a
-                  className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
+                  className="flex flex-col items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                   href="/work"
                   target="_self"
                   rel="noopener noreferrer"
                 >
-
-                  <p className="bg-blue-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">Projects</p>
                   <Image 
-                      className="rotate-355 drop-shadow-lg overflow-hidden"
-                      src="/Sprites/Projects_Sticker_Button.png"
+                      className="rounded-2xl drop-shadow-lg overflow-hidden"
+                      src="/Sprites/menu/Menu_Card_Projects.png"
                       width={250}
                       height={250}
                       alt="Project Info Image"
                     />
-
+                  <p className="text-neutral-700 dark:text-neutral-100 p-4">Projects</p>
                 </a>
 
+                {/* Contact Page Clickable Card*/}
                 <a
-                  className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
-                  href="/characters"
-                  target="_self"
-                  rel="noopener noreferrer"
-                >
-                  <p className="bg-green-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">Characters</p>
-                  <Image 
-                      className="drop-shadow-lg overflow-hidden"
-                      src="/Sprites/Capymel_Character_Tab.png"
-                      width={250}
-                      height={250}
-                      alt="Characters Image"
-                    />
-
-              
-                </a>
-
-                <a
-                  className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
+                  className="flex flex-col items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                   href="/contact"
                   target="_self"
                   rel="noopener noreferrer"
                 >
-                  <p className="bg-orange-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">Contact</p>
+                  
                   <Image 
-                      className="rotate-10 drop-shadow-lg overflow-hidden"
-                      src="/Sprites/Contact_Sticker_Button.png"
+                      className="rounded-2xl drop-shadow-lg overflow-hidden"
+                      src="/Sprites/menu/Menu_Card_Contact_Light.png"
                       width={250}
                       height={250}
                       alt="Contact Info Image"
                     />
-
+                  <p className="text-neutral-700 dark:text-neutral-100 p-4">Contact</p>
                 </a>
 
+                {/* About Page Clickable Card*/}
                 <a
-                  className="flex flex-row items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
+                  className="flex flex-col items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
                   href="/about"
                   target="_self"
                   rel="noopener noreferrer"
                 >
-                  <p className="bg-rose-200 w-70 text-neutral-800 p-4 rounded-2xl shadow-md border-4 border-white">About</p>
+                  
                   <Image 
-                      className="rotate-5 drop-shadow-lg overflow-hidden"
-                      src="/Sprites/About_Sticker_Button.png"
+                      className="rounded-2xl drop-shadow-lg overflow-hidden"
+                      src="/Sprites/menu/Menu_Card_About.png"
                       width={250}
                       height={250}
                       alt="About Image"
                     />
+                  <p className="text-neutral-700 dark:text-neutral-100 p-4">About</p>
                 </a>          
               </div>
             </div>
