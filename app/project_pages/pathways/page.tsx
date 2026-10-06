@@ -33,37 +33,30 @@ export default function STEMPathways() {
   const galleryItems = [
     {
         type: "image",
-        src: "/Sprites/pathways/STEM_Pathways_Bmore_Flyer.png",
+        src: "/Sprites/pathways/STEM_Pathways_Splash_Blue.png",
         thumbnail:"",
         alt: "RoboCEO Promo Material",
     },
 
     {
         type: "image",
-        src: "/Sprites/pathways/STEM_Pathways_One_Pager.png",
+        src: "/Sprites/pathways/STEM_Pathways_Splash_Citrus.png",
         thumbnail:"",
         alt: "RoboCEO Driver Card Example",
     },
 
     {
         type: "image",
-        src: "/Sprites/pathways/LETSGO_STEM_Pathways_Branding_Style_Sheet.png",
+        src: "/Sprites/pathways/STEM_Pathways_Color_Block.png",
         thumbnail: "",
         alt: "LET'S GO STEM Pathways Branding Style Sheet",
     },
 
     {
-        type: "video",
-        src: "/Sprites/pathways/LETSGO_Promo_Video.mp4",
-        thumbnail: "/Sprites/pathways/LETSGO_Pathways_Promo_Thumbnail.png",
-        alt: "LET'S GO Donation Promo Reel",
-    },
-
-    {
-        type: "image",
-        src: "/Sprites/pathways/Baltimore_Promo.png",
-        thumbnail:"",
-        alt: "STEM Pathways Baltimore Social Post",
+      type: "image",
+      src: "/Sprites/pathways/STEM_Pathways_Social_Mockup_O.png",
+      thumbnail:"",
+      alt: "STEM Pathways Baltimore Social Post",
     },
 
     {
@@ -75,17 +68,54 @@ export default function STEMPathways() {
 
     {
       type: "image",
-      src: "/Sprites/pathways/STEM_Pathways_Graphic.png",
+      src: "/Sprites/pathways/STEM_Pathways_Social_Mockup_2.png",
       thumbnail:"",
-      alt: "Primary Pathways Graphic",
+      alt: "STEM Pathways Baltimore Social Post",
     },
 
     {
       type: "image",
-      src: "/Sprites/pathways/STEM_Pathways_Student_Journey.png",
+      src: "/Sprites/pathways/STEM_Pathways_Phone_Mockup.png",
+      thumbnail:"",
+      alt: "STEM Pathways Baltimore Social Post",
+    },
+
+    {
+      type: "image",
+      src: "/Sprites/pathways/STEM_Pathways_Nametag_Template.png",
+      thumbnail:"",
+      alt: "STEM Pathways Baltimore Social Post",
+    },
+
+    {
+      type: "image",
+      src: "/Sprites/pathways/STEM_Pathways_Nametag_Mockup.png",
+      thumbnail:"",
+      alt: "STEM Pathways Baltimore Social Post",
+    },
+
+    {
+      type: "image",
+      src: "/Sprites/pathways/MD_Robotics_Teams_Mobile_WP.png",
       thumbnail:"",
       alt: "Student Journey Graphic",
     },
+
+    {
+      type: "image",
+      src: "/Sprites/pathways/LETSGO_STEM_Pathways_Branding_Style_Sheet.png",
+      thumbnail:"",
+      alt: "Student Journey Graphic",
+    },
+
+    {
+      type: "video",
+      src: "/Sprites/pathways/LETSGO_Promo_Video.mp4",
+      thumbnail: "/Sprites/pathways/LETSGO_Pathways_Promo_Thumbnail.png",
+      alt: "LET'S GO Donation Promo Reel",
+    },
+
+    
 
   ];
 
@@ -115,67 +145,62 @@ export default function STEMPathways() {
 
   return (
     // inner postcard background
-    <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+    <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 mb-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
       {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
       <div className="flex flex-col">
-        <Image
-          className="mx-auto block w-screen mt-2 mb-7"
-          src="/Sprites/pathways/Pathways_Banner.png"
-          width={2000}
-          height={400}
-          alt="LET'S GO Logo Header"
-        />
+        
 
         {/* Section Title - STEM Pathways */}
-        <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
+        <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2 sm:justify-items-left md:justify-items-center lg:justify-items-center">
           <p className="text-4xl font-semibold">
             LET'S GO - STEM Pathways
           </p>
+
+          
+        </div>
+
+        
+
+        {/* Section Title - Promotional Materials */}
+        <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 sm:justify-items-left md:justify-items-center lg:justify-items-center">
+          <p className="text-3xl font-regular">Identity, Social Media Collateral, Short Form Video</p>
         </div>
 
         {/* Holds split subsections */}
-        <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
-          {/* Section Body - Summary */}
+        <div className="flex flex-row justify-center items-center">
 
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-            <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular">
-            LET'S GO STEM Pathways is more than summer learning—it's a launchpad to high-paying STEM careers
-            through 125 hours of paid, industry-aligned training in biomedical science, robotics, and 3D design. 
-            I utilized <b>Canva </b> to produce compelling recruitment and fundraising materials for the program.
-            </p>
-          </div>
+              {/* Section Body - Summary */}
+              <div className="flex flex-col sm:flex-row justify-center items-center w-full lg:w-full mb-5">
+                <p className="text-stone-800 dark:text-stone-100 mx-6 mb-5 p-4 text-left border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 transition-opacity duration-300 text-xl font-regular">
+                  I aimed to curate a bright and visually distinct aesthetic for this project, since STEM Pathways serves as LET'S GO's 
+                  flagship Summer program dedicated to teaching Robotics and 3D Design.
+                </p>
+              </div>
 
-          {/* Stamps with logos of software products used */}
-          <div className="flex flex-row ml-5 mb-5">
-            <a className="text-center">
-              <Image
-                className="rotate-4"
-                src="/Sprites/Canva_Stamp.png"
-                width={250}
-                height={250}
-                alt="Canva Logo Stamp"
-              />
-              <p className="text-lg font-semibold">Canva</p>
-            </a>
-          </div>
-        </div>
+              {/* Stamps with logos of software products used */}
+              <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row mb-2">
+                <a className="text-center">
+                  <Image
+                    className="rotate-4"
+                    src="/Sprites/Canva_Stamp.png"
+                    width={100}
+                    height={100}
+                    alt="Canva Logo Stamp"
+                  />
+                  <p className="text-lg font-semibold">Canva</p>
+                  
+                </a>
+              </div>
+            </div>
 
-        {/* Section Title - Promotional Materials */}
-        <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
-          <p className="text-2xl font-semibold">Promotional Materials</p>
-        </div>
-
-        <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 my-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 font-regular">
-          <p className="text-2xl font-regular">
-            I wanted to curate a bright and visually distinct aesthetic for this project, since STEM Pathways serves as LET'S GO's 
-            flagship Summer program! I edited a few videos to serve as fundraising tools to support and showcase programming.
-          </p>
-        </div>
+        
 
         {/* Responsive Gallery */}
         <CandyFrame>
           <div className="bg-stone-50 dark:bg-stone-700 my-2 mx-2 p-6 rounded-xl">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {galleryItems.map((item, index) => (
                 <button
                   key={item.src}
@@ -276,6 +301,8 @@ export default function STEMPathways() {
           </div>
         )}
       </div>
+
+      
     </div>
   );
 }
