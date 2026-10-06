@@ -33,37 +33,73 @@ export default function CCLPlaybook() {
   const galleryItems = [
     {
         type: "image",
-        src: "/Sprites/ccl_playbook/Playbook_Cover.png",
+        src: "/Sprites/ccl_playbook/CCL_Port_Cover.png",
         alt: "RoboCEO Promo Material",
     },
 
     {
         type: "image",
-        src: "/Sprites/ccl_playbook/Back_Cover_Page_Blue.png",
+        src: "/Sprites/ccl_playbook/CCL_Port_Back_Cover.png",
         alt: "RoboCEO Driver Card Example",
     },
 
     {
         type: "image",
-        src: "/Sprites/ccl_playbook/CCL_Playbook_Style_1.png",
+        src: "/Sprites/ccl_playbook/CCL_Port_Colors.png",
         alt: "RoboCEO Style Sheet",
     },
 
     {
         type: "image",
+        src: "/Sprites/ccl_playbook/CCL_Port_Banners.png",
+        alt: "LET'S GO RoboCEO April 2026 Informational Flyer",
+    },
+
+    {
+        type: "image",
+        src: "/Sprites/ccl_playbook/CCL_Port_Book_Mockup.png",
+        alt: "LET'S GO RoboCEO April 2026 Informational Flyer",
+    },
+
+    {
+        type: "image",
+        src: "/Sprites/ccl_playbook/CCL_Port_Icons.png",
+        alt: "LET'S GO RoboCEO April 2026 Informational Flyer",
+    },
+
+    {
+        type: "image",
+        src: "/Sprites/ccl_playbook/CCL_Port_Mockup_2.png",
+        alt: "LET'S GO RoboCEO April 2026 Informational Flyer",
+    },
+
+    {
+        type: "image",
+        src: "/Sprites/ccl_playbook/CCL_Port_Mockup_1.png",
+        alt: "LET'S GO RoboCEO April 2026 Informational Flyer",
+    },
+
+    {
+        type: "image",
+        src: "/Sprites/ccl_playbook/CCL_Port_Mockup_3.png",
+        alt: "LET'S GO RoboCEO April 2026 Informational Flyer",
+    },
+
+    {
+        type: "image",
+        src: "/Sprites/ccl_playbook/CCL_Playbook_Style_3.png",
+        alt: "LET'S GO RoboCEO April 2026 Informational Flyer",
+    },
+
+    {
+        type: "image",
+        src: "/Sprites/ccl_playbook/CCL_Playbook_Style_1.png",
+        alt: "LET'S GO RoboCEO April 2026 Informational Flyer",
+    },
+
+    {
+        type: "image",
         src: "/Sprites/ccl_playbook/CCL_Playbook_Style_2.png",
-        alt: "LET'S GO RoboCEO April 2026 Informational Flyer",
-    },
-
-    {
-        type: "image",
-        src: "/Sprites/ccl_playbook/Companion_OST_Programs_Corrected.png",
-        alt: "LET'S GO RoboCEO April 2026 Informational Flyer",
-    },
-
-    {
-        type: "image",
-        src: "/Sprites/ccl_playbook/Case_Studies_Page_Blank.png",
         alt: "LET'S GO RoboCEO April 2026 Informational Flyer",
     },
   ];
@@ -95,85 +131,90 @@ export default function CCLPlaybook() {
 
   return (
     // inner postcard background
-    <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+    <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 mb-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
       {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
       <div className="flex flex-col">
-        <Image
-          className="mx-auto block w-screen mt-2 mb-7"
-          src="/Sprites/ccl_playbook/CCL_Banner.png"
-          width={2000}
-          height={400}
-          alt="Career Connected Learning Playbook Header"
-        />
 
         {/* Section Title - RoboCEO */}
-        <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
+        <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2 sm:justify-items-left md:justify-items-center lg:justify-items-center">
           <p className="text-4xl font-semibold">
             The Career-Connected Learning Playbook
           </p>
         </div>
 
+        <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 sm:justify-items-left md:justify-items-center lg:justify-items-center">
+          <p className="text-3xl font-regular">Identity, Print, Digital Flipbook</p>
+        </div>
+
         {/* Holds split subsections */}
-        <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
-          {/* Section Body - Summary */}
-
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-            <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular">
-              The Career-Connected Learning Playbook serves as a step-by-step guide to educators on preparing their high school
-              aged youth for credntialling and workforce development. I used <b>Canva </b> to create refreshing designs for the
-              organization's digital presence.
-            </p>
-          </div>
-
-          {/* Stamps with logos of software products used */}
-          <div className="flex flex-row ml-5 mb-5">
-
-            <a
-                className="transition-transform ease-in-out hover:scale-120"
-                href="https://www.flipsnack.com/8757576F8D6/ccl-playbook"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <Image
-                    className="rotate-354 drop-shadow-lg"
-                    src="/Sprites/Playbook_Stamp.png"
-                    width={250}
-                    height={250}
-                    alt="Swatches Stamp Button"
-                />
-                <p className="text-lg font-semibold">Look at the Playbook here!</p>
-            </a>
-
-            <a className="text-center">
-              <Image
-                className="rotate-4"
-                src="/Sprites/Canva_Stamp.png"
-                width={250}
-                height={250}
-                alt="Canva Logo Stamp"
-              />
-              <p className="text-lg font-semibold">Canva</p>
-            </a>
-          </div>
-        </div>
-
-        {/* Section Title - Promotional Materials */}
-        <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
-          <p className="text-2xl font-semibold">Promotional Materials</p>
-        </div>
-
-        <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 my-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 font-regular">
-          <p className="text-2xl font-regular">
-            My goal for this project was to channel a vibrant aesthetic while maintaining an educational
+                <div className="flex flex-row justify-center items-center">
+        
+                      {/* Section Body - Summary */}
+                      <div className="flex flex-row sm:flex-row justify-center items-center w-full lg:w-full mb-5">
+                        <p className="text-stone-800 dark:text-stone-100 mx-6 mb-5 p-4 text-left border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 transition-opacity duration-300 text-xl font-regular">
+                        My goal for this project was to channel a vibrant aesthetic while maintaining an educational
             look and feel. Branding colors were utilized to draw the reader's attention to core
             information within each page.
-          </p>
+                        </p>
+                      </div>
+        
+                      {/* Stamps with logos of software products used */}
+                      <div className="flex flex-col sm:flex-cols-2 md:flex-row lg:flex-row mb-2">
+                        <a className="text-center">
+                          <Image
+                            className="rotate-4"
+                            src="/Sprites/Canva_Stamp.png"
+                            width={150}
+                            height={150}
+                            alt="Canva Logo Stamp"
+                          />
+                          <p className="text-lg font-semibold">Canva</p>
+                          
+                        </a>
+
+                        <a className="text-center">
+                          <Image
+                            className="rotate-356"
+                            src="/Sprites/Flipsnack_Stamp.png"
+                            width={150}
+                            height={150}
+                            alt="Flipsnack Logo Stamp"
+                          />
+                          <p className="text-lg font-semibold">Flipsnack</p>
+                          
+                        </a>
+
+                        <a
+                          className="transition-transform ease-in-out hover:scale-110"
+                          href="https://www.flipsnack.com/8757576F8D6/ccl-playbook"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                        <Image
+                            className="rotate-2 drop-shadow-lg"
+                            src="/Sprites/Playbook_Stamp.png"
+                            width={150}
+                            height={150}
+                            alt="Playbook Stamp Button"
+                        />
+                        <p className="text-lg font-semibold">View Playbook</p>
+                    </a>
+
+                        
+                      </div>
+                    </div>
+
+        {/* Holds split subsections */}
+        <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
+         
+
+          
         </div>
 
         {/* Responsive Gallery */}
         <CandyFrame>
           <div className="bg-stone-50 dark:bg-stone-700 my-2 mx-2 p-6 rounded-xl">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {galleryItems.map((item, index) => (
                 <button
                   key={item.src}

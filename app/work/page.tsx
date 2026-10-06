@@ -40,26 +40,6 @@ export default function Work() {
                     <a
                         className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
                         style={{
-                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_RoboCEO_26.png')",
-                        }}
-                        href="/project_pages/roboceo"
-                        target="_self"
-                        rel="noopener noreferrer"
-                        >
-                        <div className="motion-target">
-                            <Image
-                            className="drop-shadow-lg"
-                            src="/Sprites/thumbnails/Thumbnail_RoboCEO_Spring_26.png"
-                            width={600}
-                            height={400}
-                            alt="LET'S GO RoboCEO Design Work Button"
-                            />
-                        </div>
-                    </a>
-
-                    <a
-                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
-                        style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_STEM_Pathways_Large.png')",
                         }}
                         href="/project_pages/pathways"
@@ -93,6 +73,26 @@ export default function Work() {
                             width={600}
                             height={400}
                             alt="Career Connected Learning Playbook Design Work Button"
+                            />
+                        </div>
+                    </a>
+
+                    <a
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
+                        style={{
+                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_RoboCEO_26.png')",
+                        }}
+                        href="/project_pages/roboceo"
+                        target="_self"
+                        rel="noopener noreferrer"
+                        >
+                        <div className="motion-target">
+                            <Image
+                            className="drop-shadow-lg"
+                            src="/Sprites/thumbnails/Thumbnail_RoboCEO_Spring_26.png"
+                            width={600}
+                            height={400}
+                            alt="LET'S GO RoboCEO Design Work Button"
                             />
                         </div>
                     </a>
