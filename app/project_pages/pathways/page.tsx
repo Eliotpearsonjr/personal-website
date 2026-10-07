@@ -75,7 +75,21 @@ export default function STEMPathways() {
 
     {
       type: "image",
-      src: "/Sprites/pathways/STEM_Pathways_Phone_Mockup.png",
+      src: "/Sprites/pathways/STEM_Pathways_Laptop_2.png",
+      thumbnail:"",
+      alt: "STEM Pathways Baltimore Social Post",
+    },
+
+    {
+      type: "image",
+      src: "/Sprites/pathways/STEM_Pathways_Icons.png",
+      thumbnail:"",
+      alt: "STEM Pathways Baltimore Social Post",
+    },
+
+    {
+      type: "image",
+      src: "/Sprites/pathways/STEM_Pathways_Laptop_1.png",
       thumbnail:"",
       alt: "STEM Pathways Baltimore Social Post",
     },
@@ -90,6 +104,13 @@ export default function STEMPathways() {
     {
       type: "image",
       src: "/Sprites/pathways/STEM_Pathways_Nametag_Mockup.png",
+      thumbnail:"",
+      alt: "STEM Pathways Baltimore Social Post",
+    },
+
+    {
+      type: "image",
+      src: "/Sprites/pathways/STEM_Pathways_Phone_Mockup.png",
       thumbnail:"",
       alt: "STEM Pathways Baltimore Social Post",
     },
@@ -163,7 +184,7 @@ export default function STEMPathways() {
 
         {/* Section Title - Promotional Materials */}
         <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 sm:justify-items-left md:justify-items-center lg:justify-items-center">
-          <p className="text-3xl font-regular">Identity, Social Media Collateral, Short Form Video</p>
+          <p className="text-3xl font-regular">Identity, Social Media, Web Design, Short Form Video</p>
         </div>
 
         {/* Holds split subsections */}
@@ -188,6 +209,18 @@ export default function STEMPathways() {
                     alt="Canva Logo Stamp"
                   />
                   <p className="text-lg font-semibold">Canva</p>
+                  
+                </a> 
+
+                <a className="text-center">
+                  <Image
+                    className="rotate-356"
+                    src="/Sprites/Wix_Stamp.png"
+                    width={100}
+                    height={100}
+                    alt="Wix Logo Stamp"
+                  />
+                  <p className="text-lg font-semibold">Wix</p>
                   
                 </a>
               </div>

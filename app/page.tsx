@@ -98,6 +98,11 @@ export default function Home() {
 
         <PostcardTitle/>
 
+         {/* Occupational Line */}
+         <div className="text-stone-700 dark:text-white border-t-2 border-orange-900/10 dark:border-rose-300/10 pt-2 ml-7 mr-7 sm:justify-items-left md:justify-items-center lg:justify-items-center">
+          <p className="text-3xl font-regular">Graphic Designer, Brand Strategist, Web Designer</p>
+        </div>
+
         {/* main menu, each page will open in the same tab */}
         <CandyFrame>
           <div className="bg-neutral-50 dark:bg-stone-700 my-1 mx-1 px-10 py-8 rounded-xl">
