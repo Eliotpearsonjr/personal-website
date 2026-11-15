@@ -89,7 +89,7 @@ export default function Work() {
                         <div className="motion-target">
                             <Image
                             className="drop-shadow-lg"
-                            src="/Sprites/thumbnails/Thumbnail_RoboCEO_Spring_26.png"
+                            src="/Sprites/thumbnails/Thumbnail_MIM.png"
                             width={600}
                             height={400}
                             alt="LET'S GO RoboCEO Design Work Button"
@@ -120,6 +120,46 @@ export default function Work() {
                     <a
                         className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
                         style={{
+                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_Plip_Pets.png')",
+                        }}
+                        href="/project_pages/plip_pets"
+                        target="_self"
+                        rel="noopener noreferrer"
+                        >
+                        <div className="motion-target">
+                            <Image
+                            className="drop-shadow-lg"
+                            src="/Sprites/thumbnails/Thumbnail_Plip_Pets_Inner.png"
+                            width={600}
+                            height={400}
+                            alt="Plip Pets Button"
+                            />
+                        </div>
+                    </a>
+
+                    <a
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
+                        style={{
+                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_RoboCEO_26.png')",
+                        }}
+                        href="/project_pages/roboceo"
+                        target="_self"
+                        rel="noopener noreferrer"
+                        >
+                        <div className="motion-target">
+                            <Image
+                            className="drop-shadow-lg"
+                            src="/Sprites/thumbnails/Thumbnail_RoboCEO_Spring_26.png"
+                            width={600}
+                            height={400}
+                            alt="LET'S GO RoboCEO Design Work Button"
+                            />
+                        </div>
+                    </a>
+
+                    <a
+                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
+                        style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_Arts_Rise.png')",
                         }}
                         href="/project_pages/rise"
@@ -137,25 +177,7 @@ export default function Work() {
                         </div>
                     </a>
 
-                    <a
-                        className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
-                        style={{
-                            ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_Plip_Pets.png')",
-                        }}
-                        href="/project_pages/plip_pets"
-                        target="_self"
-                        rel="noopener noreferrer"
-                        >
-                        <div className="motion-target">
-                            <Image
-                            className="drop-shadow-lg"
-                            src="/Sprites/thumbnails/Thumbnail_Plip_Pets.png"
-                            width={600}
-                            height={400}
-                            alt="Plip Pets Button"
-                            />
-                        </div>
-                    </a>
+                    
 
                     <a
                         className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
@@ -197,6 +219,7 @@ export default function Work() {
                         </div>
                     </a>
 
+{ /*
                     <a
                         className="transition-transform ease-in-out hover:scale-102"
                         style={{
@@ -216,6 +239,9 @@ export default function Work() {
                             />
                         </div>
                     </a>
+
+*/}
+
                 </div>
             </CandyFrame>
 
