@@ -82,7 +82,7 @@ export default function Work() {
                         style={{
                             ['--image-mask' as any]: "url('/Sprites/thumbnails/Thumbnail_RoboCEO_26.png')",
                         }}
-                        href="/project_pages/roboceo"
+                        href="/project_pages/MIM"
                         target="_self"
                         rel="noopener noreferrer"
                         >
@@ -92,7 +92,7 @@ export default function Work() {
                             src="/Sprites/thumbnails/Thumbnail_MIM.png"
                             width={600}
                             height={400}
-                            alt="LET'S GO RoboCEO Design Work Button"
+                            alt="Math Identity Matters Design Work Button"
                             />
                         </div>
                     </a>
