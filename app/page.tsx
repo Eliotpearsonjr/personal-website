@@ -155,12 +155,15 @@ function LatestWorkGallery() {
                   // copies after the first are only there for the looping, so screen readers,
                   // keyboard users and reduced-motion users never see them
                   aria-hidden={copy > 0 ? true : undefined}
-                  className={`flex shrink-0 gap-5 pr-5${copy > 0 ? " motion-reduce:hidden" : ""}`}
+                  className={copy > 0 ? "flex shrink-0 motion-reduce:hidden" : "flex shrink-0"}
                 >
                   {latestWork.map((item) => (
                     <a
                       key={item.href}
-                      className="relative group shimmer-button shrink-0 w-64 sm:w-80 transition-transform ease-in-out hover:scale-130"
+                      // slide size: w-72 (phones) / sm:w-96 (larger screens).
+                      // mr-5 is the space after every slide, so the gap is identical everywhere, including where the loop restarts.
+                      // hover:z-10 / focus-visible:z-10 lift the active slide in front of its neighbors.
+                      className="relative group shimmer-button shrink-0 w-72 sm:w-96 mr-5 transition-transform ease-in-out hover:scale-130 hover:z-10 focus-visible:z-10"
                       style={{ "--image-mask": `url('${item.src}')` } as React.CSSProperties}
                       href={item.href}
                       target="_self"
@@ -173,7 +176,7 @@ function LatestWorkGallery() {
                           src={item.src}
                           width={600}
                           height={400}
-                          sizes="(min-width: 640px) 320px, 256px"
+                          sizes="(min-width: 640px) 384px, 288px"
                           alt={copy > 0 ? "" : item.alt}
                           draggable={false}
                         />
