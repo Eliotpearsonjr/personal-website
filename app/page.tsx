@@ -160,7 +160,7 @@ function LatestWorkGallery() {
                   {latestWork.map((item) => (
                     <a
                       key={item.href}
-                      className="relative group shimmer-button shrink-0 w-64 sm:w-80 transition-transform ease-in-out hover:scale-102"
+                      className="relative group shimmer-button shrink-0 w-64 sm:w-80 transition-transform ease-in-out hover:scale-130"
                       style={{ "--image-mask": `url('${item.src}')` } as React.CSSProperties}
                       href={item.href}
                       target="_self"
@@ -205,6 +205,9 @@ export default function Home() {
          <div className="text-stone-700 dark:text-white border-t-2 border-orange-900/10 dark:border-rose-300/10 pt-2 ml-7 mr-7 sm:justify-items-left md:justify-items-center lg:justify-items-center">
           <p className="text-3xl font-regular">Graphic Designer, Brand Strategist, Web Designer</p>
         </div>
+
+        {/* latest work, horizontally scrolling gallery */}
+        <LatestWorkGallery />
 
         {/* main menu, each page will open in the same tab */}
         <CandyFrame>
@@ -267,8 +270,7 @@ export default function Home() {
             </div>
           </CandyFrame>
 
-        {/* latest work, horizontally scrolling gallery */}
-        <LatestWorkGallery />
+        
       </div>
     </div>
     
