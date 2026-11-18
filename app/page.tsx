@@ -87,6 +87,80 @@ function FullBleedBanner({
   );
 }
 
+// latest portfolio work shown in the horizontally scrolling gallery
+const latestWork = [
+  {
+    href: "/project_pages/pathways",
+    src: "/Sprites/thumbnails/Thumbnail_STEM_Pathways_Large.png",
+    alt: "LET'S GO STEM Pathways Design Work",
+  },
+  {
+    href: "/project_pages/ccl_playbook",
+    src: "/Sprites/thumbnails/Thumbnail_CCL_Playbook.png",
+    alt: "Career Connected Learning Playbook Design Work",
+  },
+  {
+    href: "/project_pages/MIM",
+    src: "/Sprites/thumbnails/Thumbnail_MIM.png",
+    alt: "Math Identity Matters Design Work",
+  },
+  {
+    href: "/project_pages/football",
+    src: "/Sprites/thumbnails/Thumbnail_Football.png",
+    alt: "Football Portfolio Design Work",
+  },
+  {
+    href: "/project_pages/plip_pets",
+    src: "/Sprites/thumbnails/Thumbnail_Plip_Pets_Inner.png",
+    alt: "Plip Pets Design Work",
+  },
+];
+
+function LatestWorkGallery() {
+  return (
+    <div className="w-full min-w-0 max-w-5xl">
+      <CandyFrame>
+        <div className="bg-neutral-50 dark:bg-stone-700 my-1 mx-1 px-6 pt-6 pb-4 rounded-xl font-[family-name:var(--font-geist-sans)]">
+          <h2 className="text-2xl font-semibold text-center text-neutral-700 dark:text-neutral-100 mb-4">
+            Latest Work
+          </h2>
+
+          {/* scrolls sideways; snaps to each slide */}
+          <div
+            role="region"
+            aria-label="Latest work gallery. Scroll horizontally to see more."
+            tabIndex={0}
+            className="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-px-3 p-3 pb-4 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-rose-300"
+          >
+            {latestWork.map((item) => (
+              <a
+                key={item.href}
+                className="relative group shimmer-button shrink-0 snap-start w-64 sm:w-80 transition-transform ease-in-out hover:scale-102"
+                style={{ "--image-mask": `url('${item.src}')` } as React.CSSProperties}
+                href={item.href}
+                target="_self"
+                rel="noopener noreferrer"
+              >
+                <div className="motion-target">
+                  <Image
+                    className="drop-shadow-lg w-full h-auto"
+                    src={item.src}
+                    width={600}
+                    height={400}
+                    sizes="(min-width: 640px) 320px, 256px"
+                    alt={item.alt}
+                    draggable={false}
+                  />
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </CandyFrame>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 p-10 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
@@ -163,6 +237,9 @@ export default function Home() {
               </div>
             </div>
           </CandyFrame>
+
+        {/* latest work, horizontally scrolling gallery */}
+        <LatestWorkGallery />
       </div>
     </div>
     
