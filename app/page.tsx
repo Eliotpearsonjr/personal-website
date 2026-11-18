@@ -5,6 +5,47 @@ import Link from "next/link";
 // Eliot Pearson Jr
 // Developement Started: 5/2/25
 
+// slim white navigation header: name on the left, page tabs right beside it
+const navTabs = [
+  { label: "PROJECTS", href: "/work" },
+  { label: "ABOUT", href: "/about" },
+  { label: "CONTACT", href: "/contact" },
+];
+
+function SiteHeader() {
+  return (
+    <header className="w-full bg-white border-b border-stone-200">
+      <nav
+        aria-label="Main navigation"
+        className="mx-auto flex max-w-screen-2xl items-center gap-x-6 sm:gap-x-12 px-4 sm:px-8"
+      >
+        {/* name, top left; also links home */}
+        <Link
+          href="/"
+          className="py-4 text-lg sm:text-xl font-extrabold tracking-tight text-stone-900 whitespace-nowrap"
+        >
+          Eliot Pearson Jr
+        </Link>
+
+        {/* tabs; the bar under each one appears on hover/focus, like the reference */}
+        <ul className="flex items-stretch gap-x-5 sm:gap-x-9 self-stretch">
+          {navTabs.map((tab) => (
+            <li key={tab.href} className="flex">
+              <Link
+                href={tab.href}
+                className="group relative flex items-center text-xs sm:text-sm font-semibold tracking-widest text-stone-500 transition-colors hover:text-stone-900 focus-visible:text-stone-900"
+              >
+                {tab.label}
+                <span className="absolute inset-x-0 bottom-0 h-[3px] bg-rose-300 opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100" />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
 // cute candy stripe border for each gallery element
 function CandyFrame({ children }: { children: React.ReactNode }) {
   return (
@@ -192,6 +233,8 @@ function LatestWorkGallery() {
 
 export default function Home() {
   return (
+    <>
+    <SiteHeader />
     <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 p-10 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
       <div className="grid grid-rows font-semibold text-3xl items-center justify-items-center min-h-screen gap-5 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         
@@ -279,7 +322,7 @@ export default function Home() {
         
       </div>
     </div>
-    
+    </>
   );
 }
 
