@@ -181,7 +181,7 @@ function LatestWorkGallery() {
                     >
                       <div className="motion-target">
                         <Image
-                          className="drop-shadow-lg w-full h-auto"
+                          className="drop-shadow-lg w-full h-auto rounded-xl"
                           src={item.src}
                           width={600}
                           height={400}
@@ -220,9 +220,9 @@ export default function Home() {
           <p className="text-2xl font-regular mt-5">Graphic Designer, Brand Strategist, Web Designer</p>
         </div>
 
-        <div className="bg-pink-100 relative w-full max-w-screen text-stone-700 dark:text-white pb-10 sm:justify-items-left md:justify-items-center lg:justify-items-center">
+        <div className="bg-pink-100 dark:bg-neutral-200 relative w-full max-w-screen text-stone-700 dark:text-white pb-10 sm:justify-items-left md:justify-items-center lg:justify-items-center">
 
-          <h2 className="text-5xl font-semibold text-center text-neutral-700 dark:text-neutral-100 pt-10 my-6">
+          <h2 className="text-5xl font-semibold text-center text-neutral-700 dark:text-neutral-800 pt-10 my-6">
             Featured Work
           </h2>
 
