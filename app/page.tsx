@@ -134,9 +134,6 @@ function LatestWorkGallery() {
         }}
       >
         <div className="bg-neutral-50 dark:bg-stone-700 pt-6 pb-4 font-[family-name:var(--font-geist-sans)]">
-          <h2 className="text-2xl font-semibold text-center text-neutral-700 dark:text-neutral-100 mb-4">
-            Latest Work
-          </h2>
 
           {/* window onto the moving track; people who prefer reduced motion get a normal scrollable row instead */}
           <div
@@ -163,7 +160,7 @@ function LatestWorkGallery() {
                       // slide size: w-72 (phones) / sm:w-96 (larger screens).
                       // mr-5 is the space after every slide, so the gap is identical everywhere, including where the loop restarts.
                       // hover:z-10 / focus-visible:z-10 lift the active slide in front of its neighbors.
-                      className="relative group shimmer-button shrink-0 w-72 sm:w-96 mr-5 transition-transform ease-in-out hover:scale-130 hover:z-10 focus-visible:z-10"
+                      className="relative group shimmer-button shrink-0 w-72 sm:w-135 mr-5 transition-transform ease-in-out hover:scale-130 hover:z-10 focus-visible:z-10"
                       style={{ "--image-mask": `url('${item.src}')` } as React.CSSProperties}
                       href={item.href}
                       target="_self"
@@ -207,7 +204,13 @@ export default function Home() {
          {/* Occupational Line */}
          <div className="text-stone-700 dark:text-white border-t-2 border-orange-900/10 dark:border-rose-300/10 pt-2 ml-7 mr-7 sm:justify-items-left md:justify-items-center lg:justify-items-center">
           <p className="text-3xl font-regular">Graphic Designer, Brand Strategist, Web Designer</p>
+
+          <h2 className="text-2xl font-semibold text-center text-neutral-700 dark:text-neutral-100 mb-4">
+            Latest Work
+          </h2>
         </div>
+
+        
 
         {/* latest work, horizontally scrolling gallery */}
         <LatestWorkGallery />
