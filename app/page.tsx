@@ -74,7 +74,7 @@ function FullBleedBanner({
     // full-bleed banner
     <div className="relative flex justify-center w-full">
       {/* thin, responsive height */}
-      <div className="relative w-full max-w-screen h-20 sm:h-20 md:h-45 lg:h-55 overflow-hidden">
+      <div className="relative w-full max-w-screen h-35 sm:h-20 md:h-45 lg:h-65 overflow-hidden">
         <Image
           src={src}
           alt={alt}
@@ -83,7 +83,18 @@ function FullBleedBanner({
           className="object-cover object-center"
           priority={false}
         />
+
+          <div className="absolute inset-x-0 inset-y-0 flex items-center justify-right text-2xl sm:text-5xl ml-50 text-white">
+            <p>Curating iconic brand design that sticks.</p>
+          </div>
+          
+          <div className="absolute inset-x-0 inset-y-45 flex items-center justify-right text-xl sm:text-2xl ml-50 text-white">
+            <p>I blend design and visual storytelling to craft cohesive brand identities worth loving.</p>
+          </div>
+
+        
       </div>
+      
     </div>
   );
 }
@@ -196,21 +207,22 @@ export default function Home() {
     <>
     <SiteHeader />
     <div className="bg-neutral-50 dark:bg-stone-800 text-stone-700 dark:text-stone-100 pb-10 transition-opacity duration-300">
-      <div className="grid grid-rows font-semibold text-3xl items-center justify-items-center min-h-screen gap-5">
-        
-        
 
-        <FullBleedBanner src="/Sprites/Nymblu_Banner_Crop.png" />
+    <FullBleedBanner src="/Sprites/Nymblu_Banner_Crop.png" />
+
+      <div className="font-semibold text-3xl items-center justify-items-center min-h-screen gap-5">
+
+        
 
          {/* Occupational Line */}
          <div className="text-stone-700 dark:text-white sm:justify-items-left md:justify-items-center lg:justify-items-center">
-          <p className="text-4xl font-regular">Curating iconic brand design that sticks.</p>
-          <p className="text-2xl font-regular">Graphic Designer, Brand Strategist, Web Designer</p>
+
+          <p className="text-2xl font-regular mt-5">Graphic Designer, Brand Strategist, Web Designer</p>
         </div>
 
         <div className="bg-pink-100 relative w-full max-w-screen text-stone-700 dark:text-white pb-10 sm:justify-items-left md:justify-items-center lg:justify-items-center">
 
-          <h2 className="text-5xl font-semibold text-center text-neutral-700 dark:text-neutral-100 my-6">
+          <h2 className="text-5xl font-semibold text-center text-neutral-700 dark:text-neutral-100 pt-10 my-6">
             Featured Work
           </h2>
 
