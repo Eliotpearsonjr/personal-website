@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import SiteHeader from "./components/SiteHeader";
 // Personal Portfolio Website
 // Home Page
 // Eliot Pearson Jr
@@ -192,6 +193,8 @@ function LatestWorkGallery() {
 
 export default function Home() {
   return (
+    <>
+    <SiteHeader />
     <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 p-10 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
       <div className="grid grid-rows font-semibold text-3xl items-center justify-items-center min-h-screen gap-5 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         
@@ -279,7 +282,7 @@ export default function Home() {
         
       </div>
     </div>
-    
+    </>
   );
 }
 

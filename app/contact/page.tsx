@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SiteHeader from "../components/SiteHeader";
 // Personal Portfolio Website
 // Contact Page
 // Eliot Pearson Jr
@@ -24,6 +25,8 @@ function CandyFrame({ children }: { children: React.ReactNode }) {
 
 export default function Contact() {
     return (
+        <>
+        <SiteHeader />
         <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
             
             {/* Section Title - Contact Information */}
@@ -109,5 +112,6 @@ export default function Contact() {
             </div>   
             
         </div>
+        </>
     );
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SiteHeader from "../components/SiteHeader";
 // Personal Portfolio Website
 // About Page
 // Eliot Pearson Jr
@@ -7,6 +8,8 @@ import Image from "next/image";
 export default function About() {
     return (
     // inner postcard background
+        <>
+        <SiteHeader />
         <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
 
             {/* text box div, makes the top border of the postcard visible from the header */}
@@ -141,6 +144,7 @@ export default function About() {
             </div>
             
         </div>
+        </>
     );
 }
 
