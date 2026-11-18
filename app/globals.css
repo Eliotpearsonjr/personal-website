@@ -93,6 +93,32 @@ body {
   animation: rock 7s ease-in-out infinite;
 }
 
+/* Home page "Latest Work" gallery: a slow, seamless sideways scroll.
+   The track holds identical copies of the slides and slides by exactly one copy
+   (--loop-shift, set in page.tsx), so the loop restarts without a visible jump.
+   Change 50s to speed it up or slow it down. */
+@keyframes latest-work-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(var(--loop-shift)); }
+}
+
+.latest-work-track {
+  animation: latest-work-scroll 50s linear infinite;
+  will-change: transform;
+}
+
+/* stops while a project is hovered (or keyboard-focused), resumes when it's not */
+.latest-work-track:has(a:hover),
+.latest-work-track:has(a:focus-visible) {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .latest-work-track {
+    animation: none;
+  }
+}
+
 /* Force Patrick Hand for all text elements in the app content.
    Exempt code-like elements so monospace stays intact. */
    .apply-cute :where(*) :not(code, pre, kbd, samp) {

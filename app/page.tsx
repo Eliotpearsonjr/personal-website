@@ -87,6 +87,109 @@ function FullBleedBanner({
   );
 }
 
+// latest portfolio work shown in the horizontally scrolling gallery
+const latestWork = [
+  {
+    href: "/project_pages/pathways",
+    src: "/Sprites/thumbnails/Thumbnail_STEM_Pathways_Large.png",
+    alt: "LET'S GO STEM Pathways Design Work",
+  },
+  {
+    href: "/project_pages/ccl_playbook",
+    src: "/Sprites/thumbnails/Thumbnail_CCL_Playbook.png",
+    alt: "Career Connected Learning Playbook Design Work",
+  },
+  {
+    href: "/project_pages/MIM",
+    src: "/Sprites/thumbnails/Thumbnail_MIM.png",
+    alt: "Math Identity Matters Design Work",
+  },
+  {
+    href: "/project_pages/football",
+    src: "/Sprites/thumbnails/Thumbnail_Football.png",
+    alt: "Football Portfolio Design Work",
+  },
+  {
+    href: "/project_pages/plip_pets",
+    src: "/Sprites/thumbnails/Thumbnail_Plip_Pets_Inner.png",
+    alt: "Plip Pets Design Work",
+  },
+];
+
+// The track holds this many identical back-to-back copies of the slides. It loops by
+// sliding exactly one copy's width, and the extra copies keep it seamless on very wide screens.
+const GALLERY_COPIES = 4;
+
+function LatestWorkGallery() {
+  return (
+    // negative margins cancel the page's padding (40px, plus 80px more from sm up)
+    // so this band runs edge to edge across the screen
+    <div className="justify-self-stretch min-w-0 -mx-10 sm:-mx-30">
+      {/* same candy stripe as the other frames, as a band above and below */}
+      <div
+        className="py-[10px]"
+        style={{
+          background:
+            "repeating-linear-gradient(45deg, rgba(255, 182, 193, 0.8) 0 14px, rgba(255, 255, 255, 0.8) 14px 28px, rgb(150, 218, 241, 0.8) 28px 42px, rgb(255, 255, 255, 0.8) 42px 56px)",
+        }}
+      >
+        <div className="bg-neutral-50 dark:bg-stone-700 pt-6 pb-4 font-[family-name:var(--font-geist-sans)]">
+          <h2 className="text-2xl font-semibold text-center text-neutral-700 dark:text-neutral-100 mb-4">
+            Latest Work
+          </h2>
+
+          {/* window onto the moving track; people who prefer reduced motion get a normal scrollable row instead */}
+          <div
+            role="region"
+            aria-label="Latest work gallery"
+            className="overflow-x-clip motion-reduce:overflow-x-auto py-3"
+          >
+            {/* slowly slides sideways; paused while a project is hovered or focused (see globals.css) */}
+            <div
+              className="latest-work-track flex w-max"
+              style={{ "--loop-shift": `-${100 / GALLERY_COPIES}%` } as React.CSSProperties}
+            >
+              {Array.from({ length: GALLERY_COPIES }, (_, copy) => (
+                <div
+                  key={copy}
+                  // copies after the first are only there for the looping, so screen readers,
+                  // keyboard users and reduced-motion users never see them
+                  aria-hidden={copy > 0 ? true : undefined}
+                  className={`flex shrink-0 gap-5 pr-5${copy > 0 ? " motion-reduce:hidden" : ""}`}
+                >
+                  {latestWork.map((item) => (
+                    <a
+                      key={item.href}
+                      className="relative group shimmer-button shrink-0 w-64 sm:w-80 transition-transform ease-in-out hover:scale-102"
+                      style={{ "--image-mask": `url('${item.src}')` } as React.CSSProperties}
+                      href={item.href}
+                      target="_self"
+                      rel="noopener noreferrer"
+                      tabIndex={copy > 0 ? -1 : undefined}
+                    >
+                      <div className="motion-target">
+                        <Image
+                          className="drop-shadow-lg w-full h-auto"
+                          src={item.src}
+                          width={600}
+                          height={400}
+                          sizes="(min-width: 640px) 320px, 256px"
+                          alt={copy > 0 ? "" : item.alt}
+                          draggable={false}
+                        />
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 p-10 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
@@ -163,6 +266,9 @@ export default function Home() {
               </div>
             </div>
           </CandyFrame>
+
+        {/* latest work, horizontally scrolling gallery */}
+        <LatestWorkGallery />
       </div>
     </div>
     
