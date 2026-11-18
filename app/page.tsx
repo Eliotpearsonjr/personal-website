@@ -32,8 +32,8 @@ function PostcardTitle() {
         <h1
           className={[
             "text-center font-black tracking-tight",
-            "text-4xl sm:text-5xl md:text-6xl lg:text-7xl",
-            "bg-white",
+            "text-3xl sm:text-3xl md:text-4xl lg:text-5xl",
+            "bg-neutral-800",
             "bg-clip-text text-transparent",
             "drop-shadow-md",
           ].join(" ")}
@@ -74,7 +74,7 @@ function FullBleedBanner({
     // full-bleed banner
     <div className="relative flex justify-center w-full">
       {/* thin, responsive height */}
-      <div className="relative w-full max-w-screen-2xl h-15 sm:h-20 md:h-30 lg:h-35 rounded-xl overflow-hidden ring-3 ring-white dark:ring-rose-300/70">
+      <div className="relative w-full max-w-screen h-20 sm:h-20 md:h-45 lg:h-55 overflow-hidden">
         <Image
           src={src}
           alt={alt}
@@ -125,7 +125,7 @@ function LatestWorkGallery() {
   return (
     // negative margins cancel the page's padding (40px, plus 80px more from sm up)
     // so this band runs edge to edge across the screen
-    <div className="justify-self-stretch min-w-0 -mx-10 sm:-mx-30">
+    <div className="justify-self-stretch min-w-0">
       {/* same candy stripe as the other frames, as a band above and below */}
       <div
         className="py-[10px]"
@@ -195,28 +195,31 @@ export default function Home() {
   return (
     <>
     <SiteHeader />
-    <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 p-10 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
-      <div className="grid grid-rows font-semibold text-3xl items-center justify-items-center min-h-screen gap-5 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="bg-neutral-50 dark:bg-stone-800 text-stone-700 dark:text-stone-100 pb-10 transition-opacity duration-300">
+      <div className="grid grid-rows font-semibold text-3xl items-center justify-items-center min-h-screen gap-5">
         
         
 
         <FullBleedBanner src="/Sprites/Banner_Stripe.png" />
 
-        <PostcardTitle/>
-
          {/* Occupational Line */}
-         <div className="text-stone-700 dark:text-white border-t-2 border-orange-900/10 dark:border-rose-300/10 pt-2 ml-7 mr-7 sm:justify-items-left md:justify-items-center lg:justify-items-center">
+         <div className="text-stone-700 dark:text-white sm:justify-items-left md:justify-items-center lg:justify-items-center">
           <p className="text-3xl font-regular">Graphic Designer, Brand Strategist, Web Designer</p>
+        </div>
 
-          <h2 className="text-2xl font-semibold text-center text-neutral-700 dark:text-neutral-100 mb-4">
-            Latest Work
+        <div className="bg-pink-100 relative w-full max-w-screen text-stone-700 dark:text-white pt-5 pb-10 sm:justify-items-left md:justify-items-center lg:justify-items-center">
+
+          <h2 className="text-5xl font-semibold text-center text-neutral-700 dark:text-neutral-100 my-7">
+            Featured Work
           </h2>
+
+          {/* latest work, horizontally scrolling gallery */}
+        <LatestWorkGallery />
         </div>
 
         
 
-        {/* latest work, horizontally scrolling gallery */}
-        <LatestWorkGallery />
+        
 
         {/* main menu, each page will open in the same tab */}
         <CandyFrame>
