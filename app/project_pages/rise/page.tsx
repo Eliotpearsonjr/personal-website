@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import SiteHeader from "../../components/SiteHeader";
 
 // Personal Portfolio Website
 // RISE Arts Center of Baltimore Subpage
@@ -83,6 +84,8 @@ export default function Rise() {
 
   return (
     // inner postcard background
+    <>
+    <SiteHeader />
     <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
       {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
       <div className="flex flex-col">
@@ -247,6 +250,7 @@ export default function Rise() {
         )}
       </div>
     </div>
+    </>
   );
 }
 

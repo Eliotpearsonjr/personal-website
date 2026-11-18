@@ -1,52 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import SiteHeader from "./components/SiteHeader";
 // Personal Portfolio Website
 // Home Page
 // Eliot Pearson Jr
 // Developement Started: 5/2/25
-
-// slim white navigation header: name on the left, page tabs right beside it
-const navTabs = [
-  { label: "PROJECTS", href: "/work" },
-  { label: "ABOUT", href: "/about" },
-  { label: "CONTACT", href: "/contact" },
-];
-
-function SiteHeader() {
-  // sticky: stays pinned to the top of the screen while the page scrolls under it
-  return (
-    <header className="sticky top-0 z-50 w-full bg-white border-b border-stone-200">
-      <nav
-        aria-label="Main navigation"
-        // h-15 (60px) is fixed so the bar keeps its size however large the text is
-        className="mx-auto flex h-15 max-w-screen-2xl items-center gap-x-4 sm:gap-x-12 px-4 sm:px-8"
-      >
-        {/* name, top left; also links home */}
-        <Link
-          href="/"
-          className="text-xl sm:text-3xl font-extrabold tracking-tight text-stone-900 whitespace-nowrap"
-        >
-          Eliot Pearson Jr
-        </Link>
-
-        {/* tabs; the bar under each one appears on hover/focus, like the reference */}
-        <ul className="flex items-stretch gap-x-3 sm:gap-x-9 self-stretch">
-          {navTabs.map((tab) => (
-            <li key={tab.href} className="flex">
-              <Link
-                href={tab.href}
-                className="group relative flex items-center text-sm sm:text-lg font-semibold tracking-wider sm:tracking-widest text-stone-500 transition-colors hover:text-stone-900 focus-visible:text-stone-900"
-              >
-                {tab.label}
-                <span className="absolute inset-x-0 bottom-0 h-[3px] bg-rose-300 opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100" />
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
-  );
-}
 
 // cute candy stripe border for each gallery element
 function CandyFrame({ children }: { children: React.ReactNode }) {
