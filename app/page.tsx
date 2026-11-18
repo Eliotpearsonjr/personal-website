@@ -200,16 +200,17 @@ export default function Home() {
         
         
 
-        <FullBleedBanner src="/Sprites/Banner_Stripe.png" />
+        <FullBleedBanner src="/Sprites/Nymblu_Banner_Crop.png" />
 
          {/* Occupational Line */}
          <div className="text-stone-700 dark:text-white sm:justify-items-left md:justify-items-center lg:justify-items-center">
-          <p className="text-3xl font-regular">Graphic Designer, Brand Strategist, Web Designer</p>
+          <p className="text-4xl font-regular">Curating iconic brand design that sticks.</p>
+          <p className="text-2xl font-regular">Graphic Designer, Brand Strategist, Web Designer</p>
         </div>
 
-        <div className="bg-pink-100 relative w-full max-w-screen text-stone-700 dark:text-white pt-5 pb-10 sm:justify-items-left md:justify-items-center lg:justify-items-center">
+        <div className="bg-pink-100 relative w-full max-w-screen text-stone-700 dark:text-white pb-10 sm:justify-items-left md:justify-items-center lg:justify-items-center">
 
-          <h2 className="text-5xl font-semibold text-center text-neutral-700 dark:text-neutral-100 my-7">
+          <h2 className="text-5xl font-semibold text-center text-neutral-700 dark:text-neutral-100 my-6">
             Featured Work
           </h2>
 
@@ -217,72 +218,7 @@ export default function Home() {
         <LatestWorkGallery />
         </div>
 
-        
 
-        
-
-        {/* main menu, each page will open in the same tab */}
-        <CandyFrame>
-          <div className="bg-neutral-50 dark:bg-stone-700 my-1 mx-1 px-10 py-8 rounded-xl">
-              <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 sm:p-4 justify-items-left rounded-sm font-[family-name:var(--font-geist-sans)]">
-
-                {/* Projects Page Clickable Card*/}
-                <a
-                  className="flex flex-col items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
-                  href="/work"
-                  target="_self"
-                  rel="noopener noreferrer"
-                >
-                  <Image 
-                      className="rounded-2xl drop-shadow-lg overflow-hidden"
-                      src="/Sprites/menu/Menu_Card_Projects.png"
-                      width={250}
-                      height={250}
-                      alt="Project Info Image"
-                    />
-                  <p className="text-neutral-700 dark:text-neutral-100 p-4">Projects</p>
-                </a>
-
-                {/* Contact Page Clickable Card*/}
-                <a
-                  className="flex flex-col items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
-                  href="/contact"
-                  target="_self"
-                  rel="noopener noreferrer"
-                >
-                  
-                  <Image 
-                      className="rounded-2xl drop-shadow-lg overflow-hidden"
-                      src="/Sprites/menu/Menu_Card_Contact_Light.png"
-                      width={250}
-                      height={250}
-                      alt="Contact Info Image"
-                    />
-                  <p className="text-neutral-700 dark:text-neutral-100 p-4">Contact</p>
-                </a>
-
-                {/* About Page Clickable Card*/}
-                <a
-                  className="flex flex-col items-center font-semibold text-xl text-center cursor-pointer transition-transform ease-in-out hover:scale-110 text-center"
-                  href="/about"
-                  target="_self"
-                  rel="noopener noreferrer"
-                >
-                  
-                  <Image 
-                      className="rounded-2xl drop-shadow-lg overflow-hidden"
-                      src="/Sprites/menu/Menu_Card_About.png"
-                      width={250}
-                      height={250}
-                      alt="About Image"
-                    />
-                  <p className="text-neutral-700 dark:text-neutral-100 p-4">About</p>
-                </a>          
-              </div>
-            </div>
-          </CandyFrame>
-
-        
       </div>
     </div>
     </>
