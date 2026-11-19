@@ -74,7 +74,7 @@ function FullBleedBanner({
     // full-bleed banner
     <div className="relative flex justify-center w-full">
       {/* thin, responsive height */}
-      <div className="relative w-full max-w-screen h-35 sm:h-20 md:h-45 lg:h-65 overflow-hidden">
+      <div className="relative w-full max-w-screen h-35 sm:h-20 md:h-45 lg:h-55 overflow-hidden">
         <Image
           src={src}
           alt={alt}
@@ -85,7 +85,7 @@ function FullBleedBanner({
         />
 
           <div className="absolute inset-x-0 inset-y-0 flex items-center justify-right text-2xl sm:text-5xl ml-50 text-white">
-            <p>Curating iconic brand design that sticks.</p>
+            <p>Strategic design that drives real brand growth</p>
           </div>
           
           <div className="absolute inset-x-0 inset-y-45 flex items-center justify-right text-xl sm:text-2xl ml-50 text-white">
@@ -217,7 +217,7 @@ export default function Home() {
          {/* Occupational Line */}
          <div className="text-stone-700 dark:text-white sm:justify-items-left md:justify-items-center lg:justify-items-center">
 
-          <p className="text-2xl font-regular mt-5">Graphic Designer, Brand Strategist, Web Designer</p>
+          <p className="text-2xl font-regular mt-5">Graphic Designer, Brand Strategist, Web Developer</p>
         </div>
 
         <div className="bg-pink-100 dark:bg-neutral-200 relative w-full max-w-screen text-stone-700 dark:text-white pb-10 sm:justify-items-left md:justify-items-center lg:justify-items-center">
