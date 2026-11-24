@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Cherry_Bomb_One, Patrick_Hand, Inter, Noto_Sans_Symbols_2 } from "next/font/google";
+import { Geist, Geist_Mono, Cherry_Bomb_One, Patrick_Hand, Inter } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,21 +25,11 @@ const patrick = Patrick_Hand({
   weight: "400",
 });
 
-// Heading font: Inter, a clean bold-friendly sans for page titles and section headings.
-// Inter is a variable font, so every weight (400-800) is available without listing them.
+// Site font: Inter, used for both headings and body text (see globals.css).
+// Inter is a variable font, so every weight is available without listing them.
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-});
-
-// Body font: Noto Sans Symbols 2 (single Regular weight).
-// It is a symbols font, so characters it doesn't contain (such as the Latin alphabet)
-// fall through to Geist in the font stack set in globals.css.
-// preload is off because no "latin" subset exists for it.
-const notoSymbols2 = Noto_Sans_Symbols_2({
-  variable: "--font-noto-symbols-2",
-  weight: "400",
-  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -55,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${patrick.variable} ${inter.variable} ${notoSymbols2.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${patrick.variable} ${inter.variable} antialiased`}
       >
         <div className="apply-cute">
           {children}
