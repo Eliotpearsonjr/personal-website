@@ -84,11 +84,11 @@ function FullBleedBanner({
           priority={false}
         />
 
-          <div className="absolute inset-x-0 inset-y-0 flex items-center justify-right text-2xl sm:text-5xl ml-50 text-white">
+          <div className="absolute inset-x-0 inset-y-0 flex items-center justify-right text-2xl sm:text-5xl font-bold ml-50 text-white">
             <p>Strategic design that drives real brand growth</p>
           </div>
           
-          <div className="absolute inset-x-0 inset-y-45 flex items-center justify-right text-xl sm:text-2xl ml-50 text-white">
+          <div className="absolute inset-x-0 inset-y-45 flex items-center justify-right text-xl sm:text-2xl font-bold ml-50 text-white">
             <p>I blend design and visual storytelling to craft cohesive brand identities worth loving.</p>
           </div>
 

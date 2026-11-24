@@ -28,7 +28,7 @@ export default function Work() {
         // inner postcard background
         <>
         <SiteHeader />
-        <div className="bg-pink-50 text-stone-700 mb-10 p-4 border-2 border-rose-200 transition-opacity duration-300">
+        <div className="bg-pink-50 text-stone-700 p-4 border-2 border-rose-200 transition-opacity duration-300">
 
             <div className="justify-items-center items-center bg-white text-stone-800 mx-10 my-10 p-4 rounded-2xl text-left border-2 border-neutral-100 transition-opacity duration-300 text-2xl font-regular">
                 <p>Welcome to my Portfolio of Design Work. Choose a project to learn more!</p>
