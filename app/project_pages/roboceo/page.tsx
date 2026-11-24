@@ -135,7 +135,7 @@ export default function Roboceo() {
             <a className="text-center">
               <Image
                 className="rotate-4"
-                src="/Sprites/Canva_Stamp.png"
+                src="/Sprites/Canva_Logo_Stamp.png"
                 width={250}
                 height={250}
                 alt="Canva Logo Stamp"

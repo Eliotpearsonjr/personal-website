@@ -152,7 +152,7 @@ export default function MIM() {
                         <a className="text-center">
                           <Image
                             className="rotate-4"
-                            src="/Sprites/Canva_Stamp.png"
+                            src="/Sprites/Canva_Logo_Stamp.png"
                             width={150}
                             height={150}
                             alt="Canva Logo Stamp"
@@ -175,7 +175,7 @@ export default function MIM() {
 
                         <a
                           className="transition-transform ease-in-out hover:scale-110"
-                          href="https://www.flipsnack.com/8757576F8D6/ccl-playbook"
+                          href="https://www.flipsnack.com/8757576F8D6/math-identity-matters-educator-guide"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
