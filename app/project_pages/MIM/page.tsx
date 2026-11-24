@@ -120,18 +120,18 @@ export default function MIM() {
     // inner postcard background
     <>
     <SiteHeader />
-    <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 mb-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+    <div className="bg-pink-100 text-stone-700 mb-10 p-4 border-2 border-rose-200 transition-opacity duration-300">
       {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
       <div className="flex flex-col">
 
         {/* Section Title - RoboCEO */}
-        <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2 sm:justify-items-left md:justify-items-center lg:justify-items-center">
+        <div className="text-stone-700 border-b-2 border-orange-900/10 pb-2 ml-7 mr-7 mb-2 sm:justify-items-left md:justify-items-center lg:justify-items-center">
           <p className="font-heading text-4xl font-semibold">
             Math Identity Matters
           </p>
         </div>
 
-        <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 sm:justify-items-left md:justify-items-center lg:justify-items-center">
+        <div className="text-stone-700 border-b-2 border-orange-900/10 pb-2 ml-7 mr-7 sm:justify-items-left md:justify-items-center lg:justify-items-center">
           <p className="font-heading text-3xl font-regular">Identity, Print, Digital Flipbook</p>
         </div>
 
@@ -140,7 +140,7 @@ export default function MIM() {
         
                       {/* Section Body - Summary */}
                       <div className="flex flex-row sm:flex-row justify-center items-center w-full lg:w-full mb-5">
-                        <p className="text-stone-800 dark:text-stone-100 mx-6 mb-5 p-4 text-left border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 transition-opacity duration-300 text-xl font-regular">
+                        <p className="text-stone-800 mx-6 mb-5 p-4 text-left border-b-2 border-orange-900/10 pb-2 transition-opacity duration-300 text-xl font-regular">
                         My goal for this project was to channel a vibrant aesthetic while maintaining an educational
             look and feel. Branding colors were utilized to draw the reader's attention to core
             information within each page.
@@ -202,7 +202,7 @@ export default function MIM() {
 
         {/* Responsive Gallery */}
         <CandyFrame>
-          <div className="bg-stone-50 dark:bg-stone-700 my-2 mx-2 p-6 rounded-xl">
+          <div className="bg-stone-50 my-2 mx-2 p-6 rounded-xl">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {galleryItems.map((item, index) => (
                 <button
@@ -246,12 +246,12 @@ export default function MIM() {
 
         {/* Lightbox */}
         {selectedImageIndex !== null && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-stone-200/70 dark:bg-stone-600/70 p-4">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-stone-200/70 p-4">
             {/* Close Button */}
             <button
               type="button"
               onClick={closeLightbox}
-              className="absolute top-5 right-5 text-stone-500 dark:text-white text-5xl font-bold hover:scale-110 transition-transform"
+              className="absolute top-5 right-5 text-stone-500 text-5xl font-bold hover:scale-110 transition-transform"
               aria-label="Close lightbox"
             >
               ×

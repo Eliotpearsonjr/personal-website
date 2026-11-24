@@ -42,7 +42,7 @@ export default function Letsgo() {
         // inner postcard background
         <>
         <SiteHeader />
-        <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+        <div className="bg-pink-100 text-stone-700 my-10 p-4 border-2 border-rose-200 transition-opacity duration-300">
 
             {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
             <div className="flex flex-col mt-10">
@@ -56,7 +56,7 @@ export default function Letsgo() {
                 />
 
                 {/* Section Title - Plip Pets */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
+                <div className="text-stone-700 border-b-2 border-orange-900/10 pb-2 ml-7 mr-7 mb-2">
                     <p className="font-heading text-4xl font-semibold">LET'S GO - Empowering Futures with STEM</p>
                 </div>
 
@@ -65,7 +65,7 @@ export default function Letsgo() {
                     {/* Section Body - Summary */}
 
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular">
+                        <p className="bg-pink-50 text-stone-800 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 transition-opacity duration-300 text-2xl font-regular">
                         I have designed promotional graphics, original characters, and student-facing materials for LET'S GO,
                         helping the non-profit to boost its brand recognition and community engagement. I used <b>Canva </b>
                         and <b>Procreate </b> to create refreshing designs for the organization's digital presence.
@@ -100,7 +100,7 @@ export default function Letsgo() {
                 </div>
                 
                 {/* Section Title - Photo Gallery */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
+                <div className="text-stone-700 border-b-2 border-rose-900/10 pb-2 ml-7 mr-7 mb-2">
                     <p className="font-heading text-2xl font-semibold">Promotional Materials</p>
                 </div>
 
@@ -108,7 +108,7 @@ export default function Letsgo() {
                 {/* Centers Gallery in middle of screen */}
                 
                 <CandyFrame>
-                    <div className="bg-stone-50 dark:bg-stone-700 my-2 mx-2 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
+                    <div className="bg-stone-50 my-2 mx-2 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
                         <div className="flex space-x-6 items-center justify-start min-w-fit w-max">
 
                             <a
@@ -165,13 +165,13 @@ export default function Letsgo() {
 
 
                 {/* Section Title - Original Characters */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 my-4">
+                <div className="text-stone-700 border-b-2 border-rose-900/10 pb-2 ml-7 mr-7 my-4">
                     <p className="font-heading text-2xl font-semibold">Event Graphics</p>
                 </div>
 
                 {/* Gameplay Images - horizontal scrollable gallery, scales with screen */}
                 <CandyFrame>
-                    <div className="bg-stone-50 dark:bg-stone-700 my-2 mx-2 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
+                    <div className="bg-stone-50 my-2 mx-2 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
                         <div className="flex space-x-10 items-center justify-start min-w-fit w-max">
 
                         <a
@@ -243,7 +243,7 @@ export default function Letsgo() {
 
 
                 {/* Section Body - Core Gameplay */}
-                <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 my-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 font-regular">
+                <div className="bg-pink-50 text-stone-800 ml-5 mr-5 my-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 transition-opacity duration-300 font-regular">
                     <p className="text-2xl font-regular">
                         LET’S GO is a non-profit with to mission create economic success for underserved and marginalized communities through STEM education
                         and workforce development. These events were hosted to enagage the local community
@@ -253,12 +253,12 @@ export default function Letsgo() {
                 </div>
 
                 {/* Section Title - Plip Types */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-4 mb-4">
+                <div className="text-stone-700 border-b-2 border-rose-900/10 pb-2 ml-7 mr-7 mt-4 mb-4">
                     <p className="font-heading text-2xl font-semibold">Sticker Designs</p>
                 </div>
 
                 {/* Section Body - Stickers Introduction */}
-                <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-30 font-regular">
+                <div className="bg-pink-50 text-stone-800 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 transition-opacity duration-30 font-regular">
                     <p className="text-2xl font-regular">
                         These sticker designs have been printed and given out during events, pop-ups, and to students during school-year programming. 
                         <b> Click each design to learn more!</b>
@@ -324,7 +324,7 @@ export default function Letsgo() {
 
                 {/* pop-up div that displays plip type info when clicked */}
                 {selectedPlip == "Fluffy" && (
-                    <div className="bg-blue-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-blue-900/30 dark:border-blue-300/30 shadow-lg transition-opacity duration-300 font-regular">
+                    <div className="bg-blue-50 text-stone-800 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-blue-900/30 shadow-lg transition-opacity duration-300 font-regular">
 
                         {/* 'close' button for information pop-up */}
                         <button
@@ -338,7 +338,7 @@ export default function Letsgo() {
                     </div>
                 )}
                 {selectedPlip == "Cozy" && (
-                    <div className="bg-blue-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-blue-900/30 dark:border-blue-300/30 shadow-lg transition-opacity duration-300 font-regular">
+                    <div className="bg-blue-50 text-stone-800 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-blue-900/30 shadow-lg transition-opacity duration-300 font-regular">
 
                         {/* 'close' button for information pop-up */}
                         <button
@@ -352,7 +352,7 @@ export default function Letsgo() {
                     </div>
                 )}
                 {selectedPlip == "Winter" && (
-                    <div className="bg-blue-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-blue-900/30 dark:border-blue-300/30 shadow-lg transition-opacity duration-300 font-regular">
+                    <div className="bg-blue-50 text-stone-800 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-blue-900/30 shadow-lg transition-opacity duration-300 font-regular">
 
                         {/* 'close' button for information pop-up */}
                         <button
@@ -366,7 +366,7 @@ export default function Letsgo() {
                     </div>
                 )}
                 {selectedPlip == "Woodsy" && (
-                    <div className="bg-blue-50 dark:bg-stone-800 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-blue-900/30 dark:border-blue-300/30 shadow-lg transition-opacity duration-300 font-regular">
+                    <div className="bg-blue-50 text-stone-800 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-blue-900/30 shadow-lg transition-opacity duration-300 font-regular">
 
                         {/* 'close' button for information pop-up */}
                         <button
