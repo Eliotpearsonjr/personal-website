@@ -50,7 +50,7 @@ function PostcardTitle() {
 
         {/* Tiny "stamp" badge in the corner */}
         <div
-          className="absolute -top-6 -right-4 rotate-6 bg-white/90 dark:bg-stone-900/90 text-[10px] sm:text-xs px-4 py-2 rounded-[8px] border border-rose-300 shadow"
+          className="absolute -top-6 -right-4 rotate-6 bg-white/90 text-[10px] sm:text-xs px-4 py-2 rounded-[8px] border border-rose-300 shadow"
           style={{
             boxShadow: "2px 2px 0 rgba(0,0,0,.12)",
             
@@ -206,7 +206,7 @@ export default function Home() {
   return (
     <>
     <SiteHeader />
-    <div className="bg-neutral-50 text-stone-700 dark:text-stone-100 pb-10 transition-opacity duration-300">
+    <div className="bg-neutral-50 text-stone-700 pb-10 transition-opacity duration-300">
 
     <FullBleedBanner src="/Sprites/Nymblu_Banner_Crop.png" />
 
@@ -220,7 +220,7 @@ export default function Home() {
           <p className="font-heading text-2xl font-regular mt-5">Graphic Designer, Brand Strategist, Web Developer</p>
         </div>
 
-        <div className="bg-pink-100 relative w-full max-w-screen text-stone-700 dark:text-white pb-10 sm:justify-items-left md:justify-items-center lg:justify-items-center">
+        <div className="bg-pink-100 relative w-full max-w-screen text-stone-700 pb-10 sm:justify-items-left md:justify-items-center lg:justify-items-center">
 
           <h2 className="text-5xl font-semibold text-center text-neutral-700 pt-10 my-6">
             Featured Work

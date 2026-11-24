@@ -28,9 +28,9 @@ export default function Work() {
         // inner postcard background
         <>
         <SiteHeader />
-        <div className="bg-pink-50 dark:bg-stone-800 text-stone-700 dark:text-stone-100 mb-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+        <div className="bg-pink-50 text-stone-700 mb-10 p-4 border-2 border-rose-200 transition-opacity duration-300">
 
-            <div className="justify-items-center items-center bg-white dark:bg-stone-900 text-stone-800 dark:text-stone-100 mx-10 my-10 p-4 rounded-2xl text-left border-2 border-neutral-100 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular">
+            <div className="justify-items-center items-center bg-white text-stone-800 mx-10 my-10 p-4 rounded-2xl text-left border-2 border-neutral-100 transition-opacity duration-300 text-2xl font-regular">
                 <p>Welcome to my Portfolio of Design Work. Choose a project to learn more!</p>
             </div>
 
@@ -38,7 +38,7 @@ export default function Work() {
             
             {/* list of projects */}
             <CandyFrame>
-                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-neutral-50 dark:bg-stone-800 rounded-xl items-center justify-items-center p-5 gap-4 font-[family-name:var(--font-geist-sans)]">
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-neutral-50 rounded-xl items-center justify-items-center p-5 gap-4 font-[family-name:var(--font-geist-sans)]">
 
                     <a
                         className="relative group shimmer-button transition-transform ease-in-out hover:scale-102"
@@ -248,7 +248,7 @@ export default function Work() {
                 </div>
             </CandyFrame>
 
-            <div className="justify-items-center items-center bg-white dark:bg-stone-900 text-stone-800 dark:text-stone-100 mx-10 my-5 p-4 rounded-2xl text-left border-2 border-neutral-100 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular">
+            <div className="justify-items-center items-center bg-white text-stone-800 mx-10 my-5 p-4 rounded-2xl text-left border-2 border-neutral-100 transition-opacity duration-300 text-2xl font-regular">
                 <p>© 2026 Eliot Pearson Jr. All rights reserved.</p>
             </div>
 

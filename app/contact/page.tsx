@@ -27,22 +27,22 @@ export default function Contact() {
     return (
         <>
         <SiteHeader />
-        <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+        <div className="bg-pink-100 text-stone-700 my-10 p-4 border-2 border-rose-200 transition-opacity duration-300">
             
             {/* Section Title - Contact Information */}
-            <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-5 mb-2">
+            <div className="text-stone-700 border-b-2 border-orange-900/10 pb-2 ml-7 mr-7 mt-5 mb-2">
                 <p className="font-heading text-4xl font-semibold">Contact Me</p>
             </div>
             
             <div className="justify-items-center items-center">
-                <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 mx-10 my-10 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular"
+                <p className="bg-pink-50 text-stone-800 mx-10 my-10 p-4 rounded-2xl text-left border-2 border-rose-900/30 transition-opacity duration-300 text-2xl font-regular"
                 >Feel free to get in touch with me, or even check out my social medias!</p>
             </div>
             
             {/* Section Title - Social Media Buttons */}
 
             <CandyFrame>
-            <div className="bg-orange-50 dark:bg-stone-700 my-1 mx-1 px-3 rounded-xl">
+            <div className="bg-orange-50 my-1 mx-1 px-3 rounded-xl">
                 <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 sm:p-4 justify-items-left rounded-sm font-[family-name:var(--font-geist-sans)]">
 
                 {/* LinkedIn */}
@@ -106,7 +106,7 @@ export default function Contact() {
 
             {/* Section - Email Inquiries*/}
             <div className="justify-items-center items-center">
-                <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 mx-5 my-10 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular"
+                <p className="bg-pink-50 text-stone-800 mx-5 my-10 p-4 rounded-2xl text-left border-2 border-rose-900/30 transition-opacity duration-300 text-2xl font-regular"
                 >If you have any business inquiries, please email me at <b>eliotnumber2@gmail.com</b>.
                 Thanks for stopping by, share my website if you'd like!</p>
             </div>   

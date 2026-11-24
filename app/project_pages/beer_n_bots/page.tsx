@@ -27,7 +27,7 @@ function CandyFrame({ children }: { children: React.ReactNode }) {
 export default function BeerNBots() {
     return (
         // inner postcard background
-        <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+        <div className="bg-pink-100 text-stone-700 my-10 p-4 border-2 border-rose-200 transition-opacity duration-300">
 
             {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
             <div className="flex flex-col mt-10">
@@ -41,7 +41,7 @@ export default function BeerNBots() {
                 />
 
                 {/* Section Title - Beer N Bots */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-4 mb-4">
+                <div className="text-stone-700 border-b-2 border-orange-900/10 pb-2 ml-7 mr-7 mt-4 mb-4">
                     <p className="font-heading text-4xl font-semibold">Beer N Bots</p>
                 </div>
 
@@ -49,7 +49,7 @@ export default function BeerNBots() {
                 <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular">
+                        <p className="bg-pink-50 text-stone-800 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 transition-opacity duration-300 text-2xl font-regular">
                             Beer N Bots is an anual event hosted by the Baltimore Robotics Center. The 
                             event allows for representatives from local tech companies to compete in a
                             cutthroat, King of the Hill-style battle with robots!
@@ -77,13 +77,13 @@ export default function BeerNBots() {
                 </div>
                 
                 {/* Section Title - Promotional Materials Gallery */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-4 mb-4">
+                <div className="text-stone-700 border-b-2 border-orange-900/10 pb-2 ml-7 mr-7 mt-4 mb-4">
                     <p className="font-heading text-2xl font-semibold">Promotional Materials</p>
                 </div>
 
                 {/* Promotional Images - horizontal scrollable gallery */}
                 <CandyFrame>
-                <div className="bg-stone-100 dark:bg-stone-700 mt-4 mb-4 mx-5 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
+                <div className="bg-stone-100 mt-4 mb-4 mx-5 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
                     <div className="flex space-x-6 items-center justify-start min-w-fit w-max">
 
                         <a
@@ -151,7 +151,7 @@ export default function BeerNBots() {
                 </CandyFrame>
 
                 {/* Section Title - Slogan Footer */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-4 mb-4">
+                <div className="text-stone-700 border-b-2 border-orange-900/10 pb-2 ml-7 mr-7 mt-4 mb-4">
                     <p className="font-heading text-2xl font-semibold">Brewing Innovation, Building Futures</p>
                 </div>
 

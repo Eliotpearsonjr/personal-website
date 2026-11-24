@@ -30,7 +30,7 @@ export default function Swatches() {
         // inner postcard background
         <>
         <SiteHeader />
-        <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+        <div className="bg-pink-100 text-stone-700 my-10 p-4 border-2 border-rose-200 transition-opacity duration-300">
 
             {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
             <div className="flex flex-col mt-10">
@@ -44,7 +44,7 @@ export default function Swatches() {
                 />
 
                 {/* Section Title - Beer N Bots */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-4 mb-4">
+                <div className="text-stone-700 border-b-2 border-orange-900/10 pb-2 ml-7 mr-7 mt-4 mb-4">
                     <p className="font-heading text-4xl font-semibold">Swatches - Color Palette Generator</p>
                 </div>
 
@@ -52,7 +52,7 @@ export default function Swatches() {
                 <div className="flex flex-col lg:flex-row gap-8 justify-center items-center">
                     {/* Section Body - Summary */}
                     <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular">
+                        <p className="bg-pink-50 text-stone-800 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 transition-opacity duration-300 text-2xl font-regular">
                             Swatches is a color palette app that I made to have a simple and clean place to keep track
                             of my color palettes for graphic design work. This one is minialist and free of ads cluttering
                             the swatches of color.
@@ -104,13 +104,13 @@ export default function Swatches() {
                 </div>
                 
                 {/* Section Title - Promotional Materials Gallery */}
-                <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-4 mb-4">
+                <div className="text-stone-700 border-b-2 border-orange-900/10 pb-2 ml-7 mr-7 mt-4 mb-4">
                     <p className="font-heading text-2xl font-semibold">Screenshots and Concept</p>
                 </div>
 
                 {/* Promotional Images - horizontal scrollable gallery */}
                 <CandyFrame>
-                <div className="bg-stone-50 dark:bg-stone-700 my-2 mx-2 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
+                <div className="bg-stone-50 my-2 mx-2 pt-8 pb-8 px-8 rounded-xl overflow-x-auto">
                     <div className="flex space-x-6 items-center justify-start min-w-fit w-max">
 
                         <a
@@ -178,7 +178,7 @@ export default function Swatches() {
                 </CandyFrame>
 
                 <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-full mb-5">
-                        <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 my-10 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular">
+                        <p className="bg-pink-50 text-stone-800 ml-5 mr-5 my-10 p-4 rounded-2xl text-left border-2 border-rose-900/30 transition-opacity duration-300 text-2xl font-regular">
                             This app allows for multiple colors to be chosen via hexcode, and these codes may be
                             copy and pasted to another source. The plus button will generate another color that
                             is similar to the last swatch in the grid. 

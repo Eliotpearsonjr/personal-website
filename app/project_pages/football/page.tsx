@@ -98,7 +98,7 @@ export default function CCLPlaybook() {
     // inner postcard background
     <>
     <SiteHeader />
-    <div className="bg-pink-100 dark:bg-stone-800 text-stone-700 dark:text-stone-100 my-10 p-4 border-2 border-rose-200 dark:border-stone-400 transition-opacity duration-300">
+    <div className="bg-pink-100 text-stone-700 my-10 p-4 border-2 border-rose-200 transition-opacity duration-300">
       {/* text box div, mt-35 makes the top border of the postcard visible from the header */}
       <div className="flex flex-col">
         <Image
@@ -110,7 +110,7 @@ export default function CCLPlaybook() {
         />
 
         {/* Section Title - RoboCEO */}
-        <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
+        <div className="text-stone-700 border-b-2 border-orange-900/10 pb-2 ml-7 mr-7 mb-2">
           <p className="font-heading text-4xl font-semibold">
             Scouting Report Portfolio Visualization
           </p>
@@ -121,7 +121,7 @@ export default function CCLPlaybook() {
           {/* Section Body - Summary */}
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full lg:w-full mb-5">
-            <p className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 text-2xl font-regular">
+            <p className="bg-pink-50 text-stone-800 ml-5 mr-5 mb-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 transition-opacity duration-300 text-2xl font-regular">
               This project was made per request of a client who wished to visualize their portfolio of
               scouting reports. <b> I DO NOT claim ownership of any of the metrics or written material, 
               which remians intellectual property of the client. </b> I used <b> Canva</b> to realize the client's vision.
@@ -144,11 +144,11 @@ export default function CCLPlaybook() {
         </div>
 
         {/* Section Title - Promotional Materials */}
-        <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
+        <div className="text-stone-700 border-b-2 border-rose-900/10 pb-2 ml-7 mr-7 mb-2">
           <p className="font-heading text-2xl font-semibold">Promotional Materials</p>
         </div>
 
-        <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 my-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 font-regular">
+        <div className="bg-pink-50 text-stone-800 ml-5 mr-5 my-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 transition-opacity duration-300 font-regular">
           <p className="text-2xl font-regular">
             I wanted to capture the aesthetic found in online media and television for football games. Clean lines,
             bold fonts, and dark colors that matched each teams colors helped to create contrast, highlighting
@@ -158,7 +158,7 @@ export default function CCLPlaybook() {
 
         {/* Responsive Gallery */}
         <CandyFrame>
-          <div className="bg-stone-50 dark:bg-stone-700 my-2 mx-2 p-6 rounded-xl">
+          <div className="bg-stone-50 my-2 mx-2 p-6 rounded-xl">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
               {galleryItems.map((item, index) => (
                 <button
@@ -202,12 +202,12 @@ export default function CCLPlaybook() {
 
         {/* Lightbox */}
         {selectedImageIndex !== null && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-stone-200/70 dark:bg-stone-600/70 p-4">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-stone-200/70 p-4">
             {/* Close Button */}
             <button
               type="button"
               onClick={closeLightbox}
-              className="absolute top-5 right-5 text-stone-500 dark:text-white text-5xl font-bold hover:scale-110 transition-transform"
+              className="absolute top-5 right-5 text-stone-500 text-5xl font-bold hover:scale-110 transition-transform"
               aria-label="Close lightbox"
             >
               ×
