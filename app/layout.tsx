@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Cherry_Bomb_One, Patrick_Hand, Encode_Sans_Expanded, Noto_Sans_Symbols_2 } from "next/font/google";
+import { Geist, Geist_Mono, Cherry_Bomb_One, Patrick_Hand, Inter, Noto_Sans_Symbols_2 } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,12 +25,11 @@ const patrick = Patrick_Hand({
   weight: "400",
 });
 
-// Heading font: a clean, wide sans for page titles and section headings.
-// Encode Sans Expanded is a static (non-variable) font, so each weight is listed.
-const encodeExpanded = Encode_Sans_Expanded({
-  variable: "--font-encode-expanded",
+// Heading font: Inter, a clean bold-friendly sans for page titles and section headings.
+// Inter is a variable font, so every weight (400-800) is available without listing them.
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
 });
 
 // Body font: Noto Sans Symbols 2 (single Regular weight).
@@ -56,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${patrick.variable} ${encodeExpanded.variable} ${notoSymbols2.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${patrick.variable} ${inter.variable} ${notoSymbols2.variable} antialiased`}
       >
         <div className="apply-cute">
           {children}
