@@ -217,7 +217,7 @@ export default function Home() {
          {/* Occupational Line */}
          <div className="text-stone-700 dark:text-white sm:justify-items-left md:justify-items-center lg:justify-items-center">
 
-          <p className="text-2xl font-regular mt-5">Graphic Designer, Brand Strategist, Web Developer</p>
+          <p className="font-heading text-2xl font-regular mt-5">Graphic Designer, Brand Strategist, Web Developer</p>
         </div>
 
         <div className="bg-pink-100 dark:bg-neutral-200 relative w-full max-w-screen text-stone-700 dark:text-white pb-10 sm:justify-items-left md:justify-items-center lg:justify-items-center">

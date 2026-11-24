@@ -14,8 +14,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  /* Patrick Hand is now your main sans */
-  --font-sans: var(--font-cute), var(--font-geist-sans);
+  /* Inter is the main sans */
+  --font-sans: var(--font-inter), var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -120,8 +120,18 @@ body {
   }
 }
 
-/* Force Patrick Hand for all text elements in the app content.
+/* Force Inter for all text elements in the app content.
    Exempt code-like elements so monospace stays intact. */
    .apply-cute :where(*) :not(code, pre, kbd, samp) {
-    font-family: var(--font-cute), var(--font-geist-sans), sans-serif !important;
+    font-family: var(--font-inter), var(--font-geist-sans), sans-serif !important;
   }
+
+/* Headings use Inter (loaded in layout.tsx).
+   Any real <h1>-<h6> gets it automatically; for headings written as <p> or <div>,
+   add the "font-heading" class. This must be !important and more specific than the
+   body font rule above, which otherwise forces its font onto everything, and it
+   also covers anything nested inside a heading (spans, links, etc.). */
+.apply-cute :is(h1, h2, h3, h4, h5, h6, .font-heading),
+.apply-cute :is(h1, h2, h3, h4, h5, h6, .font-heading) :not(code, pre, kbd, samp) {
+  font-family: var(--font-inter), var(--font-geist-sans), sans-serif !important;
+}

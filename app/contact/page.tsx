@@ -31,7 +31,7 @@ export default function Contact() {
             
             {/* Section Title - Contact Information */}
             <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-5 mb-2">
-                <p className="text-4xl font-semibold">Contact Me</p>
+                <p className="font-heading text-4xl font-semibold">Contact Me</p>
             </div>
             
             <div className="justify-items-center items-center">

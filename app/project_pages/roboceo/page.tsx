@@ -111,7 +111,7 @@ export default function Roboceo() {
 
         {/* Section Title - RoboCEO */}
         <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
-          <p className="text-4xl font-semibold">
+          <p className="font-heading text-4xl font-semibold">
             RoboCEO - Inspiring Innovation, Empowering Futures
           </p>
         </div>
@@ -147,7 +147,7 @@ export default function Roboceo() {
 
         {/* Section Title - Promotional Materials */}
         <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
-          <p className="text-2xl font-semibold">Promotional Materials</p>
+          <p className="font-heading text-2xl font-semibold">Promotional Materials</p>
         </div>
 
         <div className="bg-pink-50 dark:bg-stone-900 text-stone-800 dark:text-stone-100 ml-5 mr-5 my-5 p-4 rounded-2xl text-left border-2 border-rose-900/30 dark:border-rose-300/30 transition-opacity duration-300 font-regular">

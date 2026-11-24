@@ -42,7 +42,7 @@ export default function BeerNBots() {
 
                 {/* Section Title - Beer N Bots */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-4 mb-4">
-                    <p className="text-4xl font-semibold">Beer N Bots</p>
+                    <p className="font-heading text-4xl font-semibold">Beer N Bots</p>
                 </div>
 
                 {/* Holds split subsections */}
@@ -78,7 +78,7 @@ export default function BeerNBots() {
                 
                 {/* Section Title - Promotional Materials Gallery */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-4 mb-4">
-                    <p className="text-2xl font-semibold">Promotional Materials</p>
+                    <p className="font-heading text-2xl font-semibold">Promotional Materials</p>
                 </div>
 
                 {/* Promotional Images - horizontal scrollable gallery */}
@@ -152,7 +152,7 @@ export default function BeerNBots() {
 
                 {/* Section Title - Slogan Footer */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-4 mb-4">
-                    <p className="text-2xl font-semibold">Brewing Innovation, Building Futures</p>
+                    <p className="font-heading text-2xl font-semibold">Brewing Innovation, Building Futures</p>
                 </div>
 
             </div>

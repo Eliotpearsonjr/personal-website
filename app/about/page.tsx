@@ -17,7 +17,7 @@ export default function About() {
 
                 {/* Section Title - Welcome */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
-                    <p className="text-4xl font-semibold">Welcome To My Website!</p>
+                    <p className="font-heading text-4xl font-semibold">Welcome To My Website!</p>
                 </div>
 
                 {/* Holds split subsections */}
@@ -53,7 +53,7 @@ export default function About() {
                 
                 {/* Section Title -Eliot's Stats */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
-                    <p className="text-2xl font-semibold">Eliot's Stats</p>
+                    <p className="font-heading text-2xl font-semibold">Eliot's Stats</p>
                 </div>
 
                 {/* Information about myself */}
@@ -104,7 +104,7 @@ export default function About() {
 
                 {/* Section Title - Github Information */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
-                    <p className="text-2xl font-semibold">While You're Here...</p>
+                    <p className="font-heading text-2xl font-semibold">While You're Here...</p>
                 </div>
 
 
