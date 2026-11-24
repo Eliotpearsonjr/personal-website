@@ -222,7 +222,7 @@ export default function Home() {
 
         <div className="bg-pink-100 relative w-full max-w-screen text-stone-700 pb-10 sm:justify-items-left md:justify-items-center lg:justify-items-center">
 
-          <h2 className="text-5xl font-semibold text-center text-neutral-700 pt-10 my-6">
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-center text-neutral-700 pt-10 my-6">
             Featured Work
           </h2>
 

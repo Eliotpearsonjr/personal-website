@@ -51,7 +51,7 @@ export default function Work() {
                         >
                         <div className="motion-target">
                             <Image
-                            className="drop-shadow-lg"
+                            className="drop-shadow-lg rounded-xl"
                             src="/Sprites/thumbnails/Thumbnail_STEM_Pathways_Large.png"
                             width={600}
                             height={400}
@@ -71,7 +71,7 @@ export default function Work() {
                         >
                         <div className="motion-target">
                             <Image
-                            className="drop-shadow-lg"
+                            className="drop-shadow-lg rounded-xl"
                             src="/Sprites/thumbnails/Thumbnail_CCL_Playbook.png"
                             width={600}
                             height={400}
@@ -91,7 +91,7 @@ export default function Work() {
                         >
                         <div className="motion-target">
                             <Image
-                            className="drop-shadow-lg"
+                            className="drop-shadow-lg rounded-xl"
                             src="/Sprites/thumbnails/Thumbnail_MIM.png"
                             width={600}
                             height={400}
@@ -111,7 +111,7 @@ export default function Work() {
                         >
                         <div className="motion-target">
                             <Image
-                            className="drop-shadow-lg"
+                            className="drop-shadow-lg rounded-xl"
                             src="/Sprites/thumbnails/Thumbnail_Football.png"
                             width={600}
                             height={400}
@@ -131,7 +131,7 @@ export default function Work() {
                         >
                         <div className="motion-target">
                             <Image
-                            className="drop-shadow-lg"
+                            className="drop-shadow-lg rounded-xl"
                             src="/Sprites/thumbnails/Thumbnail_Plip_Pets_Inner.png"
                             width={600}
                             height={400}
@@ -151,7 +151,7 @@ export default function Work() {
                         >
                         <div className="motion-target">
                             <Image
-                            className="drop-shadow-lg"
+                            className="drop-shadow-lg rounded-xl"
                             src="/Sprites/thumbnails/Thumbnail_RoboCEO_Spring_26.png"
                             width={600}
                             height={400}
@@ -171,7 +171,7 @@ export default function Work() {
                         >
                         <div className="motion-target">
                             <Image
-                            className="drop-shadow-lg"
+                            className="drop-shadow-lg rounded-xl"
                             src="/Sprites/thumbnails/Thumbnail_Arts_Rise.png"
                             width={600}
                             height={400}
@@ -193,7 +193,7 @@ export default function Work() {
                         >
                         <div className="motion-target">
                             <Image
-                            className="drop-shadow-lg"
+                            className="drop-shadow-lg rounded-xl"
                             src="/Sprites/thumbnails/Thumbnail_LETSGO.png"
                             width={600}
                             height={400}
@@ -213,7 +213,7 @@ export default function Work() {
                         >
                         <div className="motion-target">
                             <Image
-                            className="drop-shadow-lg"
+                            className="drop-shadow-lg rounded-xl"
                             src="/Sprites/thumbnails/Thumbnail_Swatches.png"
                             width={600}
                             height={400}
