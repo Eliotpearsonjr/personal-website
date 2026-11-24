@@ -57,7 +57,7 @@ export default function Letsgo() {
 
                 {/* Section Title - Plip Pets */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
-                    <p className="text-4xl font-semibold">LET'S GO - Empowering Futures with STEM</p>
+                    <p className="font-heading text-4xl font-semibold">LET'S GO - Empowering Futures with STEM</p>
                 </div>
 
                 {/* Holds split subsections */}
@@ -101,7 +101,7 @@ export default function Letsgo() {
                 
                 {/* Section Title - Photo Gallery */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
-                    <p className="text-2xl font-semibold">Promotional Materials</p>
+                    <p className="font-heading text-2xl font-semibold">Promotional Materials</p>
                 </div>
 
                 {/* horizontal scrollable gallery */}
@@ -166,7 +166,7 @@ export default function Letsgo() {
 
                 {/* Section Title - Original Characters */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 my-4">
-                    <p className="text-2xl font-semibold">Event Graphics</p>
+                    <p className="font-heading text-2xl font-semibold">Event Graphics</p>
                 </div>
 
                 {/* Gameplay Images - horizontal scrollable gallery, scales with screen */}
@@ -254,7 +254,7 @@ export default function Letsgo() {
 
                 {/* Section Title - Plip Types */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-4 mb-4">
-                    <p className="text-2xl font-semibold">Sticker Designs</p>
+                    <p className="font-heading text-2xl font-semibold">Sticker Designs</p>
                 </div>
 
                 {/* Section Body - Stickers Introduction */}

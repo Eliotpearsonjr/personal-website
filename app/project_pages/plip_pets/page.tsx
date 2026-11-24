@@ -57,7 +57,7 @@ export default function PlipPets() {
 
                 {/* Section Title - Plip Pets */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
-                    <p className="text-4xl font-semibold">Plip Pets</p>
+                    <p className="font-heading text-4xl font-semibold">Plip Pets</p>
                 </div>
 
                 {/* Holds split subsections */}
@@ -104,7 +104,7 @@ export default function PlipPets() {
                 
                 {/* Section Title - Art Gallery */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
-                    <p className="text-2xl font-semibold">Sprite and Concept Art Gallery</p>
+                    <p className="font-heading text-2xl font-semibold">Sprite and Concept Art Gallery</p>
                 </div>
 
                 {/* Concept Art Images */}
@@ -257,7 +257,7 @@ export default function PlipPets() {
 
                 {/* Section Title - Core Gameplay */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 my-4">
-                    <p className="text-2xl font-semibold">Core Gameplay</p>
+                    <p className="font-heading text-2xl font-semibold">Core Gameplay</p>
                 </div>
 
                 {/* Gameplay Images - horizontal scrollable gallery, scales with screen */}
@@ -409,7 +409,7 @@ export default function PlipPets() {
 
                 {/* Section Title - Plip Types */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-rose-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mt-4 mb-4">
-                    <p className="text-2xl font-semibold">Types of Plips</p>
+                    <p className="font-heading text-2xl font-semibold">Types of Plips</p>
                 </div>
 
                 {/* Section Body - Types Introduction */}

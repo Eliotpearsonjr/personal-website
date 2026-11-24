@@ -36,7 +36,7 @@ export default function Characters() {
                 
                 {/* Section Title - Characters */}
                 <div className="text-stone-700 dark:text-white border-b-2 border-pink-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2">
-                    <p className="text-4xl font-semibold">Original Characters</p>
+                    <p className="font-heading text-4xl font-semibold">Original Characters</p>
                 </div>
 
                 {/* Holds split subsections */}

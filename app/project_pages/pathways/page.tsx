@@ -176,7 +176,7 @@ export default function STEMPathways() {
 
         {/* Section Title - STEM Pathways */}
         <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 mb-2 sm:justify-items-left md:justify-items-center lg:justify-items-center">
-          <p className="text-4xl font-semibold">
+          <p className="font-heading text-4xl font-semibold">
             LET'S GO - STEM Pathways
           </p>
 
@@ -187,7 +187,7 @@ export default function STEMPathways() {
 
         {/* Section Title - Promotional Materials */}
         <div className="text-stone-700 dark:text-white border-b-2 border-orange-900/10 dark:border-rose-300/10 pb-2 ml-7 mr-7 sm:justify-items-left md:justify-items-center lg:justify-items-center">
-          <p className="text-3xl font-regular">Identity, Social Media, Web Design, Short Form Video</p>
+          <p className="font-heading text-3xl font-regular">Identity, Social Media, Web Design, Short Form Video</p>
         </div>
 
         {/* Holds split subsections */}
