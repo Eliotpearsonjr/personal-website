@@ -145,7 +145,7 @@ function LatestWorkGallery() {
             "repeating-linear-gradient(45deg, rgba(255, 182, 193, 0.8) 0 14px, rgba(255, 255, 255, 0.8) 14px 28px, rgb(150, 218, 241, 0.8) 28px 42px, rgb(255, 255, 255, 0.8) 42px 56px)",
         }}
       >
-        <div className="bg-neutral-50 dark:bg-stone-700 pt-6 pb-4 font-[family-name:var(--font-geist-sans)]">
+        <div className="bg-neutral-50 pt-6 pb-4 font-[family-name:var(--font-geist-sans)]">
 
           {/* window onto the moving track; people who prefer reduced motion get a normal scrollable row instead */}
           <div
@@ -206,7 +206,7 @@ export default function Home() {
   return (
     <>
     <SiteHeader />
-    <div className="bg-neutral-50 dark:bg-stone-800 text-stone-700 dark:text-stone-100 pb-10 transition-opacity duration-300">
+    <div className="bg-neutral-50 text-stone-700 dark:text-stone-100 pb-10 transition-opacity duration-300">
 
     <FullBleedBanner src="/Sprites/Nymblu_Banner_Crop.png" />
 
@@ -215,14 +215,14 @@ export default function Home() {
         
 
          {/* Occupational Line */}
-         <div className="text-stone-700 dark:text-white sm:justify-items-left md:justify-items-center lg:justify-items-center">
+         <div className="text-stone-700 sm:justify-items-left md:justify-items-center lg:justify-items-center">
 
           <p className="font-heading text-2xl font-regular mt-5">Graphic Designer, Brand Strategist, Web Developer</p>
         </div>
 
-        <div className="bg-pink-100 dark:bg-neutral-200 relative w-full max-w-screen text-stone-700 dark:text-white pb-10 sm:justify-items-left md:justify-items-center lg:justify-items-center">
+        <div className="bg-pink-100 relative w-full max-w-screen text-stone-700 dark:text-white pb-10 sm:justify-items-left md:justify-items-center lg:justify-items-center">
 
-          <h2 className="text-5xl font-semibold text-center text-neutral-700 dark:text-neutral-800 pt-10 my-6">
+          <h2 className="text-5xl font-semibold text-center text-neutral-700 pt-10 my-6">
             Featured Work
           </h2>
 
